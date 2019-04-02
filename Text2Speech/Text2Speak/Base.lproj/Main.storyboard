@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Text2Speak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-gc-In6">
+                                <rect key="frame" x="12.5" y="211" width="350" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="eLo-tM-DbO"/>
+                                    <constraint firstAttribute="height" constant="28" id="qAR-hf-5QG"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="French"/>
+                                    <segment title="German"/>
+                                    <segment title="Spanish"/>
+                                    <segment title="Italian"/>
+                                </segments>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KPK-DX-dW0">
+                                <rect key="frame" x="12.5" y="20" width="350" height="194"/>
+                                <color key="backgroundColor" red="0.82530817002405699" green="0.98085211020043661" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="WfX-G5-Qkn"/>
+                                    <constraint firstAttribute="height" constant="194" id="vyr-ko-8ED"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awA-rG-JV1">
+                                <rect key="frame" x="137" y="276" width="101" height="51"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="ag3-YL-OAe"/>
+                                    <constraint firstAttribute="width" constant="101" id="seH-kb-xHE"/>
+                                </constraints>
+                                <state key="normal" title="Speak">
+                                    <color key="titleColor" red="0.82530817000000001" green="0.98085211019999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="SpeakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJ4-Mi-efZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KPK-DX-dW0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3qG-p4-GfR"/>
+                            <constraint firstItem="Zr0-gc-In6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Go0-xV-Pz5"/>
+                            <constraint firstItem="KPK-DX-dW0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LGo-sW-8dE"/>
+                            <constraint firstItem="awA-rG-JV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eZ0-et-8GS"/>
+                            <constraint firstItem="Zr0-gc-In6" firstAttribute="firstBaseline" secondItem="KPK-DX-dW0" secondAttribute="baseline" constant="16" symbolType="layoutAnchor" id="j1k-ua-Hfs"/>
+                            <constraint firstItem="awA-rG-JV1" firstAttribute="top" secondItem="Zr0-gc-In6" secondAttribute="bottom" constant="37" id="wUN-34-DwS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TextViewHere" destination="KPK-DX-dW0" id="35R-sF-4y1"/>
+                        <outlet property="segmentCT" destination="Zr0-gc-In6" id="NTE-QJ-mhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
