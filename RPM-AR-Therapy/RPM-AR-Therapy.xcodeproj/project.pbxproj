@@ -17,6 +17,7 @@
 		1D33030C224AAC6F00DC20AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D33030A224AAC6F00DC20AF /* LaunchScreen.storyboard */; };
 		1D330317224AAC6F00DC20AF /* RPM_AR_TherapyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D330316224AAC6F00DC20AF /* RPM_AR_TherapyTests.swift */; };
 		1D330322224AAC6F00DC20AF /* RPM_AR_TherapyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D330321224AAC6F00DC20AF /* RPM_AR_TherapyUITests.swift */; };
+		1D4CA5EB2253FA620011A730 /* ObjSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA5EA2253FA620011A730 /* ObjSelectController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1D330321224AAC6F00DC20AF /* RPM_AR_TherapyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPM_AR_TherapyUITests.swift; sourceTree = "<group>"; };
 		1D330323224AAC6F00DC20AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D49D60F225283C900FD65D0 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		1D4CA5EA2253FA620011A730 /* ObjSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjSelectController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				1D49D60C2252839900FD65D0 /* 3D Objects */,
 				1D330301224AAC6E00DC20AF /* art.scnassets */,
 				1D330303224AAC6E00DC20AF /* ViewController.swift */,
+				1D4CA5EA2253FA620011A730 /* ObjSelectController.swift */,
 				1D196B7E2252983000AEFF8A /* ModelType.swift */,
 				1D330305224AAC6E00DC20AF /* Main.storyboard */,
 				1D330308224AAC6F00DC20AF /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 				1D330304224AAC6E00DC20AF /* ViewController.swift in Sources */,
 				1D196B7F2252983000AEFF8A /* ModelType.swift in Sources */,
 				1D330300224AAC6E00DC20AF /* AppDelegate.swift in Sources */,
+				1D4CA5EB2253FA620011A730 /* ObjSelectController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

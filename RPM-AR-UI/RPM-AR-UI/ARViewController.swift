@@ -1,12 +1,11 @@
-
 import UIKit
 import ARKit
 
-class ViewController: UIViewController {
+class ARViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
-
+    
     var objectsOnScreen: Array<SCNNode> = Array()
     
     
@@ -55,7 +54,7 @@ class ViewController: UIViewController {
     
     
     @objc func addObjectToScene(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        if(objectsOnScreen.count < 2 && objNode != emptyNode){
+        if(objectsOnScreen.count < 2 ){
             let tapLocation = recognizer.location(in: sceneView)
             let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
             
@@ -65,50 +64,43 @@ class ViewController: UIViewController {
             let y = translation.y
             let z = translation.z
             
-            let addObjStoryboard = UIStoryboard(name: "AddObjects", bundle: nil)
-            let vc = addObjStoryboard.instantiateViewController(withIdentifier: "UITableViewController")
-            self.navigationController!.pushViewController(vc, animated: true)
-
-//for Shapes
-//            var geometry:SCNGeometry
-//            // 2
-//            switch ModelType.random() {
-//            default:
-//                // 3
-//                geometry = SCNBox(width: 0.5, height: 0.5, length: 0.5, chamferRadius: 0.0)
-//            }
-//            // 4
-//            let geometryNode = SCNNode(geometry: geometry)
-//            // 5
-//            geometryNode.position = SCNVector3(x,y,z)
-//            sceneView.scene.rootNode.addChildNode(geometryNode)
-//            objectsOnScreen.append(geometryNode)
+//            let addObjStoryboard = UIStoryboard(name: "AddObjects", bundle: nil)
+//            let vc = addObjStoryboard.instantiateViewController(withIdentifier: "UITableViewController")
+//            self.navigationController!.pushViewController(vc, animated: true)
+            
+            //for Shapes
+            //            var geometry:SCNGeometry
+            //            // 2
+            //            switch ModelType.random() {
+            //            default:
+            //                // 3
+            //                geometry = SCNBox(width: 0.5, height: 0.5, length: 0.5, chamferRadius: 0.0)
+            //            }
+            //            // 4
+            //            let geometryNode = SCNNode(geometry: geometry)
+            //            // 5
+            //            geometryNode.position = SCNVector3(x,y,z)
+            //            sceneView.scene.rootNode.addChildNode(geometryNode)
+            //            objectsOnScreen.append(geometryNode)
             
             
             
-//For 3D Models
-//            guard let shipScene = SCNScene(named: "ship.scn"),
-//                let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
-//                else { return }
-//
-//
-//            shipNode.position = SCNVector3(x,y,z)
-//            sceneView.scene.rootNode.addChildNode(shipNode)
-//            objectsOnScreen.append(shipNode)
+            //For 3D Models
+                        guard let shipScene = SCNScene(named: "ship.scn"),
+                            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
+                            else { return }
             
             
-        }else if(objNode == emptyNode){
-            
+                        shipNode.position = SCNVector3(x,y,z)
+                        sceneView.scene.rootNode.addChildNode(shipNode)
+                        objectsOnScreen.append(shipNode)
         }
         
     }
     
-    func selectObj(_ segue: UIStoryboardSegue){
-        
-    }
     
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.addObjectToScene(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
     
@@ -128,7 +120,7 @@ extension UIColor {
     }
 }
 
-extension ViewController: ARSCNViewDelegate {
+extension ARViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }

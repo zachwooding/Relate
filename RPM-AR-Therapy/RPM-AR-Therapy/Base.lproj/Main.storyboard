@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZA-Xv-a4L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H37-if-Igv">
     <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,63 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="9Kl-ZV-meh">
+            <objects>
+                <navigationController id="H37-if-Igv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sdh-9K-3ie">
+                        <rect key="frame" x="0.0" y="20" width="1112" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oMJ-bc-csj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="UZA-Xv-a4L" kind="relationship" relationship="rootViewController" id="fYg-Oy-DfM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Luk-aH-tjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="-785"/>
+        </scene>
+        <!--Select Object-->
+        <scene sceneID="ncN-e2-nJ1">
+            <objects>
+                <viewController title="Select Object" id="XOZ-ip-Yo2" customClass="ObjSelectController" customModule="RPM_AR_Therapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjN-Vr-6yW">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OtD-SB-w2r">
+                                <rect key="frame" x="0.0" y="70" width="1112" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XOZ-ip-Yo2" id="tLp-Et-bwh"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wep-oJ-swu"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="0Pm-De-aaL" id="00v-le-ggr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lda-dI-FW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="0Pm-De-aaL">
+                    <connections>
+                        <outlet property="delegate" destination="XOZ-ip-Yo2" id="Vkf-49-0j2"/>
+                        <outlet property="searchBar" destination="OtD-SB-w2r" id="L5d-OK-ndx"/>
+                        <outlet property="searchContentsController" destination="XOZ-ip-Yo2" id="uQu-4B-fta"/>
+                        <outlet property="searchResultsDataSource" destination="XOZ-ip-Yo2" id="qmn-ex-NkZ"/>
+                        <outlet property="searchResultsDelegate" destination="XOZ-ip-Yo2" id="ohF-lt-Rze"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="528.23741007194246" y="-733.09352517985621"/>
+        </scene>
+        <!--Session Name-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="RPM_AR_Therapy" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,13 +75,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="595"/>
+                                <rect key="frame" x="0.0" y="70" width="1112" height="764"/>
                             </arscnView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52I-XF-OTN">
-                                <rect key="frame" x="0.0" y="591" width="1112" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -36,15 +87,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Session Name" id="DMV-Jr-27X">
+                        <barButtonItem key="leftBarButtonItem" title="Quit Session" id="cH7-Ra-NwK">
+                            <connections>
+                                <segue destination="UZA-Xv-a4L" kind="show" id="93B-ec-fvl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Select Objects" id="iZb-jj-fw3">
+                            <connections>
+                                <segue destination="XOZ-ip-Yo2" kind="show" id="li3-rO-2wg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39.928057553956833" y="25.899280575539571"/>
+            <point key="canvasLocation" x="620.50359712230215" y="25.899280575539571"/>
         </scene>
-        <!--View Controller-->
+        <!--Start Session-->
         <scene sceneID="gdM-lj-1vT">
             <objects>
                 <viewController id="UZA-Xv-a4L" sceneMemberID="viewController">
@@ -57,17 +120,37 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start AR"/>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="ZQD-L2-bAW"/>
+                                    <segue destination="xpt-GW-YPx" kind="show" id="3US-jf-8dm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OFL-wF-hs0"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Start Session" id="koP-La-JNu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7M-XY-Qth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-692" y="134"/>
+            <point key="canvasLocation" x="-722" y="26"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xbM-XP-C3S">
+            <objects>
+                <navigationController id="xpt-GW-YPx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="emB-cY-OTb">
+                        <rect key="frame" x="0.0" y="20" width="1112" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="WGH-hv-Mdn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaV-Am-agk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="26"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="93B-ec-fvl"/>
+    </inferredMetricsTieBreakers>
 </document>
