@@ -69,31 +69,31 @@ class ARViewController: UIViewController {
 //            self.navigationController!.pushViewController(vc, animated: true)
             
             //for Shapes
-            //            var geometry:SCNGeometry
-            //            // 2
-            //            switch ModelType.random() {
-            //            default:
-            //                // 3
-            //                geometry = SCNBox(width: 0.5, height: 0.5, length: 0.5, chamferRadius: 0.0)
-            //            }
-            //            // 4
-            //            let geometryNode = SCNNode(geometry: geometry)
-            //            // 5
-            //            geometryNode.position = SCNVector3(x,y,z)
-            //            sceneView.scene.rootNode.addChildNode(geometryNode)
-            //            objectsOnScreen.append(geometryNode)
+                        var geometry:SCNGeometry
+                        // 2
+                        switch ModelType.random() {
+                        default:
+                            // 3
+                            geometry = SCNBox(width: 0.5, height: 0.5, length: 0.5, chamferRadius: 0.0)
+                        }
+                        // 4
+                        let geometryNode = SCNNode(geometry: geometry)
+                        // 5
+                        geometryNode.position = SCNVector3(x,y,z)
+                        sceneView.scene.rootNode.addChildNode(geometryNode)
+                        objectsOnScreen.append(geometryNode)
             
             
             
             //For 3D Models
-                        guard let shipScene = SCNScene(named: "ship.scn"),
-                            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
-                            else { return }
-            
-            
-                        shipNode.position = SCNVector3(x,y,z)
-                        sceneView.scene.rootNode.addChildNode(shipNode)
-                        objectsOnScreen.append(shipNode)
+//                        guard let shipScene = SCNScene(named: "ship.scn"),
+//                            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
+//                            else { return }
+//            
+//            
+//                        shipNode.position = SCNVector3(x,y,z)
+//                        sceneView.scene.rootNode.addChildNode(shipNode)
+//                        objectsOnScreen.append(shipNode)
         }
         
     }
