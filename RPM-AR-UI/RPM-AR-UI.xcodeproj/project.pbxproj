@@ -13,10 +13,13 @@
 		1D4CA6002253FC380011A730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FE2253FC380011A730 /* Main.storyboard */; };
 		1D4CA6022253FC3B0011A730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA6012253FC3B0011A730 /* Assets.xcassets */; };
 		1D4CA6052253FC3B0011A730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA6032253FC3B0011A730 /* LaunchScreen.storyboard */; };
-		1D4CA6102253FC3B0011A730 /* RPM_AR_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA60F2253FC3B0011A730 /* RPM_AR_UITests.swift */; };
 		1D4CA61B2253FC3B0011A730 /* RPM_AR_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA61A2253FC3B0011A730 /* RPM_AR_UIUITests.swift */; };
 		1D4CA6292253FDA40011A730 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA6282253FDA40011A730 /* MainViewController.swift */; };
 		1D4CA62B225403410011A730 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA62A225403410011A730 /* ModelType.swift */; };
+		1D6D7622225689DC000F9652 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7621225689DC000F9652 /* SearchViewController.swift */; };
+		1D6D762822568E01000F9652 /* Objs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762722568E01000F9652 /* Objs.swift */; };
+		1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7629225691A9000F9652 /* SearchFooter.swift */; };
+		1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762B225695FE000F9652 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +49,15 @@
 		1D4CA6042253FC3B0011A730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4CA6062253FC3B0011A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4CA60B2253FC3B0011A730 /* RPM-AR-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPM-AR-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D4CA60F2253FC3B0011A730 /* RPM_AR_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPM_AR_UITests.swift; sourceTree = "<group>"; };
-		1D4CA6112253FC3B0011A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4CA6162253FC3B0011A730 /* RPM-AR-UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPM-AR-UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4CA61A2253FC3B0011A730 /* RPM_AR_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPM_AR_UIUITests.swift; sourceTree = "<group>"; };
 		1D4CA61C2253FC3B0011A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4CA6282253FDA40011A730 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1D4CA62A225403410011A730 /* ModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelType.swift; path = "../../RPM-AR-Therapy/RPM-AR-Therapy/ModelType.swift"; sourceTree = "<group>"; };
+		1D6D7621225689DC000F9652 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1D6D762722568E01000F9652 /* Objs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objs.swift; sourceTree = "<group>"; };
+		1D6D7629225691A9000F9652 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		1D6D762B225695FE000F9652 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				1D4CA5F72253FC380011A730 /* RPM-AR-UI */,
-				1D4CA60E2253FC3B0011A730 /* RPM-AR-UITests */,
 				1D4CA6192253FC3B0011A730 /* RPM-AR-UIUITests */,
 				1D4CA5F62253FC380011A730 /* Products */,
 			);
@@ -108,21 +112,16 @@
 				1D4CA5FC2253FC380011A730 /* ARViewController.swift */,
 				1D4CA6282253FDA40011A730 /* MainViewController.swift */,
 				1D4CA62A225403410011A730 /* ModelType.swift */,
+				1D6D7621225689DC000F9652 /* SearchViewController.swift */,
+				1D6D762B225695FE000F9652 /* DetailViewController.swift */,
+				1D6D7629225691A9000F9652 /* SearchFooter.swift */,
+				1D6D762722568E01000F9652 /* Objs.swift */,
 				1D4CA5FE2253FC380011A730 /* Main.storyboard */,
 				1D4CA6012253FC3B0011A730 /* Assets.xcassets */,
 				1D4CA6032253FC3B0011A730 /* LaunchScreen.storyboard */,
 				1D4CA6062253FC3B0011A730 /* Info.plist */,
 			);
 			path = "RPM-AR-UI";
-			sourceTree = "<group>";
-		};
-		1D4CA60E2253FC3B0011A730 /* RPM-AR-UITests */ = {
-			isa = PBXGroup;
-			children = (
-				1D4CA60F2253FC3B0011A730 /* RPM_AR_UITests.swift */,
-				1D4CA6112253FC3B0011A730 /* Info.plist */,
-			);
-			path = "RPM-AR-UITests";
 			sourceTree = "<group>";
 		};
 		1D4CA6192253FC3B0011A730 /* RPM-AR-UIUITests */ = {
@@ -266,10 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6D7622225689DC000F9652 /* SearchViewController.swift in Sources */,
 				1D4CA6292253FDA40011A730 /* MainViewController.swift in Sources */,
 				1D4CA62B225403410011A730 /* ModelType.swift in Sources */,
+				1D6D762822568E01000F9652 /* Objs.swift in Sources */,
 				1D4CA5FD2253FC380011A730 /* ARViewController.swift in Sources */,
 				1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */,
+				1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */,
+				1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4CA6102253FC3B0011A730 /* RPM_AR_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
