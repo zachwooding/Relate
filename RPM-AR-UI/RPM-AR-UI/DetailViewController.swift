@@ -13,9 +13,8 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         if let detailObjs = detailObjs {
-            if let detailDescriptionLabel = detailDescriptionLabel, let objsImageView = objsImageView {
+            if let detailDescriptionLabel = detailDescriptionLabel {
                 detailDescriptionLabel.text = detailObjs.name
-                objsImageView.image = UIImage(named: detailObjs.name)
                 title = detailObjs.category
             }
         }

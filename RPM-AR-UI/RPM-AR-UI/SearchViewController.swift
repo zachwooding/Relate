@@ -96,7 +96,13 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let obj = objs[indexPath.row]
+                let obj: Objs
+                if isFiltering() {
+                    obj = filteredObjs[indexPath.row]
+                } else {
+                    obj = objs[indexPath.row]
+                }
+
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailObjs = obj
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem

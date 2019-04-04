@@ -169,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="774" y="822"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="leM-yo-wDt">
             <objects>
                 <viewController id="uW5-FF-KaE" customClass="DetailViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,9 +193,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2ca-cd-aZw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qxi-Rx-eiA"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Fxd-5b-79L">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1Lq-QV-tLN">
+                            <connections>
+                                <segue destination="zBI-f5-obd" kind="show" id="Qq7-M4-CCl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="8zz-OC-omc" id="xNd-oh-0st"/>
+                        <outlet property="detailDescriptionLabel" destination="8zz-OC-omc" id="EM8-TT-H3x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPW-t6-COz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,4 +247,7 @@
             <point key="canvasLocation" x="107" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qq7-M4-CCl"/>
+    </inferredMetricsTieBreakers>
 </document>
