@@ -187,6 +187,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class ARSCNView;
 @class UIGestureRecognizer;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
@@ -197,6 +198,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI16ARViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)addObjectToSceneWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recognizer;
+- (IBAction)selectedObjectWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -227,7 +229,6 @@ SWIFT_CLASS("_TtC9RPM_AR_UI11AppDelegate")
 
 @class UILabel;
 @class UIImageView;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC9RPM_AR_UI20DetailViewController")
 @interface DetailViewController : UIViewController
@@ -236,7 +237,6 @@ SWIFT_CLASS("_TtC9RPM_AR_UI20DetailViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified objsImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)setObj;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -271,6 +271,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI20SearchViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)backToObjSearchWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

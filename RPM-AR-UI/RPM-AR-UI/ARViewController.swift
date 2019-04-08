@@ -15,7 +15,7 @@ class ARViewController: UIViewController {
     
     var objSelected: Objs!
     
-    
+    var objDetailsScript: DetailViewController!
     
     
     override func viewDidLoad() {
@@ -88,7 +88,10 @@ class ARViewController: UIViewController {
         
     }
     
-    
+    @IBAction func selectedObject(unwindSegue: UIStoryboardSegue){
+       
+        
+    }
     
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))

@@ -36,24 +36,14 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func setObj(){
-        objSelected = detailObjs.sceneName
-    }
-
-    func getObj() -> String{
-        if (objSelected == nil){
-            return "nothing selected"
-        }else{
-            return objSelected
-        }
-        
-    }
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "passObj" {
-                
-            let controller = (segue.destination as! UINavigationController).topViewController as! ARViewController
-            controller.objSelected = detailObjs
+        if segue.destination is ARViewController{
+            let arVC = segue.destination as? ARViewController
+            arVC?.objSelected = detailObjs
         }
     }
     

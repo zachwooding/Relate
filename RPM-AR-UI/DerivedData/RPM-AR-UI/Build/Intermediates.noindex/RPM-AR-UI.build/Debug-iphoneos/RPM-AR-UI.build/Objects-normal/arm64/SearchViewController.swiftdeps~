@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["9RPM_AR_UI20SearchViewControllerC", ""]
 provides-dynamic-lookup:
+- "backToObjSearch"
 - "numberOfSections"
 - "prepare"
 - "searchFooter"
@@ -618,6 +619,7 @@ depends-member:
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "backToObjSearch"]
 - !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "definesPresentationContext"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
@@ -774,6 +776,7 @@ depends-member:
 - ["9RPM_AR_UI20SearchViewControllerC", "UIStoryboardSegue"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UITableView"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UITableViewCell"]
+- ["9RPM_AR_UI20SearchViewControllerC", "backToObjSearch"]
 - !private ["9RPM_AR_UI20SearchViewControllerC", "definesPresentationContext"]
 - ["9RPM_AR_UI20SearchViewControllerC", "deinit"]
 - ["9RPM_AR_UI20SearchViewControllerC", "filterContentForSearchText"]
@@ -1116,6 +1119,7 @@ depends-member:
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- ["So11UIResponderC", "backToObjSearch"]
 - !private ["So11UIResponderC", "definesPresentationContext"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "detailObjs"]
@@ -1560,6 +1564,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "backToObjSearch"]
 - !private ["So16UIViewControllerC", "definesPresentationContext"]
 - !private ["So16UIViewControllerC", "detailObjs"]
 - !private ["So16UIViewControllerC", "displayModeButtonItem"]
@@ -1880,4 +1885,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "eccb311bd7c3bf433cb90f2e19345066"
+interface-hash: "7212694d573ee5fe24029cb34a1afbd8"
