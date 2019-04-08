@@ -25,13 +25,13 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         objs = [
             Objs(category:"Vehicle", name:"Ship", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
             Objs(category:"Vehicle", name:"Car", sceneName:"car.scn", id:"car", icon:"\u{1F698}"),
-            Objs(category:"Other", name:"MusicNote", sceneName:"ship.scn", id:"musicnote", icon:"\u{1F3B6}"),
-            Objs(category:"Other", name:"Mountain", sceneName:"ship.scn", id:"mountain", icon:"\u{26F0}"),
-            Objs(category:"Chocolate", name:"Laptop", sceneName:"ship.scn", id:"laptop", icon:"\u{1F4BB}"),
-            Objs(category:"Chocolate", name:"MovieCamera", sceneName:"ship.scn", id:"moviecamera", icon:"\u{1F3A5}"),
-            Objs(category:"Other", name:"Rabbit", sceneName:"ship.scn", id:"rabbit", icon:"\u{1F407}"),
-            Objs(category:"Other", name:"Rocket", sceneName:"ship.scn", id:"rocket", icon:"\u{1F680}"),
-            Objs(category:"Hard", name:"Toffee Apple", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}")
+            Objs(category:"Composition", name:"Music", sceneName:"music.scn", id:"music", icon:"\u{1F3B6}"),
+            Objs(category:"Geographic", name:"Mountain", sceneName:"mountain.scn", id:"mountain", icon:"\u{26F0}"),
+            Objs(category:"Electronic", name:"Laptop", sceneName:"laptop.scn", id:"laptop", icon:"\u{1F4BB}"),
+            Objs(category:"Movies", name:"Movie", sceneName:"movie.scn", id:"movie", icon:"\u{1F3A5}"),
+            Objs(category:"Animal", name:"Rabbit", sceneName:"rabbit.scn", id:"rabbit", icon:"\u{1F407}"),
+            Objs(category:"Science", name:"Rocket", sceneName:"ship.scn", id:"rocket", icon:"\u{1F680}"),
+            
         ]
         
         // Setup the Search Controller
