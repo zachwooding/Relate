@@ -187,7 +187,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class ARSCNView;
 @class UIGestureRecognizer;
-@class UITapGestureRecognizer;
 @class NSBundle;
 @class NSCoder;
 
@@ -198,7 +197,6 @@ SWIFT_CLASS("_TtC9RPM_AR_UI16ARViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)addObjectToSceneWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recognizer;
-- (void)handleTapWithRec:(UITapGestureRecognizer * _Nonnull)rec;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -234,6 +232,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI11AppDelegate")
 SWIFT_CLASS("_TtC9RPM_AR_UI20DetailViewController")
 @interface DetailViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified detailDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified iconInfo;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified objsImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

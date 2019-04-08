@@ -41,6 +41,7 @@ depends-top-level:
 - "UITableViewDataSource"
 - "UITableViewDelegate"
 - "UIViewController"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "filter"]

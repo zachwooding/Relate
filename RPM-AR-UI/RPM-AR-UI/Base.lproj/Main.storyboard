@@ -126,7 +126,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1mY-l1-eJX" kind="showDetail" identifier="showDetail" id="JgC-hU-1ir"/>
+                                            <segue destination="1mY-l1-eJX" kind="presentation" identifier="showDetail" id="JgC-hU-1ir"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -186,11 +186,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-H2-oCP">
-                                        <rect key="frame" x="0.0" y="42" width="920" height="542"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N4-qu-cja">
+                                        <rect key="frame" x="310" y="42" width="300" height="200.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="168"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-cR-XUS">
-                                        <rect key="frame" x="411" y="584" width="98" height="30"/>
+                                        <rect key="frame" x="411" y="242.5" width="98" height="371.5"/>
                                         <state key="normal" title="Add to Screen"/>
                                         <connections>
                                             <action selector="setObj" destination="uW5-FF-KaE" eventType="primaryActionTriggered" id="Ceu-cv-ieL"/>
@@ -198,9 +201,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="gWs-H2-oCP" firstAttribute="leading" secondItem="YBF-WZ-34v" secondAttribute="leading" id="epR-0L-MOL"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,7 +223,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="8zz-OC-omc" id="EM8-TT-H3x"/>
-                        <outlet property="objsImageView" destination="gWs-H2-oCP" id="JdR-Y8-XD3"/>
+                        <outlet property="iconInfo" destination="6N4-qu-cja" id="s53-VI-Oen"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPW-t6-COz" userLabel="First Responder" sceneMemberID="firstResponder"/>

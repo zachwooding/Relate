@@ -3,6 +3,7 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var iconInfo: UILabel!
     @IBOutlet weak var objsImageView: UIImageView!
     
     
@@ -17,9 +18,9 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         if let detailObjs = detailObjs {
-            if let detailDescriptionLabel = detailDescriptionLabel, let objsImageView = objsImageView {
+            if let detailDescriptionLabel = detailDescriptionLabel, let iconInfoView = iconInfo {
                 detailDescriptionLabel.text = detailObjs.name
-                objsImageView.image = UIImage(named: detailObjs.name)
+                iconInfoView.text = detailObjs.icon
                 title = detailObjs.category
                 objSelected = detailObjs.sceneName
             }

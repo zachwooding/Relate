@@ -23,15 +23,15 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         
         objs = [
-            Objs(category:"Chocolate", name:"Chocolate Bar", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Chocolate", name:"Chocolate Chip", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Other", name:"Gummi Bear", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Other", name:"Candy Floss", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Chocolate", name:"Chocolate Coin", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Chocolate", name:"Chocolate Egg", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Other", name:"Jelly Beans", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Other", name:"Liquorice", sceneName:"ship.scn", id:"ship"),
-            Objs(category:"Hard", name:"Toffee Apple", sceneName:"ship.scn", id:"ship")
+            Objs(category:"Vehicle", name:"Ship", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Vehicle", name:"Car", sceneName:"car.scn", id:"car", icon:"\u{1F6F3}"),
+            Objs(category:"Other", name:"Gummi Bear", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Other", name:"Candy Floss", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Chocolate", name:"Chocolate Coin", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Chocolate", name:"Chocolate Egg", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Other", name:"Jelly Beans", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Other", name:"Liquorice", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Hard", name:"Toffee Apple", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}")
         ]
         
         // Setup the Search Controller

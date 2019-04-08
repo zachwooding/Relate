@@ -14,4 +14,5 @@ struct Objs {
     let name : String
     let sceneName: String
     let id: String
+    let icon: String
 }

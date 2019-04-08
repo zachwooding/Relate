@@ -15,7 +15,7 @@ class ARViewController: UIViewController {
     
     var objSelected: Objs!
     
-    let tapRec = UITapGestureRecognizer(target: self, action: #selector(handleTap(rec:)))
+    
     
     
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ class ARViewController: UIViewController {
         
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        sceneView.addGestureRecognizer(tapRec)
+        
         
     }
     
@@ -86,20 +86,6 @@ class ARViewController: UIViewController {
             objectsOnScreen.append(sNode)
         }
         
-    }
-    
-    
-    
-    //Method called when tap
-    @objc func handleTap(rec: UITapGestureRecognizer){
-        
-        if rec.state == .ended {
-            let location: CGPoint = rec.location(in: sceneView)
-            let hits = self.sceneView.hitTest(location, options: nil)
-            if !hits.isEmpty{
-                let tappedNode = hits.first?.node
-            }
-        }
     }
     
     
