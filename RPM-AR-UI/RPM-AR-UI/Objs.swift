@@ -13,4 +13,5 @@ struct Objs {
     let category : String
     let name : String
     let sceneName: String
+    let id: String
 }

@@ -126,7 +126,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1mY-l1-eJX" kind="showDetail" id="JgC-hU-1ir"/>
+                                            <segue destination="1mY-l1-eJX" kind="showDetail" identifier="showDetail" id="JgC-hU-1ir"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,7 +167,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCb-6X-XPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="822"/>
+            <point key="canvasLocation" x="1451" y="134"/>
         </scene>
         <!--Title-->
         <scene sceneID="leM-yo-wDt">
@@ -177,9 +177,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YBF-WZ-34v">
-                                <rect key="frame" x="97" y="84" width="920" height="584"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YBF-WZ-34v">
+                                <rect key="frame" x="97" y="84" width="920" height="614"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Description Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-OC-omc">
                                         <rect key="frame" x="282.5" y="0.0" width="355" height="42"/>
@@ -187,13 +186,30 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-H2-oCP">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-H2-oCP">
                                         <rect key="frame" x="0.0" y="42" width="920" height="542"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-cR-XUS">
+                                        <rect key="frame" x="411" y="584" width="98" height="30"/>
+                                        <state key="normal" title="Add to Screen"/>
+                                        <connections>
+                                            <action selector="setObj" destination="uW5-FF-KaE" eventType="primaryActionTriggered" id="Ceu-cv-ieL"/>
+                                            <segue destination="3cx-hG-SAC" kind="show" identifier="passObj" id="N0m-gI-mQ7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gWs-H2-oCP" firstAttribute="leading" secondItem="YBF-WZ-34v" secondAttribute="leading" id="epR-0L-MOL"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YBF-WZ-34v" firstAttribute="leading" secondItem="2ca-cd-aZw" secondAttribute="leading" constant="97" id="Wjp-kq-355"/>
+                            <constraint firstItem="2ca-cd-aZw" firstAttribute="bottom" secondItem="YBF-WZ-34v" secondAttribute="bottom" constant="86" id="dDs-3b-ygs"/>
+                            <constraint firstItem="YBF-WZ-34v" firstAttribute="top" secondItem="2ca-cd-aZw" secondAttribute="top" constant="14" id="l9b-l6-YuS"/>
+                            <constraint firstItem="2ca-cd-aZw" firstAttribute="trailing" secondItem="YBF-WZ-34v" secondAttribute="trailing" constant="95" id="vai-7g-Ucz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2ca-cd-aZw"/>
                     </view>
                     <toolbarItems/>
@@ -212,12 +228,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPW-t6-COz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409.8920863309354" y="821.58273381294975"/>
+            <point key="canvasLocation" x="1451" y="835"/>
         </scene>
         <!--Session Name-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <viewController id="BV1-FR-VrT" customClass="ARViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
@@ -247,11 +262,13 @@
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="107" y="134"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Qq7-M4-CCl"/>
+        <segue reference="N0m-gI-mQ7"/>
     </inferredMetricsTieBreakers>
 </document>

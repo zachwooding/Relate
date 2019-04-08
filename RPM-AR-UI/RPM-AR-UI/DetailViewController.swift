@@ -5,7 +5,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var objsImageView: UIImageView!
     
-    var detailObjs: Objs? {
+    
+    var objSelected: String!
+    
+    
+    var detailObjs: Objs! {
         didSet {
             configureView()
         }
@@ -17,6 +21,7 @@ class DetailViewController: UIViewController {
                 detailDescriptionLabel.text = detailObjs.name
                 objsImageView.image = UIImage(named: detailObjs.name)
                 title = detailObjs.category
+                objSelected = detailObjs.sceneName
             }
         }
     }
@@ -29,6 +34,29 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func setObj(){
+        objSelected = detailObjs.sceneName
+    }
+
+    func getObj() -> String{
+        if (objSelected == nil){
+            return "nothing selected"
+        }else{
+            return objSelected
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "passObj" {
+                
+            let controller = (segue.destination as! UINavigationController).topViewController as! ARViewController
+            controller.objSelected = detailObjs
+        }
+    }
+    
+    
     
 }
 

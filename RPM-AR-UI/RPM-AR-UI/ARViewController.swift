@@ -1,5 +1,6 @@
 import UIKit
 import ARKit
+import SceneKit
 
 class ARViewController: UIViewController {
     
@@ -12,6 +13,9 @@ class ARViewController: UIViewController {
     var objNode: SCNNode = SCNNode()
     var emptyNode: SCNNode = SCNNode()
     
+    var objSelected: Objs!
+    
+    let tapRec = UITapGestureRecognizer(target: self, action: #selector(handleTap(rec:)))
     
     
     override func viewDidLoad() {
@@ -42,6 +46,7 @@ class ARViewController: UIViewController {
         
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.addGestureRecognizer(tapRec)
         
     }
     
@@ -52,51 +57,51 @@ class ARViewController: UIViewController {
         sceneView.automaticallyUpdatesLighting = true
     }
     
-    
+    //add 3D Objects to scene
     @objc func addObjectToScene(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        if(objectsOnScreen.count < 2 ){
+        //checking # of objs on screen and that a Obj has been selected
+        if(objectsOnScreen.count < 2 && objSelected != nil){
+            
+            //setting loaction for object
             let tapLocation = recognizer.location(in: sceneView)
             let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
             
+            //setting obj x, y, z
             guard let hitTestResult = hitTestResults.first else { return }
             let translation = hitTestResult.worldTransform.translation
             let x = translation.x
             let y = translation.y
             let z = translation.z
             
-//            let addObjStoryboard = UIStoryboard(name: "AddObjects", bundle: nil)
-//            let vc = addObjStoryboard.instantiateViewController(withIdentifier: "UITableViewController")
-//            self.navigationController!.pushViewController(vc, animated: true)
-            
-            //for Shapes
-                        var geometry:SCNGeometry
-                        // 2
-                        switch ModelType.random() {
-                        default:
-                            // 3
-                            geometry = SCNBox(width: 0.5, height: 0.5, length: 0.5, chamferRadius: 0.0)
-                        }
-                        // 4
-                        let geometryNode = SCNNode(geometry: geometry)
-                        // 5
-                        geometryNode.position = SCNVector3(x,y,z)
-                        sceneView.scene.rootNode.addChildNode(geometryNode)
-                        objectsOnScreen.append(geometryNode)
-            
-            
-            
             //For 3D Models
-//                        guard let shipScene = SCNScene(named: "ship.scn"),
-//                            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
-//                            else { return }
-//            
-//            
-//                        shipNode.position = SCNVector3(x,y,z)
-//                        sceneView.scene.rootNode.addChildNode(shipNode)
-//                        objectsOnScreen.append(shipNode)
+            //loading selected SCN
+            guard let sceneObj = SCNScene(named: objSelected.sceneName, inDirectory: "art.scnassets"),
+                let sNode = sceneObj.rootNode.childNode(withName: objSelected.id, recursively: false)
+                else { return }
+
+            //adding scene to view
+            sNode.position = SCNVector3(x,y,z)
+            sceneView.scene.rootNode.addChildNode(sNode)
+            //tracking objects on screen
+            objectsOnScreen.append(sNode)
         }
         
     }
+    
+    
+    
+    //Method called when tap
+    @objc func handleTap(rec: UITapGestureRecognizer){
+        
+        if rec.state == .ended {
+            let location: CGPoint = rec.location(in: sceneView)
+            let hits = self.sceneView.hitTest(location, options: nil)
+            if !hits.isEmpty{
+                let tappedNode = hits.first?.node
+            }
+        }
+    }
+    
     
     
     func addTapGestureToSceneView() {
