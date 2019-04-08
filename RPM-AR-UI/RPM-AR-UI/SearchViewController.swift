@@ -21,16 +21,16 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         objs = [
             Objs(category:"Vehicle", name:"Ship", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-            Objs(category:"Vehicle", name:"Car", sceneName:"car.scn", id:"car", icon:"\u{1F6F3}"),
-            Objs(category:"Other", name:"Gummi Bear", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-            Objs(category:"Other", name:"Candy Floss", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-            Objs(category:"Chocolate", name:"Chocolate Coin", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-            Objs(category:"Chocolate", name:"Chocolate Egg", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-            Objs(category:"Other", name:"Jelly Beans", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-            Objs(category:"Other", name:"Liquorice", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
+            Objs(category:"Vehicle", name:"Car", sceneName:"car.scn", id:"car", icon:"\u{1F698}"),
+            Objs(category:"Other", name:"MusicNote", sceneName:"ship.scn", id:"musicnote", icon:"\u{1F3B6}"),
+            Objs(category:"Other", name:"Mountain", sceneName:"ship.scn", id:"mountain", icon:"\u{26F0}"),
+            Objs(category:"Chocolate", name:"Laptop", sceneName:"ship.scn", id:"laptop", icon:"\u{1F4BB}"),
+            Objs(category:"Chocolate", name:"MovieCamera", sceneName:"ship.scn", id:"moviecamera", icon:"\u{1F3A5}"),
+            Objs(category:"Other", name:"Rabbit", sceneName:"ship.scn", id:"rabbit", icon:"\u{1F407}"),
+            Objs(category:"Other", name:"Rocket", sceneName:"ship.scn", id:"rocket", icon:"\u{1F680}"),
             Objs(category:"Hard", name:"Toffee Apple", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}")
         ]
         
