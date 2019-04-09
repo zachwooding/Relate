@@ -214,7 +214,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="Fxd-5b-79L">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1Lq-QV-tLN">
+                        <barButtonItem key="leftBarButtonItem" width="29" systemItem="cancel" id="1Lq-QV-tLN">
                             <connections>
                                 <segue destination="lXs-Yo-VOb" kind="unwind" unwindAction="backToObjSearchWithUnwindSegue:" id="j25-TG-esw"/>
                             </connections>

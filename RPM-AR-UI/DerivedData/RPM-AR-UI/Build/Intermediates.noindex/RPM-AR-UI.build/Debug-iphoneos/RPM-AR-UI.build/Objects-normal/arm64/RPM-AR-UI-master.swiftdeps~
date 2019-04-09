@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "b5e6abf7a78cdc4672124e47a17f9c07"
-build_time: [1554758987, 808056000]
+build_time: [1554759086, 253854000]
 inputs:
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SearchViewController.swift": [1554758078, 0]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/MainViewController.swift": [1554739644, 0]
@@ -9,4 +9,4 @@ inputs:
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/ARViewController.swift": [1554758078, 0]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/AppDelegate.swift": [1554739644, 0]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SearchFooter.swift": [1554739644, 0]
-  "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/DetailViewController.swift": [1554758987, 0]
+  "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/DetailViewController.swift": [1554759086, 0]

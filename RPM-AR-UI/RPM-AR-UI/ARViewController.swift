@@ -5,6 +5,7 @@ import SceneKit
 class ARViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var sceneHits: SCNScene!
     
     
     var objectsOnScreen: Array<SCNNode> = Array()
@@ -16,6 +17,8 @@ class ARViewController: UIViewController {
     var objSelected: Objs!
     
     var objDetailsScript: DetailViewController!
+    
+    var objPicked: Array<Objs> = Array()
     
     
     override func viewDidLoad() {
@@ -84,14 +87,17 @@ class ARViewController: UIViewController {
             sceneView.scene.rootNode.addChildNode(sNode)
             //tracking objects on screen
             objectsOnScreen.append(sNode)
+        }else if(objectsOnScreen.count == 2){
+            let touchLocation = recognizer.location(in: sceneView)
+            let obj1 = objectsOnScreen[0]
+            let obj2 = objectsOnScreen[1]
+            
+        
         }
         
     }
     
-    @IBAction func selectedObject(unwindSegue: UIStoryboardSegue){
-       
-        
-    }
+    
     
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
