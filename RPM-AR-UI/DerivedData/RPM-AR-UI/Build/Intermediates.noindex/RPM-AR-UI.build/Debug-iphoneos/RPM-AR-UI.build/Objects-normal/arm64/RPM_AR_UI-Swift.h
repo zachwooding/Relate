@@ -186,6 +186,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class ARSCNView;
+@class SCNScene;
 @class UIGestureRecognizer;
 @class UIStoryboardSegue;
 @class NSBundle;
@@ -194,11 +195,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC9RPM_AR_UI16ARViewController")
 @interface ARViewController : UIViewController
 @property (nonatomic, weak) IBOutlet ARSCNView * _Null_unspecified sceneView;
+@property (nonatomic, weak) IBOutlet SCNScene * _Null_unspecified sceneHits;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)addObjectToSceneWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recognizer;
-- (IBAction)selectedObjectWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
+- (IBAction)backToArViewWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

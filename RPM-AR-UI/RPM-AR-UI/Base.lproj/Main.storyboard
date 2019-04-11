@@ -197,7 +197,7 @@
                                         <rect key="frame" x="125" y="242.5" width="98" height="177.5"/>
                                         <state key="normal" title="Add to Screen"/>
                                         <connections>
-                                            <segue destination="lXs-Yo-VOb" kind="unwind" identifier="" unwindAction="selectedObjectWithUnwindSegue:" id="EDt-B4-bUW"/>
+                                            <segue destination="lXs-Yo-VOb" kind="unwind" unwindAction="backToArViewWithUnwindSegue:" id="xnQ-k5-XDJ"/>
                                         </connections>
                                     </button>
                                 </subviews>

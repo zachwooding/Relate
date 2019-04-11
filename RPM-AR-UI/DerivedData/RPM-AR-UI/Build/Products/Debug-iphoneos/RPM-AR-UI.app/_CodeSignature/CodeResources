@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		ZfaClrmIQ1lT5gKwBIXmq38sFE0=
+		T/rgRJQJln9Bm0t3F/M9LkVdM/s=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		k+L5sTVYsUzpu5tGR7s6HMMAqug=
+		sLcpi29Nm+E1tYusiUd83Wn7fQk=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-U0K-SW-4ec.nib</key>
 		<data>
-		ByR58h+z9ReOSrdcoS4Aq702h8w=
+		ZRV55q2Edu3zMUrQLPVwsMZn0mo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		g2lZxlSlPQLcX+QX8CPImAZC8CY=
+		fcRJtaeDrx4Hnn/uTm+7OEHqqjc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Jr1-k4-eM4-view-PEP-hp-fsI.nib</key>
 		<data>
-		TShV4XPpXIDp+/JJ/8UaHPYg9qE=
+		BChTqZ6SepIOcO7C3D+nQSIx+ZM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-1mY-l1-eJX.nib</key>
 		<data>
-		wKAuP8+tR9yo2MnDhdE9AIhIodU=
+		25t3WzvJYESFgjZDUaPEAnry6CE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-3cx-hG-SAC.nib</key>
 		<data>
-		PwiPof9x9DhLNOFlgNaIT9VTEqU=
+		8JjsEy4QVq+gdMmmRBFR6JAUGGQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-J0y-Jw-1Gf.nib</key>
 		<data>
-		5vKxKvdDUzsinyaj9j0TEcW6J2Y=
+		2iRr28PZzMMXlD1PT0fZkPgg4/w=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-jS1-xd-lDV.nib</key>
 		<data>
-		YQnHmzDak7eN6SSMEEuFNi1/fIo=
+		Bqz0PhOIR0dr4/EUoO7usa5Wll0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-zBI-f5-obd.nib</key>
 		<data>
-		WGO9KPddZJo+5q2dWGParWyXt4g=
+		wGbMVcuW59/C9sgmqcCDqX0PUyg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/jS1-xd-lDV-view-coQ-ln-kF7.nib</key>
 		<data>
-		QYy2xo9QeL3d+5fHGIH+xBRhDfE=
+		PTuHV30Ia34q9Vtzs82FMckdOO4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/uW5-FF-KaE-view-QNO-rS-hi3.nib</key>
 		<data>
-		MUG1AmmXaMEu3tXVqD+wDxiIgIg=
+		kEHCYsT+Cy6W8dMcC6w1fQQMzrY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/zBI-f5-obd-view-utV-AN-RLL.nib</key>
 		<data>
-		4rWCV0Ova8Tjd6oYaPD0GU4wHNI=
+		YQd/w0h9epRdgYcOIzmVOXgF/z8=
 		</data>
 		<key>Frameworks/libswiftARKit.dylib</key>
 		<data>
@@ -156,13 +156,41 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>art.scnassets/Music.scn</key>
+		<key>art.scnassets/Mountain.scn</key>
 		<data>
-		7EcN2OJjtHFVJJjGyKQm5Lrn48I=
+		rHxpzs52m5wZItkWZZBsPM2EloQ=
+		</data>
+		<key>art.scnassets/MovieCamera.scn</key>
+		<data>
+		FOA6Kkdk6YkfI6Kp9iivB60SudI=
+		</data>
+		<key>art.scnassets/bananaaa.mtl</key>
+		<data>
+		6JUO3Rdoc1HJdchJMS69UxVgD6U=
+		</data>
+		<key>art.scnassets/bananaaa.scn</key>
+		<data>
+		8zh2HUTPVKWsjDu7j2oasiC7MzQ=
 		</data>
 		<key>art.scnassets/car.scn</key>
 		<data>
-		cI3Ggi7Gok3S5RlcXg2s7Xf44NU=
+		I2hp4dQR+2Tm5IHwaaSWpKhnhmg=
+		</data>
+		<key>art.scnassets/laptop.scn</key>
+		<data>
+		rj9uk5fxbMArzW3fvVzVQq0cVeg=
+		</data>
+		<key>art.scnassets/music.scn</key>
+		<data>
+		TdhcRCCY5d4GtV9Y0G/dhLq92i4=
+		</data>
+		<key>art.scnassets/rabbit.scn</key>
+		<data>
+		7kCkl8LXjg4LH+tfvP0fvdRnezs=
+		</data>
+		<key>art.scnassets/rocketship.scn</key>
+		<data>
+		+FR9L4/gNrWyJb0cRO4mUMRBFAM=
 		</data>
 		<key>art.scnassets/ship copy.scn</key>
 		<data>
@@ -178,7 +206,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		eQhjP2jKH7HIiQVgjVizxRGyijc=
+		19fnxSytRFH3oqyYHGmjtTri/mU=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -191,7 +219,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ft8WPit0Nvum5JYEL9C6G5LIxQ/Kl8DVd3gnkDG/7Gg=
+			V/0F2pmrG+Tcd2UGHUv/s6OfO9rLH8HZkL8cPR9UW5s=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -205,84 +233,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lJSgKQ4TBM91GNhm3qnXf8Ko3fXFDDHwAdmhA6SgAA0=
+			dgyIjpndbZIkRiX+qe2+nfUn5nxsfP4aH+t5NGz7UHQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-U0K-SW-4ec.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			In6Nr+woOm+m3PlxQLCANCvkMbeOdIuMd7zOQ1pCQs0=
+			p+XQ0/tZ3l913KcjSkC3qMQcDhKVKPgmXXbtP3PULAo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vj4rS8Y2EpBWxs/NlOPT1FKxk7QuSLqT3pqN2SOVGrs=
+			6lKXAJk0xzsu15bMfBk4BCThiMb6kjRXAyhLL6BG85M=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Jr1-k4-eM4-view-PEP-hp-fsI.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UngWaOS2lTixfFvVRg9cC9K7jwQ3L241WR206DqVZUE=
+			bxZ2zLJc4GZwvsKBwdnSWYbBu6YQ83yAqu0LMrviFNc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-1mY-l1-eJX.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eJq9OixgHxrOLz8Q0n0hdMeYTfmHQ04vWqWYPN2nAPU=
+			F3mm8C2F5ycapXod4PXwVb5yKtFL0JBMss7EtZcU8bs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-3cx-hG-SAC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8t4U9YpadJjeX3LjPBWcxl9E1hWErjhudzt8TzeA1RQ=
+			v5HXw16O9BgRnDqOJOAckkf88sXW/favqLVuECItfnE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-J0y-Jw-1Gf.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z+psiLJXabEotjVBSKXl/MbZpJQmLLBtUKYIIRBByGg=
+			RnTT57KjL9foJRmfE5+6dG3nmC2l3wpx4/x8/Yl6OQ0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-jS1-xd-lDV.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			baOyTp/ueJhcEB/ejhg82sp1NurMmf02ZEXj51xSjbM=
+			RqxciZ8S8AYneqgiasV+YuFT53F3vYUVJN0IUj81qps=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-zBI-f5-obd.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/rrcocJrAzeXgCpPRivdhAHrAIKWVv3YEEBBdlN2Is=
+			5hAmMTs0vzq5FJqU75fXTVQBn49J8Ba29AD+dchH5CY=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/jS1-xd-lDV-view-coQ-ln-kF7.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CpGrHdsUYo5Q0ipmeR9mb77CICSn2/lgw3W75WHK9Pc=
+			GOfGdWjmnvR3EQnW5J/eMUYmwzu/b11CkjUtgyv6a58=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/uW5-FF-KaE-view-QNO-rS-hi3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nr5PZNNhV0wiqu/46mE6mDkCi78L2ZKpTrrE0cWncns=
+			dxRg4wBha69vVGG6S5ZGX20Vf0HQgQcoP2+jhT/cKTA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/zBI-f5-obd-view-utV-AN-RLL.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5CS2+Gj6ab2x8+KwtiM88RkBv9kPg/6EVNqLKq3h/cw=
+			jGSZi8P7tONsEw29xujUAir/i4WYW5XhNic9weyUEo4=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftARKit.dylib</key>
@@ -439,18 +467,67 @@
 			W3bPE1xKLYulaT+VPBBka1+zFgIYjM8CDI44uYeM1VM=
 			</data>
 		</dict>
-		<key>art.scnassets/Music.scn</key>
+		<key>art.scnassets/Mountain.scn</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z9AZCEc2P036J1qrQYRmdObqaOhFdyWM2aowwzWwfkQ=
+			T+X+eBACOPfo9v2IuyWnIKXdSIEm/+B5VspRyjrwVOA=
+			</data>
+		</dict>
+		<key>art.scnassets/MovieCamera.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ycEzH27V3d/l7zZ2O8/URadtl1LCeuvXpNjikcaVDyY=
+			</data>
+		</dict>
+		<key>art.scnassets/bananaaa.mtl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HMhe8nT+qauvfoDKGh6cGK1lGW9ZMXUOAGq5eq+Mwsk=
+			</data>
+		</dict>
+		<key>art.scnassets/bananaaa.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wf2t8Towu98KvTXWELz8VfpG5hTGm9om8KiMsb/VWi8=
 			</data>
 		</dict>
 		<key>art.scnassets/car.scn</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wSIBNjT9sYYpJs0sNZZs5nPqgQeIF8G6pdOVZmRW78I=
+			oYj+aq8yHMa7w5A8tP9qWkUUx73FkQgt7Jg5xzaOtnc=
+			</data>
+		</dict>
+		<key>art.scnassets/laptop.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cILPM5YfspC3clCCVxU4+/Deq+lHhNkchfEGlxOqv1E=
+			</data>
+		</dict>
+		<key>art.scnassets/music.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ayDNTkSGhVQloMZAP/ggf5PnXY0dcAh/S1P1nRjVK18=
+			</data>
+		</dict>
+		<key>art.scnassets/rabbit.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HkqXX9qdyXYdVEcqoIQK6MOXqA8MMp0uZXKLGAmuEOY=
+			</data>
+		</dict>
+		<key>art.scnassets/rocketship.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wLR5fuwtibT2R8+W/I9qsAUdl7EMlpaqya8j8btLajE=
 			</data>
 		</dict>
 		<key>art.scnassets/ship copy.scn</key>
@@ -478,7 +555,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fs8zuG6Y3H3cEBXtf8k1nG1fCdwUjm08gfR01cl/ITM=
+			NIeqZfK19/RkaYMvjQjtD6L4JgVOXUoPWnVGU8L+tps=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

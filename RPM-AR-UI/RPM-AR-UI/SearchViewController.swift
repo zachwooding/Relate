@@ -28,9 +28,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             Objs(category:"Composition", name:"Music", sceneName:"music.scn", id:"music", icon:"\u{1F3B6}"),
             Objs(category:"Geographic", name:"Mountain", sceneName:"mountain.scn", id:"mountain", icon:"\u{26F0}"),
             Objs(category:"Electronic", name:"Laptop", sceneName:"laptop.scn", id:"laptop", icon:"\u{1F4BB}"),
-            Objs(category:"Movies", name:"Movie", sceneName:"movie.scn", id:"movie", icon:"\u{1F3A5}"),
+            Objs(category:"Movies", name:"Movie", sceneName:"MovieCamera.scn", id:"moviecamera", icon:"\u{1F3A5}"),
             Objs(category:"Animal", name:"Rabbit", sceneName:"rabbit.scn", id:"rabbit", icon:"\u{1F407}"),
-            Objs(category:"Science", name:"Rocket", sceneName:"ship.scn", id:"rocket", icon:"\u{1F680}"),
+            Objs(category:"Science", name:"Rocket", sceneName:"rocketship.scn", id:"rocket", icon:"\u{1F680}"),
+            Objs(category: "Fruit", name: "Banana", sceneName: "bananaaa.scn", id: "banana", icon: "\u{1F34C}")
             
         ]
         

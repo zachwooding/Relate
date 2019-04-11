@@ -87,13 +87,14 @@ class ARViewController: UIViewController {
             sceneView.scene.rootNode.addChildNode(sNode)
             //tracking objects on screen
             objectsOnScreen.append(sNode)
-        }else if(objectsOnScreen.count == 2){
-            let touchLocation = recognizer.location(in: sceneView)
-            let obj1 = objectsOnScreen[0]
-            let obj2 = objectsOnScreen[1]
-            
-        
         }
+//        else if(objectsOnScreen.count == 2){
+//            let touchLocation = recognizer.location(in: sceneView)
+//            let obj1 = objectsOnScreen[0]
+//            let obj2 = objectsOnScreen[1]
+//
+//
+//        }
         
     }
     
@@ -102,6 +103,11 @@ class ARViewController: UIViewController {
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @IBAction func backToArView(unwindSegue: UIStoryboardSegue){
+        
+        
     }
     
     

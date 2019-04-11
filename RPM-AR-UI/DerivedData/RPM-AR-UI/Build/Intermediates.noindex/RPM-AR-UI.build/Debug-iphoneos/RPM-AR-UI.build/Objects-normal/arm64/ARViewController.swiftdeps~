@@ -12,8 +12,8 @@ provides-member:
 provides-dynamic-lookup:
 - "addObjectToScene"
 - "renderer"
+- "sceneHits"
 - "sceneView"
-- "selectedObject"
 - "viewDidLoad"
 - "viewWillAppear"
 - "viewWillDisappear"
@@ -42,13 +42,12 @@ depends-top-level:
 - "Objs"
 - "SCNNode"
 - !private "SCNPlane"
-- !private "SCNScene"
+- "SCNScene"
 - "SCNSceneRenderer"
 - !private "SCNVector3"
 - !private "StringLiteralType"
 - "UIColor"
 - "UIGestureRecognizer"
-- "UIStoryboardSegue"
 - !private "UITapGestureRecognizer"
 - "UIViewController"
 - "float3"
@@ -138,12 +137,11 @@ depends-member:
 - ["9RPM_AR_UI16ARViewControllerC", "Objs"]
 - ["9RPM_AR_UI16ARViewControllerC", "SCNNode"]
 - !private ["9RPM_AR_UI16ARViewControllerC", "SCNPlane"]
-- !private ["9RPM_AR_UI16ARViewControllerC", "SCNScene"]
+- ["9RPM_AR_UI16ARViewControllerC", "SCNScene"]
 - ["9RPM_AR_UI16ARViewControllerC", "SCNSceneRenderer"]
 - !private ["9RPM_AR_UI16ARViewControllerC", "SCNVector3"]
 - !private ["9RPM_AR_UI16ARViewControllerC", "UIColor"]
 - ["9RPM_AR_UI16ARViewControllerC", "UIGestureRecognizer"]
-- ["9RPM_AR_UI16ARViewControllerC", "UIStoryboardSegue"]
 - !private ["9RPM_AR_UI16ARViewControllerC", "UITapGestureRecognizer"]
 - ["9RPM_AR_UI16ARViewControllerC", "addObjectToScene"]
 - ["9RPM_AR_UI16ARViewControllerC", "addTapGestureToSceneView"]
@@ -153,11 +151,12 @@ depends-member:
 - ["9RPM_AR_UI16ARViewControllerC", "init"]
 - ["9RPM_AR_UI16ARViewControllerC", "objDetailsScript"]
 - ["9RPM_AR_UI16ARViewControllerC", "objNode"]
+- ["9RPM_AR_UI16ARViewControllerC", "objPicked"]
 - ["9RPM_AR_UI16ARViewControllerC", "objSelected"]
 - ["9RPM_AR_UI16ARViewControllerC", "objectsOnScreen"]
 - ["9RPM_AR_UI16ARViewControllerC", "renderer"]
+- ["9RPM_AR_UI16ARViewControllerC", "sceneHits"]
 - ["9RPM_AR_UI16ARViewControllerC", "sceneView"]
-- ["9RPM_AR_UI16ARViewControllerC", "selectedObject"]
 - ["9RPM_AR_UI16ARViewControllerC", "session"]
 - ["9RPM_AR_UI16ARViewControllerC", "sessionInterruptionEnded"]
 - ["9RPM_AR_UI16ARViewControllerC", "sessionShouldAttemptRelocalization"]
@@ -760,12 +759,11 @@ depends-member:
 - ["So8NSObjectC", "Objs"]
 - ["So8NSObjectC", "SCNNode"]
 - !private ["So8NSObjectC", "SCNPlane"]
-- !private ["So8NSObjectC", "SCNScene"]
+- ["So8NSObjectC", "SCNScene"]
 - ["So8NSObjectC", "SCNSceneRenderer"]
 - !private ["So8NSObjectC", "SCNVector3"]
 - ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIGestureRecognizer"]
-- ["So8NSObjectC", "UIStoryboardSegue"]
 - !private ["So8NSObjectC", "UITapGestureRecognizer"]
 - !private ["So8NSObjectC", "addChildNode"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
@@ -793,6 +791,7 @@ depends-member:
 - !private ["So8NSObjectC", "materials"]
 - ["So8NSObjectC", "objDetailsScript"]
 - ["So8NSObjectC", "objNode"]
+- ["So8NSObjectC", "objPicked"]
 - ["So8NSObjectC", "objSelected"]
 - ["So8NSObjectC", "objectsOnScreen"]
 - !private ["So8NSObjectC", "pause"]
@@ -802,8 +801,8 @@ depends-member:
 - !private ["So8NSObjectC", "rootNode"]
 - !private ["So8NSObjectC", "run"]
 - !private ["So8NSObjectC", "scene"]
+- ["So8NSObjectC", "sceneHits"]
 - ["So8NSObjectC", "sceneView"]
-- ["So8NSObjectC", "selectedObject"]
 - ["So8NSObjectC", "session"]
 - ["So8NSObjectC", "sessionInterruptionEnded"]
 - ["So8NSObjectC", "sessionShouldAttemptRelocalization"]
@@ -1275,12 +1274,11 @@ depends-member:
 - ["So11UIResponderC", "Objs"]
 - ["So11UIResponderC", "SCNNode"]
 - !private ["So11UIResponderC", "SCNPlane"]
-- !private ["So11UIResponderC", "SCNScene"]
+- ["So11UIResponderC", "SCNScene"]
 - ["So11UIResponderC", "SCNSceneRenderer"]
 - !private ["So11UIResponderC", "SCNVector3"]
 - !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIGestureRecognizer"]
-- ["So11UIResponderC", "UIStoryboardSegue"]
 - !private ["So11UIResponderC", "UITapGestureRecognizer"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - ["So11UIResponderC", "addObjectToScene"]
@@ -1296,12 +1294,13 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "objDetailsScript"]
 - ["So11UIResponderC", "objNode"]
+- ["So11UIResponderC", "objPicked"]
 - ["So11UIResponderC", "objSelected"]
 - ["So11UIResponderC", "objectsOnScreen"]
 - ["So11UIResponderC", "renderer"]
 - !private ["So11UIResponderC", "scene"]
+- ["So11UIResponderC", "sceneHits"]
 - ["So11UIResponderC", "sceneView"]
-- ["So11UIResponderC", "selectedObject"]
 - ["So11UIResponderC", "session"]
 - ["So11UIResponderC", "sessionInterruptionEnded"]
 - ["So11UIResponderC", "sessionShouldAttemptRelocalization"]
@@ -1477,12 +1476,11 @@ depends-member:
 - ["So16UIViewControllerC", "Objs"]
 - ["So16UIViewControllerC", "SCNNode"]
 - !private ["So16UIViewControllerC", "SCNPlane"]
-- !private ["So16UIViewControllerC", "SCNScene"]
+- ["So16UIViewControllerC", "SCNScene"]
 - ["So16UIViewControllerC", "SCNSceneRenderer"]
 - !private ["So16UIViewControllerC", "SCNVector3"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", "UIGestureRecognizer"]
-- ["So16UIViewControllerC", "UIStoryboardSegue"]
 - !private ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "addObjectToScene"]
@@ -1493,11 +1491,12 @@ depends-member:
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "objDetailsScript"]
 - ["So16UIViewControllerC", "objNode"]
+- ["So16UIViewControllerC", "objPicked"]
 - ["So16UIViewControllerC", "objSelected"]
 - ["So16UIViewControllerC", "objectsOnScreen"]
 - ["So16UIViewControllerC", "renderer"]
+- ["So16UIViewControllerC", "sceneHits"]
 - ["So16UIViewControllerC", "sceneView"]
-- ["So16UIViewControllerC", "selectedObject"]
 - ["So16UIViewControllerC", "session"]
 - ["So16UIViewControllerC", "sessionInterruptionEnded"]
 - ["So16UIViewControllerC", "sessionShouldAttemptRelocalization"]
@@ -1860,4 +1859,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "eabb410a56e190281ab4bccc049c037d"
+interface-hash: "ea5ef66337f27dc2c3744c1870a6b109"

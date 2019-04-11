@@ -12,6 +12,7 @@ depends-top-level:
 depends-member:
 - ["9RPM_AR_UI4ObjsV", "String"]
 - ["9RPM_AR_UI4ObjsV", "category"]
+- ["9RPM_AR_UI4ObjsV", "icon"]
 - ["9RPM_AR_UI4ObjsV", "id"]
 - ["9RPM_AR_UI4ObjsV", "init"]
 - ["9RPM_AR_UI4ObjsV", "name"]
@@ -61,4 +62,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "36bf68d2150997c7a4c106c42347324c"
+interface-hash: "af3980846e1aa686166b0eb2e5726082"
