@@ -4,7 +4,8 @@ import SceneKit
 
 class ARViewController: UIViewController {
     
-    @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var arSceneView: ARSCNView!
+    @IBOutlet var sceneView:SCNView! = SCNView()
     @IBOutlet weak var sceneHits: SCNScene!
     
     
@@ -38,17 +39,16 @@ class ARViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        sceneView.session.pause()
+        arSceneView.session.pause()
     }
     
     func setUpSceneView() {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
         
-        sceneView.session.run(configuration)
-        
-        sceneView.delegate = self
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        arSceneView.session.run(configuration)
+        arSceneView.delegate = self
+        arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
         
     }
@@ -56,8 +56,8 @@ class ARViewController: UIViewController {
     
     
     func configureLighting() {
-        sceneView.autoenablesDefaultLighting = true
-        sceneView.automaticallyUpdatesLighting = true
+        arSceneView.autoenablesDefaultLighting = true
+        arSceneView.automaticallyUpdatesLighting = true
     }
     
     //add 3D Objects to scene
@@ -66,8 +66,8 @@ class ARViewController: UIViewController {
         if(objectsOnScreen.count < 2 && objSelected != nil){
             
             //setting loaction for object
-            let tapLocation = recognizer.location(in: sceneView)
-            let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
+            let tapLocation = recognizer.location(in: arSceneView)
+            let hitTestResults = arSceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
             
             //setting obj x, y, z
             guard let hitTestResult = hitTestResults.first else { return }
@@ -75,6 +75,7 @@ class ARViewController: UIViewController {
             let x = translation.x
             let y = translation.y
             let z = translation.z
+            
             
             //For 3D Models
             //loading selected SCN
@@ -84,9 +85,11 @@ class ARViewController: UIViewController {
 
             //adding scene to view
             sNode.position = SCNVector3(x,y,z)
-            sceneView.scene.rootNode.addChildNode(sNode)
+            arSceneView.scene.rootNode.addChildNode(sNode)
+            sceneView.scene?.rootNode.addChildNode(sNode)
             //tracking objects on screen
             objectsOnScreen.append(sNode)
+            
         }
 //        else if(objectsOnScreen.count == 2){
 //            let touchLocation = recognizer.location(in: sceneView)
@@ -98,12 +101,38 @@ class ARViewController: UIViewController {
         
     }
     
+    @objc func selectObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
+        let tapLoc = recog.location(in: sceneView)
+        let hitTestResult = arSceneView.scene
+        let pickedObj = hitTestResult.first
+        let tappedObj = pickedObj?.node
+        for _ in objectsOnScreen{
+            let screenObj0 = objectsOnScreen[0]
+            let screenObj1 = objectsOnScreen[1]
+            if tappedObj == screenObj0{
+                objectsOnScreen.remove(at: 1)
+                arSceneView.scene.rootNode.
+                
+                
+            }else if tappedObj == screenObj1{
+                objectsOnScreen.remove(at: 0)
+            }
+            
+        }
+        
+        
+
+    }
     
     
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
-        sceneView.addGestureRecognizer(tapGestureRecognizer)
+        arSceneView.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+    func addTapGestureToNodeView(){
+        let tGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
+        arSceneView.addGestureRecognizer(tGestureRecognizer)    }
     
     @IBAction func backToArView(unwindSegue: UIStoryboardSegue){
         

@@ -4,8 +4,8 @@
 <array>
 	<string>SceneKit</string>
 	<string>XCTest</string>
-	<string>ARKit</string>
-	<string>UIKit</string>
 	<string>Foundation</string>
+	<string>UIKit</string>
+	<string>ARKit</string>
 </array>
 </plist>
