@@ -7,14 +7,35 @@
 //
 
 import UIKit
+import CoreData
 
 class MainViewController: UIViewController {
+    
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    private  var allSession : Array<Session> = Array()
+    
+    @IBOutlet weak var datePicker : UIDatePicker!
+    @IBOutlet weak var timePicker : UIDatePicker!
+    @IBOutlet weak var name : UITextField!
+    @IBOutlet weak var sessionNum : UITextField!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare (for seque: UIStoryboardSegue, sender: Any?){
+        if seque.destination is ARViewController{
+            let newSession = Session(name: name!.text!, time: timePicker.countDownDuration, date: datePicker.date, sessionNum: sessionNum.text!)
+            allSession.append(newSession)
+        }
+    }
+    
+
     
 
     /*
