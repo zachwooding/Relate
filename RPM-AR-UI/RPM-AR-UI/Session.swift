@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CoreData
 
 struct Session{
     let name : String
