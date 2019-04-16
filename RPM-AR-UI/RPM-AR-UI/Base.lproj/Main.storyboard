@@ -307,7 +307,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="8zz-OC-omc" id="EM8-TT-H3x"/>
+                        <outlet property="detailDescriptionLabel" destination="8zz-OC-omc" id="D2A-5G-4kq"/>
                         <outlet property="iconInfo" destination="6N4-qu-cja" id="s53-VI-Oen"/>
                     </connections>
                 </viewController>
@@ -347,7 +347,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="arSceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

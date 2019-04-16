@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SceneKit
+
 
 struct Objs {
     let category : String
