@@ -211,10 +211,13 @@ SWIFT_CLASS("_TtC9RPM_AR_UI16ARViewController")
 @protocol SCNSceneRenderer;
 @class SCNNode;
 @class ARAnchor;
+@class ARSession;
+@class ARCamera;
 
 @interface ARViewController (SWIFT_EXTENSION(RPM_AR_UI)) <ARSCNViewDelegate>
 - (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didAddNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
 - (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didUpdateNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
+- (void)session:(ARSession * _Nonnull)session cameraDidChangeTrackingState:(ARCamera * _Nonnull)camera;
 @end
 
 @class UIWindow;

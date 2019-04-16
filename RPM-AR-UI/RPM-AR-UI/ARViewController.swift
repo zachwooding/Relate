@@ -49,6 +49,7 @@ class ARViewController: UIViewController {
         arSceneView.session.run(configuration)
         arSceneView.delegate = self
         arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        //arSceneView.addSubview(sceneView)
         
         
     }
@@ -101,38 +102,60 @@ class ARViewController: UIViewController {
         
     }
     
+    func resetTracking(){
+        let configuration=ARWorldTrackingConfiguration()
+        
+        configuration.planeDetection = .horizontal
+        
+        arSceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+        arSceneView.delegate = self
+        arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        
+        addTapGestureToSceneView()
+        
+    }
+    
     @objc func selectObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
-        let tapLoc = recog.location(in: sceneView)
-        let hitTestResult = arSceneView.scene
-        let pickedObj = hitTestResult.first
-        let tappedObj = pickedObj?.node
-        for _ in objectsOnScreen{
-            let screenObj0 = objectsOnScreen[0]
-            let screenObj1 = objectsOnScreen[1]
-            if tappedObj == screenObj0{
-                objectsOnScreen.remove(at: 1)
-                arSceneView.scene.rootNode.
-                
-                
-            }else if tappedObj == screenObj1{
-                objectsOnScreen.remove(at: 0)
-            }
+        arSceneView.scene.rootNode.enumerateChildNodes{
+            (node, stop) in node.removeFromParentNode()
+            resetTracking()
+            
             
         }
+        
+        //arSceneView.hitTest(<#T##point: CGPoint##CGPoint#>, types: <#T##ARHitTestResult.ResultType#>)
+       
+//        let touchLocation = recog.location(in: arSceneView)
+//        let hitTestResult = ARViewController.ren
+//        let pickedObj = hitTestResult.first
+//        let tappedObj = pickedObj?.node
+//        for _ in objectsOnScreen{
+//            let screenObj0 = objectsOnScreen[0]
+//            let screenObj1 = objectsOnScreen[1]
+//            if tappedObj == screenObj0{
+//                objectsOnScreen.remove(at: 1)
+//                arSceneView.scene.rootNode.
+//
+//
+//            }else if tappedObj == screenObj1{
+//                objectsOnScreen.remove(at: 0)
+//            }
+//
+//        }
         
         
 
     }
     
-    
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
         arSceneView.addGestureRecognizer(tapGestureRecognizer)
+        
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
+        longPressGestureRecognizer.minimumPressDuration = 1.0;
+        arSceneView.addGestureRecognizer(longPressGestureRecognizer)
     }
     
-    func addTapGestureToNodeView(){
-        let tGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
-        arSceneView.addGestureRecognizer(tGestureRecognizer)    }
     
     @IBAction func backToArView(unwindSegue: UIStoryboardSegue){
         
@@ -201,4 +224,16 @@ extension ARViewController: ARSCNViewDelegate {
         let z = CGFloat(planeAnchor.center.z)
         planeNode.position = SCNVector3(x, y, z)
     }
+    func renderer(_renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor:ARAnchor){
+        
+        node.removeFromParentNode()
+        
+    }
+    
+    func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera){
+        
+    }
+    
+    
 }
+
