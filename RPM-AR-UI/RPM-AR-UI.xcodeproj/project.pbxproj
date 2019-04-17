@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DF85C51226796120084147A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF85C50226796120084147A /* Session.swift */; };
 		1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA5F82253FC380011A730 /* AppDelegate.swift */; };
 		1D4CA5FD2253FC380011A730 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FC2253FC380011A730 /* ARViewController.swift */; };
 		1D4CA6002253FC380011A730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FE2253FC380011A730 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DF85C50226796120084147A /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1D4CA5F52253FC380011A730 /* RPM-AR-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPM-AR-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4CA5F82253FC380011A730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4CA5FA2253FC380011A730 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				1D6D7621225689DC000F9652 /* SearchViewController.swift */,
 				1D6D762B225695FE000F9652 /* DetailViewController.swift */,
 				1D6D7629225691A9000F9652 /* SearchFooter.swift */,
+				0DF85C50226796120084147A /* Session.swift */,
 				1D6D762722568E01000F9652 /* Objs.swift */,
 				1D4CA5FE2253FC380011A730 /* Main.storyboard */,
 				1D4CA6012253FC3B0011A730 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */,
 				1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */,
 				1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */,
+				0DF85C51226796120084147A /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
