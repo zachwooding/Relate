@@ -250,10 +250,17 @@ SWIFT_CLASS("_TtC9RPM_AR_UI20DetailViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIDatePicker;
+@class UITextField;
 
 SWIFT_CLASS("_TtC9RPM_AR_UI18MainViewController")
 @interface MainViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified datePicker;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified timePicker;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified name;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified sessionNum;
 - (void)viewDidLoad;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)seque sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

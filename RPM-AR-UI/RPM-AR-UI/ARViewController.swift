@@ -8,14 +8,19 @@ class ARViewController: UIViewController {
     @IBOutlet var sceneView:SCNView! = SCNView()
     @IBOutlet weak var sceneHits: SCNScene!
     
+    @IBOutlet var titleOfSession: UINavigationItem!
+    @IBOutlet var timeLeftLabel: UILabel!
+    
+    var timer: Timer?
+    var timeLeft: Double?
     
     var objectsOnScreen: Array<SCNNode> = Array()
-    
-    
     var objNode: SCNNode = SCNNode()
     var emptyNode: SCNNode = SCNNode()
     
     var objSelected: Objs!
+    
+    var sessionInfo: Session!
     
     var objDetailsScript: DetailViewController!
     
@@ -30,6 +35,8 @@ class ARViewController: UIViewController {
         addTapGestureToSceneView()
         
         configureLighting()
+        
+        manageSession()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -162,6 +169,24 @@ class ARViewController: UIViewController {
         
     }
     
+    @objc func onTimerFires(){
+        timeLeft -= 1
+        timeLeftLabel.text = "\(timeLeft)"
+    }
+    
+    func startTimer(){
+        timer = Timer.scheduledTimer(timeInterval: sessionInfo.time, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+    }
+    
+    func manageSession(){
+        titleOfSession.title = sessionInfo.name
+
+        timeLeft = Double(sessionInfo.time)
+        timeLeftLabel.text = "\(timeLeft)"
+    
+        
+        
+    }
     
 }
 
