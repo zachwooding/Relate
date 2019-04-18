@@ -26,6 +26,8 @@ class ARViewController: UIViewController {
     
     var objPicked: Array<Objs> = Array()
     
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,9 @@ class ARViewController: UIViewController {
         configureLighting()
         
         manageSession()
+        
+        
+            
     }
     
     override func viewWillAppear(_ animated: Bool) {

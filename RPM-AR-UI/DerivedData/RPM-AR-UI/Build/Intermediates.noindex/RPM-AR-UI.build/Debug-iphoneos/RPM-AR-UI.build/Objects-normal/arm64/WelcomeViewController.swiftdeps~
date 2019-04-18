@@ -6,8 +6,10 @@ provides-nominal:
 provides-member:
 - ["9RPM_AR_UI21WelcomeViewControllerC", ""]
 provides-dynamic-lookup:
+- "backToWelcome"
 - "viewDidLoad"
 depends-top-level:
+- "UIStoryboardSegue"
 - "UIViewController"
 - "WelcomeViewController"
 depends-member:
@@ -39,6 +41,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- ["So8NSObjectC", "backToWelcome"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "viewDidLoad"]
@@ -62,6 +66,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "backToWelcome"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -81,10 +87,14 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "backToWelcome"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["9RPM_AR_UI21WelcomeViewControllerC", "UIStoryboardSegue"]
+- ["9RPM_AR_UI21WelcomeViewControllerC", "backToWelcome"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "init"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -158,4 +168,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "91d84e4361c6450c87a147c8b403a8c7"
+interface-hash: "44c55e527da3387a03478debb2996f1b"

@@ -30,12 +30,11 @@ class NewSessionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-<<<<<<< HEAD:RPM-AR-UI/RPM-AR-UI/NewSessionViewController.swift
+
     func timeCon (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
-=======
->>>>>>> 9260037a3cd737adfebf0df31afb30cbf9fbbdf1:RPM-AR-UI/RPM-AR-UI/MainViewController.swift
+
     
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
         if segue.destination is UINavigationController{

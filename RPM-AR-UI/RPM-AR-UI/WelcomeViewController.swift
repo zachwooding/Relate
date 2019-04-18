@@ -10,15 +10,28 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    var savedDataArray : Array<Session> = Array()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    
         // Do any additional setup after loading the view.
     }
     
     @IBAction func backToWelcome(unwindSegue: UIStoryboardSegue){
         
         
+    }
+    
+    func load() {
+        let defaults = UserDefaults.standard
+    
+        if let savedData = defaults.object(forKey: "savedDataArray") as? Data {
+            if let decodedData = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? [Session]{
+                savedDataArray = decodedData!
+            }
+        }
     }
     
 

@@ -28,7 +28,6 @@ provides-dynamic-lookup:
 - "viewWillAppear"
 - "viewWillDisappear"
 depends-top-level:
-- !private "!"
 - !private "!="
 - !private "%"
 - !private "&&"
@@ -37,6 +36,7 @@ depends-top-level:
 - !private "-="
 - !private "/"
 - !private "<"
+- !private "=="
 - "ARAnchor"
 - "ARCamera"
 - !private "ARPlaneAnchor"
@@ -348,7 +348,6 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "invalidate"]
-- !private ["s7CVarArgP", "isValid"]
 - !private ["s7CVarArgP", "location"]
 - !private ["s7CVarArgP", "manageSession"]
 - !private ["s7CVarArgP", "materials"]
@@ -456,7 +455,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "invalidate"]
-- !private ["s28CustomDebugStringConvertibleP", "isValid"]
 - !private ["s28CustomDebugStringConvertibleP", "location"]
 - !private ["s28CustomDebugStringConvertibleP", "manageSession"]
 - !private ["s28CustomDebugStringConvertibleP", "materials"]
@@ -582,7 +580,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "invalidate"]
-- !private ["s23CustomStringConvertibleP", "isValid"]
 - !private ["s23CustomStringConvertibleP", "location"]
 - !private ["s23CustomStringConvertibleP", "manageSession"]
 - !private ["s23CustomStringConvertibleP", "materials"]
@@ -728,7 +725,6 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "invalidate"]
-- !private ["SQ", "isValid"]
 - !private ["SQ", "location"]
 - !private ["SQ", "manageSession"]
 - !private ["SQ", "materials"]
@@ -877,7 +873,6 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "invalidate"]
-- !private ["SH", "isValid"]
 - !private ["SH", "location"]
 - !private ["SH", "manageSession"]
 - !private ["SH", "materials"]
@@ -1153,7 +1148,6 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "invalidate"]
-- !private ["So8NSObjectC", "isValid"]
 - !private ["So8NSObjectC", "location"]
 - ["So8NSObjectC", "manageSession"]
 - !private ["So8NSObjectC", "materials"]
@@ -1248,7 +1242,6 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "invalidate"]
-- !private ["So8NSObjectP", "isValid"]
 - !private ["So8NSObjectP", "location"]
 - !private ["So8NSObjectP", "manageSession"]
 - !private ["So8NSObjectP", "materials"]
@@ -1524,7 +1517,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So7NSTimerC", "invalidate"]
-- !private ["So7NSTimerC", "isValid"]
 - !private ["So7NSTimerC", "scheduledTimer"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "autoenablesDefaultLighting"]
@@ -2357,7 +2349,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "isValid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "location"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "manageSession"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "materials"]
