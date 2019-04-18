@@ -312,6 +312,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI21WelcomeViewController")
 @interface WelcomeViewController : UIViewController
 - (void)viewDidLoad;
 - (IBAction)backToWelcomeWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

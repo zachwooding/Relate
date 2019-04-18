@@ -166,7 +166,7 @@ class noteViewController: UIViewController, UITextFieldDelegate,  UINavigationCo
                     let note = Note(context: moc)
 
                     if let data = UIImageJPEGRepresentation(self.noteImageView.image!, 1.0) {
-                            note.noteImage = data as NSData
+                        note.noteImage = data as NSData as Data
                     }
                 
                     note.noteName = noteName

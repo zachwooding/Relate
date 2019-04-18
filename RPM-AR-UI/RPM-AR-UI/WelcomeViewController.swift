@@ -14,6 +14,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        load();
         
     
         // Do any additional setup after loading the view.
@@ -22,6 +23,15 @@ class WelcomeViewController: UIViewController {
     @IBAction func backToWelcome(unwindSegue: UIStoryboardSegue){
         
         
+    }
+    
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?){
+        if segue.destination is UINavigationController{
+            let navTarget = segue.destination as! UINavigationController
+            let nsVC = navTarget.topViewController as! NewSessionViewController
+            
+            //nsVC.savedSessions = savedDataArray
+        }
     }
     
     func load() {

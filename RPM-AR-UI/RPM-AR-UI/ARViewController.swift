@@ -26,6 +26,8 @@ class ARViewController: UIViewController {
     
     var objPicked: Array<Objs> = Array()
     
+    var savedSessions: Array<Session>!
+    
    
     
     
@@ -128,32 +130,29 @@ class ARViewController: UIViewController {
     }
     
     @objc func selectObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
-        arSceneView.scene.rootNode.enumerateChildNodes{
-            (node, stop) in node.removeFromParentNode()
-            resetTracking()
-            
-            
-        }
-        
-        //arSceneView.hitTest(<#T##point: CGPoint##CGPoint#>, types: <#T##ARHitTestResult.ResultType#>)
-       
-//        let touchLocation = recog.location(in: arSceneView)
-//        let hitTestResult = ARViewController.ren
-//        let pickedObj = hitTestResult.first
-//        let tappedObj = pickedObj?.node
-//        for _ in objectsOnScreen{
-//            let screenObj0 = objectsOnScreen[0]
-//            let screenObj1 = objectsOnScreen[1]
-//            if tappedObj == screenObj0{
-//                objectsOnScreen.remove(at: 1)
-//                arSceneView.scene.rootNode.
+//        arSceneView.scene.rootNode.enumerateChildNodes{
+//            (node, stop) in node.removeFromParentNode()
+//            resetTracking()
 //
-//
-//            }else if tappedObj == screenObj1{
-//                objectsOnScreen.remove(at: 0)
-//            }
 //
 //        }
+        
+        
+       
+        let touchLocation = recog.location(in: arSceneView)
+        let hitTestResult = arSceneView.hitTest(touchLocation, options: nil)
+        for pickedObj in hitTestResult{
+            let screenObj0 = objectsOnScreen[0]
+            let screenObj1 = objectsOnScreen[1]
+            if pickedObj.node == screenObj0{
+                objectsOnScreen.remove(at: 1)
+                arSceneView.scene.rootNode.childNode(withName: objectsOnScreen[0].name!, recursively: false)
+            }else if pickedObj.node == screenObj1{
+                objectsOnScreen.remove(at: 0)
+                arSceneView.scene.rootNode.childNode(withName: objectsOnScreen[1].name!, recursively: false)
+            }
+
+        }
         
         
 

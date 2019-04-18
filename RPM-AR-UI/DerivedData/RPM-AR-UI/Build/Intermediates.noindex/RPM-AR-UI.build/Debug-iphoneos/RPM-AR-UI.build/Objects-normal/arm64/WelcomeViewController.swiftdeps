@@ -7,6 +7,7 @@ provides-member:
 - ["9RPM_AR_UI21WelcomeViewControllerC", ""]
 provides-dynamic-lookup:
 - "backToWelcome"
+- "prepare"
 - "viewDidLoad"
 depends-top-level:
 - "Array"
@@ -14,8 +15,10 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Data"
 - !private "NSKeyedUnarchiver"
+- !private "NewSessionViewController"
 - "Session"
 - !private "StringLiteralType"
+- !private "UINavigationController"
 - "UIStoryboardSegue"
 - "UIViewController"
 - !private "UserDefaults"
@@ -25,15 +28,20 @@ depends-member:
 - ["s13ArrayProtocolP", "init"]
 - ["SK", "init"]
 - !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "Array"]
 - !private ["s7CVarArgP", "NSKeyedUnarchiver"]
 - !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "destination"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "load"]
 - !private ["s7CVarArgP", "object"]
 - !private ["s7CVarArgP", "savedDataArray"]
 - !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "topViewController"]
 - !private ["s7CVarArgP", "unarchiveTopLevelObjectWithData"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["Sl", "init"]
@@ -44,44 +52,60 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedUnarchiver"]
 - !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "load"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
 - !private ["s28CustomDebugStringConvertibleP", "savedDataArray"]
 - !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "topViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "unarchiveTopLevelObjectWithData"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "Array"]
 - !private ["s23CustomStringConvertibleP", "NSKeyedUnarchiver"]
 - !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "destination"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "load"]
 - !private ["s23CustomStringConvertibleP", "object"]
 - !private ["s23CustomStringConvertibleP", "savedDataArray"]
 - !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "topViewController"]
 - !private ["s23CustomStringConvertibleP", "unarchiveTopLevelObjectWithData"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "_getBuiltinLogicValue"]
 - ["Se", "init"]
 - !private ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
 - ["SE", "init"]
 - !private ["SE", "init"]
 - ["SQ", "Array"]
 - !private ["SQ", "NSKeyedUnarchiver"]
 - !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "destination"]
 - ["SQ", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "load"]
 - !private ["SQ", "object"]
 - !private ["SQ", "savedDataArray"]
 - !private ["SQ", "standard"]
+- !private ["SQ", "topViewController"]
 - !private ["SQ", "unarchiveTopLevelObjectWithData"]
 - !private ["SQ", "viewDidLoad"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -92,13 +116,18 @@ depends-member:
 - !private ["SH", "NSKeyedUnarchiver"]
 - !private ["SH", "UserDefaults"]
 - ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "destination"]
 - ["SH", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "load"]
 - !private ["SH", "object"]
 - !private ["SH", "savedDataArray"]
 - !private ["SH", "standard"]
+- !private ["SH", "topViewController"]
 - !private ["SH", "unarchiveTopLevelObjectWithData"]
 - !private ["SH", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -111,7 +140,9 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "load"]
 - !private ["So8NSCodingP", "savedDataArray"]
+- !private ["So8NSCodingP", "topViewController"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "Array"]
 - !private ["So26NSExtensionRequestHandlingP", "NSKeyedUnarchiver"]
@@ -119,33 +150,43 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "load"]
 - !private ["So26NSExtensionRequestHandlingP", "savedDataArray"]
+- !private ["So26NSExtensionRequestHandlingP", "topViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So17NSKeyedUnarchiverC", "unarchiveTopLevelObjectWithData"]
 - ["So8NSObjectC", "Array"]
 - !private ["So8NSObjectC", "Data"]
 - !private ["So8NSObjectC", "NSKeyedUnarchiver"]
+- !private ["So8NSObjectC", "NewSessionViewController"]
 - ["So8NSObjectC", "Session"]
+- !private ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - !private ["So8NSObjectC", "UserDefaults"]
 - ["So8NSObjectC", "backToWelcome"]
+- !private ["So8NSObjectC", "destination"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "load"]
 - !private ["So8NSObjectC", "object"]
+- ["So8NSObjectC", "prepare"]
 - ["So8NSObjectC", "savedDataArray"]
 - !private ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "topViewController"]
 - !private ["So8NSObjectC", "unarchiveTopLevelObjectWithData"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectP", "Array"]
 - !private ["So8NSObjectP", "NSKeyedUnarchiver"]
 - !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "load"]
 - !private ["So8NSObjectP", "object"]
 - !private ["So8NSObjectP", "savedDataArray"]
 - !private ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "topViewController"]
 - !private ["So8NSObjectP", "unarchiveTopLevelObjectWithData"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["Sk", "init"]
@@ -167,7 +208,9 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "load"]
 - !private ["So21UIAppearanceContainerP", "savedDataArray"]
+- !private ["So21UIAppearanceContainerP", "topViewController"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "Array"]
 - !private ["So18UIContentContainerP", "NSKeyedUnarchiver"]
@@ -175,7 +218,9 @@ depends-member:
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "load"]
 - !private ["So18UIContentContainerP", "savedDataArray"]
+- !private ["So18UIContentContainerP", "topViewController"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "Array"]
 - !private ["So18UIFocusEnvironmentP", "NSKeyedUnarchiver"]
@@ -183,27 +228,36 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "load"]
 - !private ["So18UIFocusEnvironmentP", "savedDataArray"]
+- !private ["So18UIFocusEnvironmentP", "topViewController"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So22UINavigationControllerC", "topViewController"]
 - ["So30UIPasteConfigurationSupportingP", "Array"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedUnarchiver"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "load"]
 - !private ["So30UIPasteConfigurationSupportingP", "savedDataArray"]
+- !private ["So30UIPasteConfigurationSupportingP", "topViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Array"]
 - !private ["So11UIResponderC", "Data"]
 - !private ["So11UIResponderC", "NSKeyedUnarchiver"]
+- !private ["So11UIResponderC", "NewSessionViewController"]
 - ["So11UIResponderC", "Session"]
+- !private ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - !private ["So11UIResponderC", "UserDefaults"]
 - ["So11UIResponderC", "backToWelcome"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "load"]
+- ["So11UIResponderC", "prepare"]
 - ["So11UIResponderC", "savedDataArray"]
+- !private ["So11UIResponderC", "topViewController"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "Array"]
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedUnarchiver"]
@@ -211,7 +265,9 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "load"]
 - !private ["So30UIResponderStandardEditActionsP", "savedDataArray"]
+- !private ["So30UIResponderStandardEditActionsP", "topViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "Array"]
 - !private ["So16UIStateRestoringP", "NSKeyedUnarchiver"]
@@ -219,15 +275,20 @@ depends-member:
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "load"]
 - !private ["So16UIStateRestoringP", "savedDataArray"]
+- !private ["So16UIStateRestoringP", "topViewController"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So17UIStoryboardSegueC", "destination"]
 - ["So18UITraitEnvironmentP", "Array"]
 - !private ["So18UITraitEnvironmentP", "NSKeyedUnarchiver"]
 - !private ["So18UITraitEnvironmentP", "UserDefaults"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "load"]
 - !private ["So18UITraitEnvironmentP", "savedDataArray"]
+- !private ["So18UITraitEnvironmentP", "topViewController"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "Array"]
 - !private ["So23UIUserActivityRestoringP", "NSKeyedUnarchiver"]
@@ -235,12 +296,16 @@ depends-member:
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "load"]
 - !private ["So23UIUserActivityRestoringP", "savedDataArray"]
+- !private ["So23UIUserActivityRestoringP", "topViewController"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - ["So16UIViewControllerC", "Array"]
 - !private ["So16UIViewControllerC", "Data"]
 - !private ["So16UIViewControllerC", "NSKeyedUnarchiver"]
+- !private ["So16UIViewControllerC", "NewSessionViewController"]
 - ["So16UIViewControllerC", "Session"]
+- !private ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - !private ["So16UIViewControllerC", "UserDefaults"]
 - ["So16UIViewControllerC", ""]
@@ -248,22 +313,28 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "load"]
+- ["So16UIViewControllerC", "prepare"]
 - ["So16UIViewControllerC", "savedDataArray"]
+- !private ["So16UIViewControllerC", "topViewController"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["So14NSUserDefaultsC", "object"]
 - !private ["So14NSUserDefaultsC", "standard"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "Array"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "Data"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "NSKeyedUnarchiver"]
+- !private ["9RPM_AR_UI21WelcomeViewControllerC", "NewSessionViewController"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "Session"]
+- !private ["9RPM_AR_UI21WelcomeViewControllerC", "UINavigationController"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "UIStoryboardSegue"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "UserDefaults"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "backToWelcome"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "init"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "load"]
+- ["9RPM_AR_UI21WelcomeViewControllerC", "prepare"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "savedDataArray"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "viewDidLoad"]
 - ["s24_DestructorSafeContainerP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -279,13 +350,17 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedUnarchiver"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "load"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "savedDataArray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "topViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "unarchiveTopLevelObjectWithData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
@@ -294,6 +369,7 @@ depends-nominal:
 - "Sa"
 - "s13ArrayProtocolP"
 - "SK"
+- !private "Sb"
 - "s7CVarArgP"
 - "Sl"
 - !private "SL"
@@ -305,6 +381,7 @@ depends-nominal:
 - "SE"
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -328,16 +405,19 @@ depends-nominal:
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
 - "So18UIFocusEnvironmentP"
+- !private "So22UINavigationControllerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So16UIViewControllerC"
 - !private "So14NSUserDefaultsC"
 - "9RPM_AR_UI21WelcomeViewControllerC"
 - "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -392,4 +472,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "722a9217feb5cefd81ea0a8a6bf50506"
+interface-hash: "209864418834875ec106c7315d78f8e8"
