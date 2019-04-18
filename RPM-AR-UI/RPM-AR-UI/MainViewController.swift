@@ -28,6 +28,7 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
         if segue.destination is ARViewController{
             let newSession = Session(name: name!.text!, time: timePicker.countDownDuration, date: datePicker.date, sessionNum: sessionNum.text!)
@@ -36,6 +37,7 @@ class MainViewController: UIViewController {
             arVC?.sessionInfo = newSession
         }
     }
+    
     
     /*
     // MARK: - Navigation
