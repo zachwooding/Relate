@@ -29,7 +29,7 @@
         <!--Welcome!-->
         <scene sceneID="44Q-Oo-PGN">
             <objects>
-                <viewController id="Jr1-k4-eM4" sceneMemberID="viewController">
+                <viewController id="Jr1-k4-eM4" customClass="WelcomeViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cHv-IX-8xw">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="98" y="134"/>
         </scene>
-        <!--Main View Controller-->
+        <!--New Session View Controller-->
         <scene sceneID="1xm-Nm-Bve">
             <objects>
-                <viewController id="jS1-xd-lDV" customClass="MainViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jS1-xd-lDV" customClass="NewSessionViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="coQ-ln-kF7">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Start Session"/>
                                                 <connections>
-                                                    <segue destination="3cx-hG-SAC" kind="show" id="k9z-Cf-Wrl"/>
+                                                    <segue destination="3cx-hG-SAC" kind="show" identifier="SessionToAr" id="k9z-Cf-Wrl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -301,7 +301,7 @@
                     <navigationItem key="navigationItem" title="Title" id="Fxd-5b-79L">
                         <barButtonItem key="leftBarButtonItem" width="29" systemItem="cancel" id="1Lq-QV-tLN">
                             <connections>
-                                <segue destination="lXs-Yo-VOb" kind="unwind" unwindAction="backToObjSearchWithUnwindSegue:" id="j25-TG-esw"/>
+                                <segue destination="lXs-Yo-VOb" kind="unwind" unwindAction="backToObjSearchWithUnwindSegue:" id="54X-0g-hzP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -325,26 +325,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="70" width="1112" height="692"/>
+                                <rect key="frame" x="0.0" y="70" width="1112" height="626"/>
                             </arscnView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ds6-Mx-Qgj">
-                                <rect key="frame" x="0.0" y="760" width="1112" height="74"/>
+                                <rect key="frame" x="0.0" y="704" width="1112" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlW-yR-fEb">
                                         <rect key="frame" x="49" y="22" width="32" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="quitSession" destination="BV1-FR-VrT" eventType="touchUpInside" id="DfX-MP-LHV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3E-OW-fez">
                                         <rect key="frame" x="227" y="22" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startTimer" destination="BV1-FR-VrT" eventType="touchUpInside" id="bWM-zw-sXu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiJ-i6-i4c">
                                         <rect key="frame" x="133" y="22" width="42" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseTimer" destination="BV1-FR-VrT" eventType="touchUpInside" id="Ycq-z7-Tg0"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Remaining:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-6R-CmT">
                                         <rect key="frame" x="316" y="27" width="127" height="21"/>
@@ -354,7 +363,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97G-y2-mw9">
-                                        <rect key="frame" x="459" y="27" width="38" height="21"/>
+                                        <rect key="frame" x="459" y="27" width="184" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -384,11 +393,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="arSceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
-                        <outlet property="timeLeftLabel" destination="97G-y2-mw9" id="cGn-Tq-Jy9"/>
+                        <outlet property="timeLeftLabel" destination="97G-y2-mw9" id="iwA-iL-0BB"/>
                         <outlet property="titleOfSession" destination="M4t-u9-czs" id="cOe-Xm-MWt"/>
+                        <segue destination="18u-X8-dIu" kind="unwind" identifier="unwindToWelcome" unwindAction="backToWelcomeWithUnwindSegue:" id="T2m-X8-u7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <exit id="18u-X8-dIu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="758.6330935251799" y="834.53237410071949"/>
         </scene>

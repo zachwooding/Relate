@@ -188,6 +188,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class ARSCNView;
 @class SCNView;
 @class SCNScene;
+@class UINavigationItem;
+@class UILabel;
 @class UIGestureRecognizer;
 @class UIStoryboardSegue;
 @class NSBundle;
@@ -198,12 +200,18 @@ SWIFT_CLASS("_TtC9RPM_AR_UI16ARViewController")
 @property (nonatomic, weak) IBOutlet ARSCNView * _Null_unspecified arSceneView;
 @property (nonatomic, strong) IBOutlet SCNView * _Null_unspecified sceneView;
 @property (nonatomic, weak) IBOutlet SCNScene * _Null_unspecified sceneHits;
+@property (nonatomic, strong) IBOutlet UINavigationItem * _Null_unspecified titleOfSession;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLeftLabel;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)addObjectToSceneWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recognizer;
 - (void)selectObjectsOnScreenWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recog;
 - (IBAction)backToArViewWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
+- (void)onTimerFires;
+- (IBAction)startTimer;
+- (IBAction)pauseTimer;
+- (IBAction)quitSession;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -235,7 +243,6 @@ SWIFT_CLASS("_TtC9RPM_AR_UI11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC9RPM_AR_UI20DetailViewController")
@@ -253,14 +260,14 @@ SWIFT_CLASS("_TtC9RPM_AR_UI20DetailViewController")
 @class UIDatePicker;
 @class UITextField;
 
-SWIFT_CLASS("_TtC9RPM_AR_UI18MainViewController")
-@interface MainViewController : UIViewController
+SWIFT_CLASS("_TtC9RPM_AR_UI24NewSessionViewController")
+@interface NewSessionViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified datePicker;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified timePicker;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified name;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified sessionNum;
 - (void)viewDidLoad;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)seque sender:(id _Nullable)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -299,6 +306,15 @@ SWIFT_CLASS("_TtC9RPM_AR_UI20SearchViewController")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC9RPM_AR_UI21WelcomeViewController")
+@interface WelcomeViewController : UIViewController
+- (void)viewDidLoad;
+- (IBAction)backToWelcomeWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

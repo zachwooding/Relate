@@ -12,7 +12,7 @@ class ARViewController: UIViewController {
     @IBOutlet var timeLeftLabel: UILabel!
     
     var timer: Timer?
-    var timeLeft: Double?
+    var timeLeft: Double? = 1000.0
     
     var objectsOnScreen: Array<SCNNode> = Array()
     var objNode: SCNNode = SCNNode()
@@ -170,22 +170,55 @@ class ARViewController: UIViewController {
     }
     
     @objc func onTimerFires(){
-        timeLeft -= 1
-        timeLeftLabel.text = "\(timeLeft)"
+        timeLeft! -= 1.0
+        let(h,m,s) = timeCon(seconds: Int(timeLeft!))
+        timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     }
     
-    func startTimer(){
-        timer = Timer.scheduledTimer(timeInterval: sessionInfo.time, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+    @IBAction func startTimer(){
+        if timer == nil {
+             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+        }
+       
+    }
+    
+    @IBAction func pauseTimer(){
+        if(timer != nil){
+            timer?.invalidate()
+            timer = nil
+        }
+        
+    }
+    
+    @IBAction func quitSession(){
+        let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be lost.", preferredStyle: UIAlertController.Style.alert)
+        
+        quitAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+            self.performSegue(withIdentifier: "unwindToWelcome", sender: self)
+        }))
+        
+        quitAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            
+        }))
+        
+        
+        
+        present(quitAlert, animated: true, completion: nil)
     }
     
     func manageSession(){
         titleOfSession.title = sessionInfo.name
 
         timeLeft = Double(sessionInfo.time)
-        timeLeftLabel.text = "\(timeLeft)"
+        let(h,m,s) = timeCon(seconds: Int(timeLeft!))
+        timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     
         
         
+    }
+    
+    func timeCon (seconds : Int) -> (Int, Int, Int) {
+        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
     
 }
