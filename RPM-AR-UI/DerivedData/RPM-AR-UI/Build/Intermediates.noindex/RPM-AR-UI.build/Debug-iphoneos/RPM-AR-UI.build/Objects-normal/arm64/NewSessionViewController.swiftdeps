@@ -39,9 +39,6 @@ depends-member:
 - !private ["9RPM_AR_UI16ARViewControllerC", "savedSessions"]
 - !private ["9RPM_AR_UI16ARViewControllerC", "sessionInfo"]
 - ["9RPM_AR_UI11AppDelegateC", "persistentContainer"]
-- !private ["Sa", "append"]
-- !private ["s13ArrayProtocolP", "append"]
-- !private ["SK", "append"]
 - !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "countDownDuration"]
@@ -52,7 +49,6 @@ depends-member:
 - ["s7CVarArgP", "UIApplication"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "countDownDuration"]
 - !private ["s7CVarArgP", "date"]
 - !private ["s7CVarArgP", "datePicker"]
@@ -72,13 +68,11 @@ depends-member:
 - !private ["s7CVarArgP", "topViewController"]
 - ["s7CVarArgP", "viewContext"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- !private ["Sl", "append"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "Session"]
 - ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "countDownDuration"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "datePicker"]
@@ -101,7 +95,6 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "countDownDuration"]
 - !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "init"]
@@ -111,7 +104,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "UIApplication"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "countDownDuration"]
 - !private ["s23CustomStringConvertibleP", "date"]
 - !private ["s23CustomStringConvertibleP", "datePicker"]
@@ -132,13 +124,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewContext"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["Se", "_getBuiltinLogicValue"]
-- !private ["Se", "append"]
 - !private ["Se", "countDownDuration"]
 - !private ["Se", "date"]
 - !private ["Se", "init"]
 - !private ["Se", "text"]
 - !private ["SE", "_getBuiltinLogicValue"]
-- !private ["SE", "append"]
 - !private ["SE", "countDownDuration"]
 - !private ["SE", "date"]
 - !private ["SE", "init"]
@@ -148,7 +138,6 @@ depends-member:
 - ["SQ", "UIApplication"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
-- !private ["SQ", "append"]
 - !private ["SQ", "countDownDuration"]
 - !private ["SQ", "date"]
 - !private ["SQ", "datePicker"]
@@ -168,7 +157,6 @@ depends-member:
 - !private ["SQ", "topViewController"]
 - ["SQ", "viewContext"]
 - !private ["SQ", "viewDidLoad"]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "countDownDuration"]
@@ -180,7 +168,6 @@ depends-member:
 - ["SH", "UIApplication"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
-- !private ["SH", "append"]
 - !private ["SH", "countDownDuration"]
 - !private ["SH", "date"]
 - !private ["SH", "datePicker"]
@@ -204,7 +191,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["SM", "append"]
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "Session"]
 - ["So8NSCodingP", "UIApplication"]
@@ -310,7 +296,7 @@ depends-member:
 - ["9RPM_AR_UI24NewSessionViewControllerC", "init"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "name"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "prepare"]
-- !private ["9RPM_AR_UI24NewSessionViewControllerC", "savedSessions"]
+- ["9RPM_AR_UI24NewSessionViewControllerC", "savedSessions"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "sessionNum"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "timeCon"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "timePicker"]
@@ -319,11 +305,8 @@ depends-member:
 - !private ["Sq", "countDownDuration"]
 - !private ["Sq", "date"]
 - !private ["Sq", "text"]
-- !private ["Sk", "append"]
-- !private ["Sm", "append"]
 - !private ["So24SCNSceneRendererDelegateP", "savedSessions"]
 - !private ["So24SCNSceneRendererDelegateP", "sessionInfo"]
-- !private ["ST", "append"]
 - !private ["9RPM_AR_UI7SessionV", "init"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
@@ -573,10 +556,8 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "countDownDuration"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "date"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Session"]
@@ -602,7 +583,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "countDownDuration"]
 - !private ["s21_ObjectiveCBridgeableP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -612,14 +592,10 @@ depends-nominal:
 - !private "So17ARSessionObserverP"
 - !private "9RPM_AR_UI16ARViewControllerC"
 - "9RPM_AR_UI11AppDelegateC"
-- !private "Sa"
-- !private "s13ArrayProtocolP"
-- !private "SK"
 - !private "Sz"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "Sl"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
@@ -628,7 +604,6 @@ depends-nominal:
 - !private "Se"
 - !private "SE"
 - "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
@@ -637,7 +612,6 @@ depends-nominal:
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "SM"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -646,10 +620,7 @@ depends-nominal:
 - "9RPM_AR_UI24NewSessionViewControllerC"
 - !private "Sj"
 - !private "Sq"
-- !private "Sk"
-- !private "Sm"
 - !private "So24SCNSceneRendererDelegateP"
-- !private "ST"
 - !private "9RPM_AR_UI7SessionV"
 - !private "SZ"
 - !private "s13SignedNumericP"
@@ -687,7 +658,6 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
@@ -738,4 +708,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3a523e24984134db12608abd567b8b17"
+interface-hash: "975c8d12c353c302a65496408d66dfc8"

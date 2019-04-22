@@ -11,6 +11,7 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     var savedDataArray : Array<Session> = Array()
+    var savedSession: Array<Session>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +26,14 @@ class WelcomeViewController: UIViewController {
         
     }
     
+    
+    
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
         if segue.destination is UINavigationController{
             let navTarget = segue.destination as! UINavigationController
             let nsVC = navTarget.topViewController as! NewSessionViewController
             
-            //nsVC.savedSessions = savedDataArray
+            nsVC.savedSessions = savedDataArray
         }
     }
     

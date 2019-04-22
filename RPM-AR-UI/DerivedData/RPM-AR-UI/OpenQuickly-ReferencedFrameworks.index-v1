@@ -3,10 +3,10 @@
 <plist version="1.0">
 <array>
 	<string>SceneKit</string>
-	<string>ARKit</string>
+	<string>Foundation</string>
 	<string>XCTest</string>
 	<string>CoreData</string>
 	<string>UIKit</string>
-	<string>Foundation</string>
+	<string>ARKit</string>
 </array>
 </plist>

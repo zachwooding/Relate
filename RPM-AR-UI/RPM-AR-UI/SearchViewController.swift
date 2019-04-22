@@ -12,6 +12,7 @@ import SceneKit
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let searchController = UISearchController(searchResultsController: nil)
+    @IBOutlet var searcherBar: UISearchBar!
     var objs = [Objs]()
     var filteredObjs = [Objs]()
     
@@ -31,7 +32,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             Objs(category:"Movies", name:"Movie", sceneName:"MovieCamera.scn", id:"moviecamera", icon:"\u{1F3A5}"),
             Objs(category:"Animal", name:"Rabbit", sceneName:"rabbit.scn", id:"rabbit", icon:"\u{1F407}"),
             Objs(category:"Science", name:"Rocket", sceneName:"rocketship.scn", id:"rocket", icon:"\u{1F680}"),
-            Objs(category: "Fruit", name: "Banana", sceneName: "bananaaa.scn", id: "banana", icon: "\u{1F34C}")
+            Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
             
             
 //            Objs(category:"Appliances", name:"Fridge", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
@@ -46,11 +47,15 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         ]
         
         // Setup the Search Controller
+        
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
+        //searcherBar = searchController.searchBar
         searchController.searchBar.placeholder = "Search Objects"
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
+        
 
 
         // Do any additional setup after loading the view.

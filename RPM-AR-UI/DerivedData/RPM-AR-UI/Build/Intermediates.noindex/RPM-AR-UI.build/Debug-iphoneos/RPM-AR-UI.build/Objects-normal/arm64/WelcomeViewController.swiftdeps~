@@ -178,6 +178,7 @@ depends-member:
 - !private ["So8NSObjectC", "object"]
 - ["So8NSObjectC", "prepare"]
 - ["So8NSObjectC", "savedDataArray"]
+- ["So8NSObjectC", "savedSession"]
 - !private ["So8NSObjectC", "savedSessions"]
 - !private ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "topViewController"]
@@ -271,6 +272,7 @@ depends-member:
 - ["So11UIResponderC", "load"]
 - ["So11UIResponderC", "prepare"]
 - ["So11UIResponderC", "savedDataArray"]
+- ["So11UIResponderC", "savedSession"]
 - !private ["So11UIResponderC", "savedSessions"]
 - !private ["So11UIResponderC", "topViewController"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -334,6 +336,7 @@ depends-member:
 - ["So16UIViewControllerC", "load"]
 - ["So16UIViewControllerC", "prepare"]
 - ["So16UIViewControllerC", "savedDataArray"]
+- ["So16UIViewControllerC", "savedSession"]
 - !private ["So16UIViewControllerC", "savedSessions"]
 - !private ["So16UIViewControllerC", "topViewController"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -352,6 +355,7 @@ depends-member:
 - ["9RPM_AR_UI21WelcomeViewControllerC", "load"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "prepare"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "savedDataArray"]
+- ["9RPM_AR_UI21WelcomeViewControllerC", "savedSession"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "viewDidLoad"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -494,4 +498,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "209864418834875ec106c7315d78f8e8"
+interface-hash: "56067be67ff46533f10c801e9e1b4e65"

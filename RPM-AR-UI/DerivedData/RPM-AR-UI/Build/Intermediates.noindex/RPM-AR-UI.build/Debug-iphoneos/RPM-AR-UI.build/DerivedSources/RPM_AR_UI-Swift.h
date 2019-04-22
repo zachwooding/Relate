@@ -207,6 +207,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI16ARViewController")
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)addObjectToSceneWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recognizer;
 - (void)selectObjectsOnScreenWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recog;
+- (void)removeAllObjectsOnScreenWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)recog;
 - (IBAction)backToArViewWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
 - (void)onTimerFires;
 - (IBAction)startTimer;

@@ -14,7 +14,7 @@ class NewSessionViewController: UIViewController {
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    private  var savedSessions : Array<Session>!
+    var savedSessions : Array<Session>!
     
     @IBOutlet weak var datePicker : UIDatePicker!
     @IBOutlet weak var timePicker : UIDatePicker!
@@ -41,7 +41,6 @@ class NewSessionViewController: UIViewController {
             let navTarget = segue.destination as! UINavigationController
             let (h,m,s) = timeCon(seconds: Int(timePicker.countDownDuration))
             let newSession = Session(name: name!.text!, time: timePicker.countDownDuration, hours: h, mins: m, secs: s ,date: datePicker.date, sessionNum: sessionNum.text!)
-            savedSessions?.append(newSession)
             let arVC = navTarget.topViewController as! ARViewController
             
             arVC.sessionInfo = newSession

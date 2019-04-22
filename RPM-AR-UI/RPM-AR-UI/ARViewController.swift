@@ -15,7 +15,6 @@ class ARViewController: UIViewController {
     var timeLeft: Double? = 1000.0
     
     var objectsOnScreen: Array<SCNNode> = Array()
-    var objNode: SCNNode = SCNNode()
     var emptyNode: SCNNode = SCNNode()
     
     var objSelected: Objs!
@@ -33,8 +32,6 @@ class ARViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        emptyNode = objNode
         
         addTapGestureToSceneView()
         
@@ -63,7 +60,8 @@ class ARViewController: UIViewController {
         arSceneView.session.run(configuration)
         arSceneView.delegate = self
         arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        //arSceneView.addSubview(sceneView)
+        arSceneView.scene.rootNode.addChildNode(emptyNode)
+        arSceneView.scene.rootNode.addChildNode(emptyNode)
         
         
     }
@@ -78,12 +76,12 @@ class ARViewController: UIViewController {
     //add 3D Objects to scene
     @objc func addObjectToScene(withGestureRecognizer recognizer: UIGestureRecognizer) {
         //checking # of objs on screen and that a Obj has been selected
-        if(objectsOnScreen.count < 2 && objSelected != nil){
+        if(objSelected != nil){
             
             //setting loaction for object
             let tapLocation = recognizer.location(in: arSceneView)
             let hitTestResults = arSceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-            
+            let objArray = arSceneView.scene.rootNode.childNodes
             //setting obj x, y, z
             guard let hitTestResult = hitTestResults.first else { return }
             let translation = hitTestResult.worldTransform.translation
@@ -100,19 +98,22 @@ class ARViewController: UIViewController {
 
             //adding scene to view
             sNode.position = SCNVector3(x,y,z)
-            arSceneView.scene.rootNode.addChildNode(sNode)
-            sceneView.scene?.rootNode.addChildNode(sNode)
+            for obj in objArray{
+                if obj == emptyNode{
+                    arSceneView.scene.rootNode.replaceChildNode(emptyNode, with: sNode)
+                    break
+                }else{
+                    arSceneView.scene.rootNode.addChildNode(sNode)
+                    break
+                }
+                
+            }
+            
+            //arSceneView.scene.rootNode.addChildNode(sNode)
             //tracking objects on screen
             objectsOnScreen.append(sNode)
             
         }
-//        else if(objectsOnScreen.count == 2){
-//            let touchLocation = recognizer.location(in: sceneView)
-//            let obj1 = objectsOnScreen[0]
-//            let obj2 = objectsOnScreen[1]
-//
-//
-//        }
         
     }
     
@@ -130,26 +131,30 @@ class ARViewController: UIViewController {
     }
     
     @objc func selectObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
-//        arSceneView.scene.rootNode.enumerateChildNodes{
-//            (node, stop) in node.removeFromParentNode()
-//            resetTracking()
-//
-//
-//        }
         
-        
-       
         let touchLocation = recog.location(in: arSceneView)
         let hitTestResult = arSceneView.hitTest(touchLocation, options: nil)
+        let objArray = arSceneView.scene.rootNode.childNodes
+        var isRemoved = false
         for pickedObj in hitTestResult{
-            let screenObj0 = objectsOnScreen[0]
-            let screenObj1 = objectsOnScreen[1]
-            if pickedObj.node == screenObj0{
-                objectsOnScreen.remove(at: 1)
-                arSceneView.scene.rootNode.childNode(withName: objectsOnScreen[0].name!, recursively: false)
-            }else if pickedObj.node == screenObj1{
-                objectsOnScreen.remove(at: 0)
-                arSceneView.scene.rootNode.childNode(withName: objectsOnScreen[1].name!, recursively: false)
+            for obj in objArray{
+//                let name1 = pickedObj.node.name
+//                let name2 = obj.name
+                if pickedObj.node.name == obj.name{
+                    for onScreenObj in objectsOnScreen{
+                        if obj.name == onScreenObj.name{
+                            //readObj(obj)
+                            objectsOnScreen.remove(at: objectsOnScreen.index(of: onScreenObj)!)
+                        }
+                    }
+                    //objArray.remove(at: objArray.index(of: obj)!)
+                    arSceneView.scene.rootNode.replaceChildNode(obj, with: emptyNode)
+                    isRemoved = true
+                    break
+                }
+                if isRemoved{
+                    break
+                }
             }
 
         }
@@ -158,13 +163,25 @@ class ARViewController: UIViewController {
 
     }
     
+    @objc func removeAllObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
+        arSceneView.scene.rootNode.enumerateChildNodes{
+            (node, stop) in node.removeFromParentNode()
+            resetTracking()
+
+        }
+    }
+    
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
         arSceneView.addGestureRecognizer(tapGestureRecognizer)
         
-        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
         longPressGestureRecognizer.minimumPressDuration = 1.0;
         arSceneView.addGestureRecognizer(longPressGestureRecognizer)
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(ARViewController.removeAllObjectsOnScreen(withGestureRecognizer:)))
+        doubleTap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(doubleTap)
     }
     
     
@@ -197,8 +214,9 @@ class ARViewController: UIViewController {
     @IBAction func quitSession(){
         let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be lost.", preferredStyle: UIAlertController.Style.alert)
         
-        quitAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
-            self.performSegue(withIdentifier: "unwindToWelcome", sender: self)
+        quitAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
+            (action: UIAlertAction!) in self.saveDataAndExit()
+            
         }))
         
         quitAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -208,6 +226,12 @@ class ARViewController: UIViewController {
         
         
         present(quitAlert, animated: true, completion: nil)
+    }
+    
+    func saveDataAndExit(){
+        let wlVC = WelcomeViewController()
+        wlVC.savedSession = savedSessions
+        performSegue(withIdentifier: "unwindToWelcome", sender: self)
     }
     
     func manageSession(){
