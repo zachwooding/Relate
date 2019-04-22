@@ -1,6 +1,7 @@
 import UIKit
 import ARKit
 import SceneKit
+import AVFondation
 
 class ARViewController: UIViewController {
     
@@ -188,6 +189,14 @@ class ARViewController: UIViewController {
     @IBAction func backToArView(unwindSegue: UIStoryboardSegue){
         
         
+    }
+    
+    @IBAction func readObj(Objs: sceneObj){
+        let speechUtterance = AVSpeechUtterance(string: Obj.picked[1].name)
+        utterance.voice = AVSpeechSynthisisVoice(language: "en-US")
+        sppechUtterance.rate = 0.25
+        speechUtterance.pitchMultiplier = 0.25
+        speechUtterance.volume = 0.75
     }
     
     @objc func onTimerFires(){
