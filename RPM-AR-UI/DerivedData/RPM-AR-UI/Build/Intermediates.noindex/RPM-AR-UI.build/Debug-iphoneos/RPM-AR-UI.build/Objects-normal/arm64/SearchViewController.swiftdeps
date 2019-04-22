@@ -10,6 +10,7 @@ provides-dynamic-lookup:
 - "numberOfSections"
 - "prepare"
 - "searchFooter"
+- "searcherBar"
 - "tableView"
 - "updateSearchResults"
 - "viewDidLoad"
@@ -34,6 +35,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - !private "UINavigationController"
+- "UISearchBar"
 - "UISearchController"
 - "UISearchResultsUpdating"
 - "UIStoryboardSegue"
@@ -615,6 +617,7 @@ depends-member:
 - ["So8NSObjectC", "SearchFooter"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UISearchBar"]
 - ["So8NSObjectC", "UISearchController"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
@@ -667,6 +670,7 @@ depends-member:
 - ["So8NSObjectC", "searchController"]
 - ["So8NSObjectC", "searchFooter"]
 - !private ["So8NSObjectC", "searchResultsUpdater"]
+- ["So8NSObjectC", "searcherBar"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectC", "splitViewController"]
@@ -772,6 +776,7 @@ depends-member:
 - ["9RPM_AR_UI20SearchViewControllerC", "SearchFooter"]
 - ["9RPM_AR_UI20SearchViewControllerC", "String"]
 - !private ["9RPM_AR_UI20SearchViewControllerC", "UINavigationController"]
+- ["9RPM_AR_UI20SearchViewControllerC", "UISearchBar"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UISearchController"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UIStoryboardSegue"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UITableView"]
@@ -806,6 +811,7 @@ depends-member:
 - ["9RPM_AR_UI20SearchViewControllerC", "searchBarIsEmpty"]
 - ["9RPM_AR_UI20SearchViewControllerC", "searchController"]
 - ["9RPM_AR_UI20SearchViewControllerC", "searchFooter"]
+- ["9RPM_AR_UI20SearchViewControllerC", "searcherBar"]
 - ["9RPM_AR_UI20SearchViewControllerC", "sectionIndexTitles"]
 - ["9RPM_AR_UI20SearchViewControllerC", "sectionIndexTitlesForTableView"]
 - !private ["9RPM_AR_UI20SearchViewControllerC", "splitViewController"]
@@ -1115,6 +1121,7 @@ depends-member:
 - ["So11UIResponderC", "SearchFooter"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UINavigationController"]
+- ["So11UIResponderC", "UISearchBar"]
 - ["So11UIResponderC", "UISearchController"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
@@ -1160,6 +1167,7 @@ depends-member:
 - ["So11UIResponderC", "searchController"]
 - ["So11UIResponderC", "searchFooter"]
 - !private ["So11UIResponderC", "searchResultsUpdater"]
+- ["So11UIResponderC", "searcherBar"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
 - !private ["So11UIResponderC", "splitViewController"]
@@ -1559,6 +1567,7 @@ depends-member:
 - ["So16UIViewControllerC", "SearchFooter"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UINavigationController"]
+- ["So16UIViewControllerC", "UISearchBar"]
 - ["So16UIViewControllerC", "UISearchController"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -1600,6 +1609,7 @@ depends-member:
 - ["So16UIViewControllerC", "searchController"]
 - ["So16UIViewControllerC", "searchFooter"]
 - !private ["So16UIViewControllerC", "searchResultsUpdater"]
+- ["So16UIViewControllerC", "searcherBar"]
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
 - !private ["So16UIViewControllerC", "splitViewController"]
@@ -1887,4 +1897,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7212694d573ee5fe24029cb34a1afbd8"
+interface-hash: "4bdbf26d0009b2d0820f8e05f3e60842"

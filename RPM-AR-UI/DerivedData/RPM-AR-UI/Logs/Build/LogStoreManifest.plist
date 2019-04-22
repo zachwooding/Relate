@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>022F47B4-00D0-4446-930B-8061106B7292</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>022F47B4-00D0-4446-930B-8061106B7292.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577659194.89684403</real>
+			<key>timeStoppedRecording</key>
+			<real>577659203.48164296</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>022F47B4-00D0-4446-930B-8061106B7292</string>
+		</dict>
 		<key>02C45AA3-7521-48A4-96FD-6ECB3CDC96EE</key>
 		<dict>
 			<key>className</key>
@@ -93,6 +122,35 @@
 			<key>uniqueIdentifier</key>
 			<string>05FF55F5-2CCF-447E-9159-A871EC522428</string>
 		</dict>
+		<key>0C679C77-4C2A-4567-941C-3ACD4C67933C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0C679C77-4C2A-4567-941C-3ACD4C67933C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658312.15738797</real>
+			<key>timeStoppedRecording</key>
+			<real>577658312.97327304</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>0C679C77-4C2A-4567-941C-3ACD4C67933C</string>
+		</dict>
 		<key>0E613445-CB30-4587-A0B7-0E1ADD462920</key>
 		<dict>
 			<key>className</key>
@@ -150,6 +208,64 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>10A30231-FEDC-4312-B945-E78798A4CBFA</string>
+		</dict>
+		<key>133BA791-BEBD-40FD-8AE2-30F27E0B1C24</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>133BA791-BEBD-40FD-8AE2-30F27E0B1C24.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658488.04430604</real>
+			<key>timeStoppedRecording</key>
+			<real>577658495.32909</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>133BA791-BEBD-40FD-8AE2-30F27E0B1C24</string>
+		</dict>
+		<key>194963EC-63C4-4307-9C6A-22AA1E23E917</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>194963EC-63C4-4307-9C6A-22AA1E23E917.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658842.68268001</real>
+			<key>timeStoppedRecording</key>
+			<real>577658843.30887496</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>194963EC-63C4-4307-9C6A-22AA1E23E917</string>
 		</dict>
 		<key>194A8D7A-2F5A-4E5A-B785-5F5336625E0B</key>
 		<dict>
@@ -354,6 +470,35 @@
 			<key>uniqueIdentifier</key>
 			<string>22B34387-D722-40CD-8F84-8EE19E7534AE</string>
 		</dict>
+		<key>29E16321-C6A0-42A4-A0C2-BE7919340C8C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>29E16321-C6A0-42A4-A0C2-BE7919340C8C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658327.90918195</real>
+			<key>timeStoppedRecording</key>
+			<real>577658328.89140499</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>29E16321-C6A0-42A4-A0C2-BE7919340C8C</string>
+		</dict>
 		<key>29FC7D23-2BB8-4C45-8F27-E39BE734CF8A</key>
 		<dict>
 			<key>className</key>
@@ -528,6 +673,35 @@
 			<key>uniqueIdentifier</key>
 			<string>31DB2F98-2AB1-44B7-BA0C-C4AE2E369E2F</string>
 		</dict>
+		<key>3230AC08-C348-4115-9FEB-16D2B1B9421B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3230AC08-C348-4115-9FEB-16D2B1B9421B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577660304.96736097</real>
+			<key>timeStoppedRecording</key>
+			<real>577660310.93782401</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>3230AC08-C348-4115-9FEB-16D2B1B9421B</string>
+		</dict>
 		<key>39B43E97-54E5-4826-9A56-DA3A8DB53852</key>
 		<dict>
 			<key>className</key>
@@ -644,6 +818,35 @@
 			<key>uniqueIdentifier</key>
 			<string>450928EA-4575-409B-87AF-8C441BA41D09</string>
 		</dict>
+		<key>48012FC9-EBC6-430E-8D20-717491E32713</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>48012FC9-EBC6-430E-8D20-717491E32713.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658430.78873396</real>
+			<key>timeStoppedRecording</key>
+			<real>577658431.56791997</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>48012FC9-EBC6-430E-8D20-717491E32713</string>
+		</dict>
 		<key>484A2AF0-2CDE-4C6C-8C58-DC138FC10581</key>
 		<dict>
 			<key>className</key>
@@ -731,6 +934,64 @@
 			<key>uniqueIdentifier</key>
 			<string>488BBFFF-0873-4DE7-88DD-A5D0323C3464</string>
 		</dict>
+		<key>49DAEBB5-F077-4301-8BB2-84587ADDAFB6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>49DAEBB5-F077-4301-8BB2-84587ADDAFB6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658797.92942095</real>
+			<key>timeStoppedRecording</key>
+			<real>577658806.01564705</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>49DAEBB5-F077-4301-8BB2-84587ADDAFB6</string>
+		</dict>
+		<key>51005A9D-6AFA-4A79-9AB8-F5801CDBD800</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>51005A9D-6AFA-4A79-9AB8-F5801CDBD800.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658990.24988794</real>
+			<key>timeStoppedRecording</key>
+			<real>577658998.760041</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>51005A9D-6AFA-4A79-9AB8-F5801CDBD800</string>
+		</dict>
 		<key>545E3225-06CC-4E72-9296-E5955CD46AF1</key>
 		<dict>
 			<key>className</key>
@@ -788,6 +1049,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>5562D653-A4AF-41AF-B9A6-972352AD9E1C</string>
+		</dict>
+		<key>5A30E61F-E26D-4C33-96C1-79ADA7B476CC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5A30E61F-E26D-4C33-96C1-79ADA7B476CC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577659068.32147098</real>
+			<key>timeStoppedRecording</key>
+			<real>577659068.94781399</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>5A30E61F-E26D-4C33-96C1-79ADA7B476CC</string>
 		</dict>
 		<key>656585BE-6CCD-461E-A19E-4AE2B53F0D62</key>
 		<dict>
@@ -847,6 +1137,35 @@
 			<key>uniqueIdentifier</key>
 			<string>65A8D83C-9B8D-45DB-A8D4-CCAC5A2C9B61</string>
 		</dict>
+		<key>691F14EA-EE83-40C6-BE23-D0A13DF975E0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>691F14EA-EE83-40C6-BE23-D0A13DF975E0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658453.19658196</real>
+			<key>timeStoppedRecording</key>
+			<real>577658454.25915599</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>691F14EA-EE83-40C6-BE23-D0A13DF975E0</string>
+		</dict>
 		<key>6AA38CA4-51CE-4B03-A3F9-083DE8214A11</key>
 		<dict>
 			<key>className</key>
@@ -904,6 +1223,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>6B0C37FF-C2A1-4B10-8A74-80842B917BFB</string>
+		</dict>
+		<key>7032A391-4979-4579-AF8D-AAA4D1455595</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7032A391-4979-4579-AF8D-AAA4D1455595.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577659929.59919596</real>
+			<key>timeStoppedRecording</key>
+			<real>577659937.35539496</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>7032A391-4979-4579-AF8D-AAA4D1455595</string>
 		</dict>
 		<key>78DC502E-DBB0-4D2D-9874-CB806A70F011</key>
 		<dict>
@@ -991,6 +1339,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>7AACF161-FEB6-4806-84EF-97AC993425E4</string>
+		</dict>
+		<key>7AD61257-F3BA-4206-B9E8-96066C72D881</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7AD61257-F3BA-4206-B9E8-96066C72D881.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658975.31390595</real>
+			<key>timeStoppedRecording</key>
+			<real>577658981.91449702</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>7AD61257-F3BA-4206-B9E8-96066C72D881</string>
 		</dict>
 		<key>7DFDCD7E-A7F5-4527-B5AA-834BB0362330</key>
 		<dict>
@@ -1166,6 +1543,93 @@
 			<key>uniqueIdentifier</key>
 			<string>94BFE5A1-EFB9-4E75-97F2-B4A28AA46E43</string>
 		</dict>
+		<key>95905863-9670-4D25-9190-F30C8483E06B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>95905863-9670-4D25-9190-F30C8483E06B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658385.54092097</real>
+			<key>timeStoppedRecording</key>
+			<real>577658386.47297096</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>95905863-9670-4D25-9190-F30C8483E06B</string>
+		</dict>
+		<key>9DE1B5B4-1259-445D-B2A8-2599515AC18D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9DE1B5B4-1259-445D-B2A8-2599515AC18D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658526.508178</real>
+			<key>timeStoppedRecording</key>
+			<real>577658527.17314005</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>9DE1B5B4-1259-445D-B2A8-2599515AC18D</string>
+		</dict>
+		<key>9DF88A78-E43B-432F-AD3F-E6DFE854D6DD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9DF88A78-E43B-432F-AD3F-E6DFE854D6DD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658301.38136303</real>
+			<key>timeStoppedRecording</key>
+			<real>577658302.49958503</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>9DF88A78-E43B-432F-AD3F-E6DFE854D6DD</string>
+		</dict>
 		<key>9F933077-8491-429D-8C67-D5FBC3A826A3</key>
 		<dict>
 			<key>className</key>
@@ -1224,6 +1688,64 @@
 			<key>uniqueIdentifier</key>
 			<string>A0A6F02F-6F5E-4E40-AF05-B8388B7F8242</string>
 		</dict>
+		<key>A1F9E8F3-138A-48FE-9AFE-C1F9494383AC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A1F9E8F3-138A-48FE-9AFE-C1F9494383AC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658688.363415</real>
+			<key>timeStoppedRecording</key>
+			<real>577658695.80696201</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>A1F9E8F3-138A-48FE-9AFE-C1F9494383AC</string>
+		</dict>
+		<key>A2BC1B0A-A21C-44D8-8ACD-BFBEF413EBFF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A2BC1B0A-A21C-44D8-8ACD-BFBEF413EBFF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577660088.20279002</real>
+			<key>timeStoppedRecording</key>
+			<real>577660095.11844206</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>A2BC1B0A-A21C-44D8-8ACD-BFBEF413EBFF</string>
+		</dict>
 		<key>A3DA73EC-B1F1-46A0-9298-5D1F4161532C</key>
 		<dict>
 			<key>className</key>
@@ -1252,6 +1774,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>A3DA73EC-B1F1-46A0-9298-5D1F4161532C</string>
+		</dict>
+		<key>A77D33E5-02BA-433B-B28D-45F2F6306D30</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A77D33E5-02BA-433B-B28D-45F2F6306D30.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658394.64485705</real>
+			<key>timeStoppedRecording</key>
+			<real>577658395.48333704</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>A77D33E5-02BA-433B-B28D-45F2F6306D30</string>
 		</dict>
 		<key>A9066616-E907-410E-8E41-B3F419E3811E</key>
 		<dict>
@@ -1340,6 +1891,35 @@
 			<key>uniqueIdentifier</key>
 			<string>AB8D0F2A-3460-4F28-BB07-08C1E6C7B9E3</string>
 		</dict>
+		<key>AD5004D5-6A6B-4459-9674-8B9B75D8BFD7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AD5004D5-6A6B-4459-9674-8B9B75D8BFD7.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658284.74258804</real>
+			<key>timeStoppedRecording</key>
+			<real>577658289.69050503</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>AD5004D5-6A6B-4459-9674-8B9B75D8BFD7</string>
+		</dict>
 		<key>AFC7A50B-A210-442C-B9B0-98D0DDE7A36D</key>
 		<dict>
 			<key>className</key>
@@ -1368,6 +1948,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>AFC7A50B-A210-442C-B9B0-98D0DDE7A36D</string>
+		</dict>
+		<key>B5CF2AA1-ED73-4787-BA4D-FC967D782677</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B5CF2AA1-ED73-4787-BA4D-FC967D782677.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658424.24493802</real>
+			<key>timeStoppedRecording</key>
+			<real>577658425.42472196</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>B5CF2AA1-ED73-4787-BA4D-FC967D782677</string>
 		</dict>
 		<key>BAB1ABBE-562A-4C18-A7E8-02BBA1479119</key>
 		<dict>
@@ -1513,6 +2122,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>C680A351-8C84-4EA8-9C37-3FA1C32E550F</string>
+		</dict>
+		<key>C8D74747-2BB2-4863-9A2F-F0047374882F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C8D74747-2BB2-4863-9A2F-F0047374882F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577659237.16946101</real>
+			<key>timeStoppedRecording</key>
+			<real>577659237.79275</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>C8D74747-2BB2-4863-9A2F-F0047374882F</string>
 		</dict>
 		<key>C8E1ED7A-7576-4D5F-BE2D-4273217F0724</key>
 		<dict>
@@ -1919,6 +2557,35 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>F56603D7-0614-494D-97E8-A88E11D29B00</string>
+		</dict>
+		<key>FC37C7B5-088D-4F8F-8953-4E1E7A0D5DCD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FC37C7B5-088D-4F8F-8953-4E1E7A0D5DCD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577658480.92447495</real>
+			<key>timeStoppedRecording</key>
+			<real>577658481.82947099</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>FC37C7B5-088D-4F8F-8953-4E1E7A0D5DCD</string>
 		</dict>
 		<key>FCA11940-0343-426C-9625-73F64CD942DB</key>
 		<dict>

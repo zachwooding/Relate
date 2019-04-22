@@ -283,11 +283,13 @@ SWIFT_CLASS("_TtC9RPM_AR_UI12SearchFooter")
 
 
 
+@class UISearchBar;
 @class UITableView;
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC9RPM_AR_UI20SearchViewController")
 @interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UISearchBar * _Null_unspecified searcherBar;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) IBOutlet SearchFooter * _Null_unspecified searchFooter;
 - (void)viewDidLoad;

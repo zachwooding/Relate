@@ -10,7 +10,6 @@ provides-dynamic-lookup:
 - "numberOfSections"
 - "prepare"
 - "searchFooter"
-- "searcherBar"
 - "tableView"
 - "updateSearchResults"
 - "viewDidLoad"
@@ -35,7 +34,6 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - !private "UINavigationController"
-- "UISearchBar"
 - "UISearchController"
 - "UISearchResultsUpdating"
 - "UIStoryboardSegue"
@@ -122,7 +120,6 @@ depends-member:
 - !private ["s7CVarArgP", "searchBarIsEmpty"]
 - !private ["s7CVarArgP", "searchController"]
 - !private ["s7CVarArgP", "searchResultsUpdater"]
-- !private ["s7CVarArgP", "searcherBar"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
 - !private ["s7CVarArgP", "splitViewController"]
@@ -202,7 +199,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "searchBarIsEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "searchController"]
 - !private ["s28CustomDebugStringConvertibleP", "searchResultsUpdater"]
-- !private ["s28CustomDebugStringConvertibleP", "searcherBar"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "splitViewController"]
@@ -286,7 +282,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "searchBarIsEmpty"]
 - !private ["s23CustomStringConvertibleP", "searchController"]
 - !private ["s23CustomStringConvertibleP", "searchResultsUpdater"]
-- !private ["s23CustomStringConvertibleP", "searcherBar"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s23CustomStringConvertibleP", "splitViewController"]
@@ -378,7 +373,6 @@ depends-member:
 - !private ["SQ", "searchBarIsEmpty"]
 - !private ["SQ", "searchController"]
 - !private ["SQ", "searchResultsUpdater"]
-- !private ["SQ", "searcherBar"]
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
 - !private ["SQ", "splitViewController"]
@@ -467,7 +461,6 @@ depends-member:
 - !private ["SH", "searchBarIsEmpty"]
 - !private ["SH", "searchController"]
 - !private ["SH", "searchResultsUpdater"]
-- !private ["SH", "searcherBar"]
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
 - !private ["SH", "splitViewController"]
@@ -544,7 +537,6 @@ depends-member:
 - !private ["So8NSCodingP", "searchBarIsEmpty"]
 - !private ["So8NSCodingP", "searchController"]
 - !private ["So8NSCodingP", "searchResultsUpdater"]
-- !private ["So8NSCodingP", "searcherBar"]
 - ["So8NSCodingP", "sectionIndexTitles"]
 - ["So8NSCodingP", "sectionIndexTitlesForTableView"]
 - !private ["So8NSCodingP", "splitViewController"]
@@ -596,7 +588,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "searchBarIsEmpty"]
 - !private ["So26NSExtensionRequestHandlingP", "searchController"]
 - !private ["So26NSExtensionRequestHandlingP", "searchResultsUpdater"]
-- !private ["So26NSExtensionRequestHandlingP", "searcherBar"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitles"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitlesForTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "splitViewController"]
@@ -624,7 +615,6 @@ depends-member:
 - ["So8NSObjectC", "SearchFooter"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UINavigationController"]
-- ["So8NSObjectC", "UISearchBar"]
 - ["So8NSObjectC", "UISearchController"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
@@ -677,7 +667,6 @@ depends-member:
 - ["So8NSObjectC", "searchController"]
 - ["So8NSObjectC", "searchFooter"]
 - !private ["So8NSObjectC", "searchResultsUpdater"]
-- ["So8NSObjectC", "searcherBar"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectC", "splitViewController"]
@@ -738,7 +727,6 @@ depends-member:
 - !private ["So8NSObjectP", "searchBarIsEmpty"]
 - !private ["So8NSObjectP", "searchController"]
 - !private ["So8NSObjectP", "searchResultsUpdater"]
-- !private ["So8NSObjectP", "searcherBar"]
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectP", "splitViewController"]
@@ -784,7 +772,6 @@ depends-member:
 - ["9RPM_AR_UI20SearchViewControllerC", "SearchFooter"]
 - ["9RPM_AR_UI20SearchViewControllerC", "String"]
 - !private ["9RPM_AR_UI20SearchViewControllerC", "UINavigationController"]
-- ["9RPM_AR_UI20SearchViewControllerC", "UISearchBar"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UISearchController"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UIStoryboardSegue"]
 - ["9RPM_AR_UI20SearchViewControllerC", "UITableView"]
@@ -819,7 +806,6 @@ depends-member:
 - ["9RPM_AR_UI20SearchViewControllerC", "searchBarIsEmpty"]
 - ["9RPM_AR_UI20SearchViewControllerC", "searchController"]
 - ["9RPM_AR_UI20SearchViewControllerC", "searchFooter"]
-- ["9RPM_AR_UI20SearchViewControllerC", "searcherBar"]
 - ["9RPM_AR_UI20SearchViewControllerC", "sectionIndexTitles"]
 - ["9RPM_AR_UI20SearchViewControllerC", "sectionIndexTitlesForTableView"]
 - !private ["9RPM_AR_UI20SearchViewControllerC", "splitViewController"]
@@ -913,7 +899,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "searchBarIsEmpty"]
 - !private ["So21UIAppearanceContainerP", "searchController"]
 - !private ["So21UIAppearanceContainerP", "searchResultsUpdater"]
-- !private ["So21UIAppearanceContainerP", "searcherBar"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
 - !private ["So21UIAppearanceContainerP", "splitViewController"]
@@ -964,7 +949,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "searchBarIsEmpty"]
 - !private ["So18UIContentContainerP", "searchController"]
 - !private ["So18UIContentContainerP", "searchResultsUpdater"]
-- !private ["So18UIContentContainerP", "searcherBar"]
 - ["So18UIContentContainerP", "sectionIndexTitles"]
 - ["So18UIContentContainerP", "sectionIndexTitlesForTableView"]
 - !private ["So18UIContentContainerP", "splitViewController"]
@@ -1034,7 +1018,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "searchBarIsEmpty"]
 - !private ["So18UIFocusEnvironmentP", "searchController"]
 - !private ["So18UIFocusEnvironmentP", "searchResultsUpdater"]
-- !private ["So18UIFocusEnvironmentP", "searcherBar"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UIFocusEnvironmentP", "splitViewController"]
@@ -1112,7 +1095,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "searchBarIsEmpty"]
 - !private ["So30UIPasteConfigurationSupportingP", "searchController"]
 - !private ["So30UIPasteConfigurationSupportingP", "searchResultsUpdater"]
-- !private ["So30UIPasteConfigurationSupportingP", "searcherBar"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "splitViewController"]
@@ -1133,7 +1115,6 @@ depends-member:
 - ["So11UIResponderC", "SearchFooter"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UINavigationController"]
-- ["So11UIResponderC", "UISearchBar"]
 - ["So11UIResponderC", "UISearchController"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
@@ -1179,7 +1160,6 @@ depends-member:
 - ["So11UIResponderC", "searchController"]
 - ["So11UIResponderC", "searchFooter"]
 - !private ["So11UIResponderC", "searchResultsUpdater"]
-- ["So11UIResponderC", "searcherBar"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
 - !private ["So11UIResponderC", "splitViewController"]
@@ -1233,7 +1213,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "searchBarIsEmpty"]
 - !private ["So30UIResponderStandardEditActionsP", "searchController"]
 - !private ["So30UIResponderStandardEditActionsP", "searchResultsUpdater"]
-- !private ["So30UIResponderStandardEditActionsP", "searcherBar"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "splitViewController"]
@@ -1277,7 +1256,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So20UIScrollViewDelegateP", "searchBarIsEmpty"]
 - !private ["So20UIScrollViewDelegateP", "searchController"]
-- !private ["So20UIScrollViewDelegateP", "searcherBar"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitles"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitlesForTableView"]
 - !private ["So20UIScrollViewDelegateP", "splitViewController"]
@@ -1321,7 +1299,6 @@ depends-member:
 - ["So23UISearchResultsUpdatingP", "scrollViewWillEndDragging"]
 - !private ["So23UISearchResultsUpdatingP", "searchBarIsEmpty"]
 - !private ["So23UISearchResultsUpdatingP", "searchController"]
-- !private ["So23UISearchResultsUpdatingP", "searcherBar"]
 - ["So23UISearchResultsUpdatingP", "sectionIndexTitles"]
 - ["So23UISearchResultsUpdatingP", "sectionIndexTitlesForTableView"]
 - !private ["So23UISearchResultsUpdatingP", "splitViewController"]
@@ -1370,7 +1347,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "searchBarIsEmpty"]
 - !private ["So16UIStateRestoringP", "searchController"]
 - !private ["So16UIStateRestoringP", "searchResultsUpdater"]
-- !private ["So16UIStateRestoringP", "searcherBar"]
 - ["So16UIStateRestoringP", "sectionIndexTitles"]
 - ["So16UIStateRestoringP", "sectionIndexTitlesForTableView"]
 - !private ["So16UIStateRestoringP", "splitViewController"]
@@ -1416,7 +1392,6 @@ depends-member:
 - ["So21UITableViewDataSourceP", "scrollViewWillEndDragging"]
 - !private ["So21UITableViewDataSourceP", "searchBarIsEmpty"]
 - !private ["So21UITableViewDataSourceP", "searchController"]
-- !private ["So21UITableViewDataSourceP", "searcherBar"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitles"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitlesForTableView"]
 - !private ["So21UITableViewDataSourceP", "splitViewController"]
@@ -1453,7 +1428,6 @@ depends-member:
 - ["So19UITableViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So19UITableViewDelegateP", "searchBarIsEmpty"]
 - !private ["So19UITableViewDelegateP", "searchController"]
-- !private ["So19UITableViewDelegateP", "searcherBar"]
 - ["So19UITableViewDelegateP", "sectionIndexTitles"]
 - ["So19UITableViewDelegateP", "sectionIndexTitlesForTableView"]
 - !private ["So19UITableViewDelegateP", "splitViewController"]
@@ -1505,7 +1479,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "searchBarIsEmpty"]
 - !private ["So18UITraitEnvironmentP", "searchController"]
 - !private ["So18UITraitEnvironmentP", "searchResultsUpdater"]
-- !private ["So18UITraitEnvironmentP", "searcherBar"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UITraitEnvironmentP", "splitViewController"]
@@ -1559,7 +1532,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "searchBarIsEmpty"]
 - !private ["So23UIUserActivityRestoringP", "searchController"]
 - !private ["So23UIUserActivityRestoringP", "searchResultsUpdater"]
-- !private ["So23UIUserActivityRestoringP", "searcherBar"]
 - ["So23UIUserActivityRestoringP", "sectionIndexTitles"]
 - ["So23UIUserActivityRestoringP", "sectionIndexTitlesForTableView"]
 - !private ["So23UIUserActivityRestoringP", "splitViewController"]
@@ -1587,7 +1559,6 @@ depends-member:
 - ["So16UIViewControllerC", "SearchFooter"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UINavigationController"]
-- ["So16UIViewControllerC", "UISearchBar"]
 - ["So16UIViewControllerC", "UISearchController"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -1629,7 +1600,6 @@ depends-member:
 - ["So16UIViewControllerC", "searchController"]
 - ["So16UIViewControllerC", "searchFooter"]
 - !private ["So16UIViewControllerC", "searchResultsUpdater"]
-- ["So16UIViewControllerC", "searcherBar"]
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
 - !private ["So16UIViewControllerC", "splitViewController"]
@@ -1742,7 +1712,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "searchBarIsEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "searchController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "searchResultsUpdater"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "searcherBar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "splitViewController"]
@@ -1918,4 +1887,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4bdbf26d0009b2d0820f8e05f3e60842"
+interface-hash: "7212694d573ee5fe24029cb34a1afbd8"
