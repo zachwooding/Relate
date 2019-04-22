@@ -1,7 +1,7 @@
 import UIKit
 import ARKit
 import SceneKit
-import AVFondation
+import AVFoundation
 
 class ARViewController: UIViewController {
     
@@ -141,15 +141,16 @@ class ARViewController: UIViewController {
             for obj in objArray{
 //                let name1 = pickedObj.node.name
 //                let name2 = obj.name
-                if pickedObj.node.name == obj.name{
+                if pickedObj.node.name != obj.name && obj.name != nil && pickedObj.node.name != nil{
                     for onScreenObj in objectsOnScreen{
                         if obj.name == onScreenObj.name{
-                            //readObj(obj)
+                            readObj(sceneObj: obj.name!)
                             objectsOnScreen.remove(at: objectsOnScreen.index(of: onScreenObj)!)
                         }
                     }
                     //objArray.remove(at: objArray.index(of: obj)!)
-                    arSceneView.scene.rootNode.replaceChildNode(obj, with: emptyNode)
+                    //arSceneView.scene.rootNode.replaceChildNode(obj, with: emptyNode)
+                    arSceneView.scene.rootNode.childNode(withName: obj.name!, recursively: false)!.removeFromParentNode()
                     isRemoved = true
                     break
                 }
@@ -173,10 +174,10 @@ class ARViewController: UIViewController {
     }
     
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
         arSceneView.addGestureRecognizer(tapGestureRecognizer)
         
-        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
         longPressGestureRecognizer.minimumPressDuration = 1.0;
         arSceneView.addGestureRecognizer(longPressGestureRecognizer)
         
@@ -191,12 +192,16 @@ class ARViewController: UIViewController {
         
     }
     
-    @IBAction func readObj(Objs: sceneObj){
-        let speechUtterance = AVSpeechUtterance(string: Obj.picked[1].name)
-        utterance.voice = AVSpeechSynthisisVoice(language: "en-US")
-        sppechUtterance.rate = 0.25
-        speechUtterance.pitchMultiplier = 0.25
-        speechUtterance.volume = 0.75
+    func readObj(sceneObj: String){
+        let speechUtterance = AVSpeechUtterance(string: sceneObj)
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        speechUtterance.rate = 0.25
+        //speechUtterance.pitchMultiplier = 0.25
+        //speechUtterance.volume = 0.75
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(speechUtterance)
+        
     }
     
     @objc func onTimerFires(){
