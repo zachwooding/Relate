@@ -5,34 +5,43 @@ import AVFoundation
 
 class ARViewController: UIViewController {
     
+    //scenes being used
     @IBOutlet weak var arSceneView: ARSCNView!
-    @IBOutlet var sceneView:SCNView! = SCNView()
-    @IBOutlet weak var sceneHits: SCNScene!
+    //@IBOutlet var sceneView:SCNView! = SCNView()
+    //@IBOutlet weak var sceneHits: SCNScene!
     
+    //displays of session info
     @IBOutlet var titleOfSession: UINavigationItem!
     @IBOutlet var timeLeftLabel: UILabel!
     
+    //timer setup
     var timer: Timer?
     var timeLeft: Double? = 1000.0
     
+    //control for whats on screen
     var objectsOnScreen: Array<SCNNode> = Array()
-    var emptyNode: SCNNode = SCNNode()
+    //var emptyNode: SCNNode = SCNNode()
     
+    //object picked from details
     var objSelected: Objs!
-    
-    var sessionInfo: Session!
-    
     var objDetailsScript: DetailViewController!
     
-    var objPicked: Array<Objs> = Array()
+    //all objects listed in ObjectList
+    var allObjs: Array<Objs> = Array()
     
+    //session data and saving sessions
     var savedSessions: Array<Session>!
+    var sessionInfo: Session!
+    
     
    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let objListControl = ObjectList()
+        allObjs = objListControl.get()
         
         addTapGestureToSceneView()
         
@@ -61,8 +70,8 @@ class ARViewController: UIViewController {
         arSceneView.session.run(configuration)
         arSceneView.delegate = self
         arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        arSceneView.scene.rootNode.addChildNode(emptyNode)
-        arSceneView.scene.rootNode.addChildNode(emptyNode)
+        //arSceneView.scene.rootNode.addChildNode(emptyNode)
+       //arSceneView.scene.rootNode.addChildNode(emptyNode)
         
         
     }
@@ -82,7 +91,6 @@ class ARViewController: UIViewController {
             //setting loaction for object
             let tapLocation = recognizer.location(in: arSceneView)
             let hitTestResults = arSceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-            let objArray = arSceneView.scene.rootNode.childNodes
             //setting obj x, y, z
             guard let hitTestResult = hitTestResults.first else { return }
             let translation = hitTestResult.worldTransform.translation
@@ -99,18 +107,7 @@ class ARViewController: UIViewController {
 
             //adding scene to view
             sNode.position = SCNVector3(x,y,z)
-            for obj in objArray{
-                if obj == emptyNode{
-                    arSceneView.scene.rootNode.replaceChildNode(emptyNode, with: sNode)
-                    break
-                }else{
-                    arSceneView.scene.rootNode.addChildNode(sNode)
-                    break
-                }
-                
-            }
-            
-            //arSceneView.scene.rootNode.addChildNode(sNode)
+            arSceneView.scene.rootNode.addChildNode(sNode)
             //tracking objects on screen
             objectsOnScreen.append(sNode)
             
@@ -118,42 +115,67 @@ class ARViewController: UIViewController {
         
     }
     
-    func resetTracking(){
-        let configuration=ARWorldTrackingConfiguration()
-        
-        configuration.planeDetection = .horizontal
-        
-        arSceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
-        arSceneView.delegate = self
-        arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        
-        addTapGestureToSceneView()
-        
-    }
-    
+    //selecting objects that are on screen
     @objc func selectObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
         
+        //setting the location touched
         let touchLocation = recog.location(in: arSceneView)
+        
+        //checking for object hit
         let hitTestResult = arSceneView.hitTest(touchLocation, options: nil)
+        
+        //getting all objects on screen
         let objArray = arSceneView.scene.rootNode.childNodes
+        
+        //checking if object has already been removed
         var isRemoved = false
+        
+        //iterating through hit objects
         for pickedObj in hitTestResult{
+            
+            //iterating through objects on screen
             for obj in objArray{
-//                let name1 = pickedObj.node.name
-//                let name2 = obj.name
+                
+                //checking names of objects that have been hit vs objects on screen.
+                //also checking if objects are named to prevent nil object errors
+                //this will work because all objects that the user can add will be named
                 if pickedObj.node.name != obj.name && obj.name != nil && pickedObj.node.name != nil{
+                    
+                    //finding the object that is named in the stored array to double check
                     for onScreenObj in objectsOnScreen{
+                        
+                        //object that is not selected is found here
                         if obj.name == onScreenObj.name{
-                            readObj(sceneObj: obj.name!)
+                            
+                            //sending name to text to speech method
+                            readObj(sceneObj: pickedObj.node.name!)
+                            
+                            //removing object that was not selected
                             objectsOnScreen.remove(at: objectsOnScreen.index(of: onScreenObj)!)
+                            
+                            //matching the selected object with Objs object for session storage
+                            for theObj in allObjs{
+                                
+                                //storing selected object
+                                if theObj.name == pickedObj.node.name{
+                                    sessionInfo.objsPicked.append(theObj)
+                                }
+                                
+                                //storing not selected
+                                if theObj.name == obj.name{
+                                    sessionInfo.objsNotPicked.append(theObj)
+                                }
+                            }
                         }
                     }
-                    //objArray.remove(at: objArray.index(of: obj)!)
-                    //arSceneView.scene.rootNode.replaceChildNode(obj, with: emptyNode)
+                    
+                    //break loop because object was found
                     arSceneView.scene.rootNode.childNode(withName: obj.name!, recursively: false)!.removeFromParentNode()
                     isRemoved = true
                     break
                 }
+                
+                //break loop because object was removed
                 if isRemoved{
                     break
                 }
@@ -165,51 +187,69 @@ class ARViewController: UIViewController {
 
     }
     
+    //removing all objects from screen with a double tap
     @objc func removeAllObjectsOnScreen(withGestureRecognizer recog: UIGestureRecognizer){
-        arSceneView.scene.rootNode.enumerateChildNodes{
-            (node, stop) in node.removeFromParentNode()
-            resetTracking()
-
+        //double tap to remove all objects off screen
+        for node in arSceneView.scene.rootNode.childNodes{
+            //searching for objects that are named
+            if node.name != nil {
+                //removing obj
+                node.removeFromParentNode()
+            }
         }
+        
     }
     
+    //adding tap gestures
     func addTapGestureToSceneView() {
+        
+        //tap to add objects
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARViewController.addObjectToScene(withGestureRecognizer:)))
         arSceneView.addGestureRecognizer(tapGestureRecognizer)
         
+        //long press to select object
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
         longPressGestureRecognizer.minimumPressDuration = 1.0;
         arSceneView.addGestureRecognizer(longPressGestureRecognizer)
         
+        //double tap to remove all objects
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(ARViewController.removeAllObjectsOnScreen(withGestureRecognizer:)))
         doubleTap.numberOfTapsRequired = 2
         view.addGestureRecognizer(doubleTap)
     }
     
-    
+    //segue from detailed view
     @IBAction func backToArView(unwindSegue: UIStoryboardSegue){
         
         
     }
     
+    //text to speech
     func readObj(sceneObj: String){
+        
+        //setting string to say
         let speechUtterance = AVSpeechUtterance(string: sceneObj)
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         speechUtterance.rate = 0.25
         //speechUtterance.pitchMultiplier = 0.25
         //speechUtterance.volume = 0.75
         
+        //speeking
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(speechUtterance)
         
     }
     
+    //Timer functionality
     @objc func onTimerFires(){
         timeLeft! -= 1.0
+        
+        //setting timer label
         let(h,m,s) = timeCon(seconds: Int(timeLeft!))
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     }
     
+    //starting timer
     @IBAction func startTimer(){
         if timer == nil {
              timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
@@ -217,6 +257,7 @@ class ARViewController: UIViewController {
        
     }
     
+    //pause timer
     @IBAction func pauseTimer(){
         if(timer != nil){
             timer?.invalidate()
@@ -225,6 +266,7 @@ class ARViewController: UIViewController {
         
     }
     
+    //quit session with stop button press
     @IBAction func quitSession(){
         let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be lost.", preferredStyle: UIAlertController.Style.alert)
         
@@ -237,17 +279,17 @@ class ARViewController: UIViewController {
             
         }))
         
-        
-        
         present(quitAlert, animated: true, completion: nil)
     }
     
+    //saving session and moving to welcome screen
     func saveDataAndExit(){
         let wlVC = WelcomeViewController()
-        wlVC.savedSession = savedSessions
+        wlVC.savedSession = sessionInfo
         performSegue(withIdentifier: "unwindToWelcome", sender: self)
     }
     
+    //managing data receved from new session page
     func manageSession(){
         titleOfSession.title = sessionInfo.name
 
@@ -259,11 +301,18 @@ class ARViewController: UIViewController {
         
     }
     
+    //converting time in seconds to hours, mins, and secs
     func timeCon (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
     
 }
+
+
+/*
+ * All below is for set up and operation of AR functionality
+ *
+ */
 
 extension float4x4 {
     var translation: float3 {

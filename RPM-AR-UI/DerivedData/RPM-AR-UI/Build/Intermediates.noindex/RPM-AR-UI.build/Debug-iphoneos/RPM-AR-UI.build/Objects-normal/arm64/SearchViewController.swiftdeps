@@ -19,7 +19,6 @@ depends-top-level:
 - !private "&&"
 - !private "=="
 - !private "??"
-- !private "Array"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -29,6 +28,7 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - !private "IntegerLiteralType"
+- !private "ObjectList"
 - "Objs"
 - "SearchFooter"
 - "SearchViewController"
@@ -44,7 +44,6 @@ depends-top-level:
 - "UITableViewDataSource"
 - "UITableViewDelegate"
 - "UIViewController"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "filter"]
@@ -71,6 +70,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "reloadData"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "textLabel"]
+- !private ["s7CVarArgP", "ObjectList"]
 - ["s7CVarArgP", "Objs"]
 - ["s7CVarArgP", "UISearchController"]
 - ["s7CVarArgP", ""]
@@ -150,6 +150,7 @@ depends-member:
 - !private ["SL", "isEmpty"]
 - !private ["SL", "lowercased"]
 - !private ["SL", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "ObjectList"]
 - ["s28CustomDebugStringConvertibleP", "Objs"]
 - ["s28CustomDebugStringConvertibleP", "UISearchController"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -232,6 +233,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "reloadData"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "ObjectList"]
 - ["s23CustomStringConvertibleP", "Objs"]
 - ["s23CustomStringConvertibleP", "UISearchController"]
 - ["s23CustomStringConvertibleP", ""]
@@ -323,6 +325,7 @@ depends-member:
 - !private ["SE", "reloadData"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
+- !private ["SQ", "ObjectList"]
 - ["SQ", "Objs"]
 - ["SQ", "UISearchController"]
 - ["SQ", ""]
@@ -411,6 +414,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
+- !private ["SH", "ObjectList"]
 - ["SH", "Objs"]
 - ["SH", "UISearchController"]
 - ["SH", ""]
@@ -493,6 +497,7 @@ depends-member:
 - ["SM", "init"]
 - !private ["SM", "row"]
 - !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "ObjectList"]
 - ["So8NSCodingP", "Objs"]
 - ["So8NSCodingP", "UISearchController"]
 - ["So8NSCodingP", ""]
@@ -554,6 +559,7 @@ depends-member:
 - !private ["So9NSCopyingP", "contains"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So9NSCopyingP", "lowercased"]
+- !private ["So26NSExtensionRequestHandlingP", "ObjectList"]
 - ["So26NSExtensionRequestHandlingP", "Objs"]
 - ["So26NSExtensionRequestHandlingP", "UISearchController"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -613,6 +619,7 @@ depends-member:
 - !private ["So8NSObjectC", "DetailViewController"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "ObjectList"]
 - ["So8NSObjectC", "Objs"]
 - ["So8NSObjectC", "SearchFooter"]
 - ["So8NSObjectC", "String"]
@@ -683,6 +690,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "ObjectList"]
 - ["So8NSObjectP", "Objs"]
 - ["So8NSObjectP", "UISearchController"]
 - ["So8NSObjectP", ""]
@@ -749,8 +757,9 @@ depends-member:
 - !private ["So8NSStringC", "contains"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["So8NSStringC", "lowercased"]
+- !private ["9RPM_AR_UI10ObjectListC", "get"]
+- !private ["9RPM_AR_UI10ObjectListC", "init"]
 - !private ["9RPM_AR_UI4ObjsV", "category"]
-- !private ["9RPM_AR_UI4ObjsV", "init"]
 - !private ["9RPM_AR_UI4ObjsV", "name"]
 - !private ["Sq", "indexPathForSelectedRow"]
 - !private ["Sq", "reloadData"]
@@ -772,6 +781,7 @@ depends-member:
 - !private ["9RPM_AR_UI20SearchViewControllerC", "DetailViewController"]
 - ["9RPM_AR_UI20SearchViewControllerC", "IndexPath"]
 - ["9RPM_AR_UI20SearchViewControllerC", "Int"]
+- !private ["9RPM_AR_UI20SearchViewControllerC", "ObjectList"]
 - ["9RPM_AR_UI20SearchViewControllerC", "Objs"]
 - ["9RPM_AR_UI20SearchViewControllerC", "SearchFooter"]
 - ["9RPM_AR_UI20SearchViewControllerC", "String"]
@@ -864,6 +874,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textLabel"]
+- !private ["So21UIAppearanceContainerP", "ObjectList"]
 - ["So21UIAppearanceContainerP", "Objs"]
 - ["So21UIAppearanceContainerP", "UISearchController"]
 - ["So21UIAppearanceContainerP", ""]
@@ -919,6 +930,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So16UIBarPositioningP", "placeholder"]
 - !private ["So16UIBarPositioningP", "text"]
+- !private ["So18UIContentContainerP", "ObjectList"]
 - ["So18UIContentContainerP", "Objs"]
 - ["So18UIContentContainerP", "UISearchController"]
 - ["So18UIContentContainerP", ""]
@@ -983,6 +995,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textLabel"]
+- !private ["So18UIFocusEnvironmentP", "ObjectList"]
 - ["So18UIFocusEnvironmentP", "Objs"]
 - ["So18UIFocusEnvironmentP", "UISearchController"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -1060,6 +1073,7 @@ depends-member:
 - !private ["So16UINavigationItemC", "leftBarButtonItem"]
 - !private ["So16UINavigationItemC", "leftItemsSupplementBackButton"]
 - !private ["So16UINavigationItemC", "searchController"]
+- !private ["So30UIPasteConfigurationSupportingP", "ObjectList"]
 - ["So30UIPasteConfigurationSupportingP", "Objs"]
 - ["So30UIPasteConfigurationSupportingP", "UISearchController"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -1117,6 +1131,7 @@ depends-member:
 - !private ["So11UIResponderC", "DetailViewController"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "ObjectList"]
 - ["So11UIResponderC", "Objs"]
 - ["So11UIResponderC", "SearchFooter"]
 - ["So11UIResponderC", "String"]
@@ -1180,6 +1195,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "ObjectList"]
 - ["So30UIResponderStandardEditActionsP", "Objs"]
 - ["So30UIResponderStandardEditActionsP", "UISearchController"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -1236,6 +1252,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "indexPathForSelectedRow"]
 - !private ["So12UIScrollViewC", "reloadData"]
+- !private ["So20UIScrollViewDelegateP", "ObjectList"]
 - ["So20UIScrollViewDelegateP", "Objs"]
 - ["So20UIScrollViewDelegateP", "UISearchController"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -1279,6 +1296,7 @@ depends-member:
 - !private ["So18UISearchControllerC", "obscuresBackgroundDuringPresentation"]
 - !private ["So18UISearchControllerC", "searchBar"]
 - !private ["So18UISearchControllerC", "searchResultsUpdater"]
+- !private ["So23UISearchResultsUpdatingP", "ObjectList"]
 - ["So23UISearchResultsUpdatingP", "Objs"]
 - ["So23UISearchResultsUpdatingP", "UISearchController"]
 - ["So23UISearchResultsUpdatingP", ""]
@@ -1319,6 +1337,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForSelectedRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- !private ["So16UIStateRestoringP", "ObjectList"]
 - ["So16UIStateRestoringP", "Objs"]
 - ["So16UIStateRestoringP", "UISearchController"]
 - ["So16UIStateRestoringP", ""]
@@ -1372,6 +1391,7 @@ depends-member:
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "detailTextLabel"]
 - !private ["So15UITableViewCellC", "textLabel"]
+- !private ["So21UITableViewDataSourceP", "ObjectList"]
 - ["So21UITableViewDataSourceP", "Objs"]
 - ["So21UITableViewDataSourceP", "UISearchController"]
 - ["So21UITableViewDataSourceP", ""]
@@ -1408,6 +1428,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "updateSearchResultsForSearchController"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
+- !private ["So19UITableViewDelegateP", "ObjectList"]
 - ["So19UITableViewDelegateP", "Objs"]
 - ["So19UITableViewDelegateP", "UISearchController"]
 - ["So19UITableViewDelegateP", ""]
@@ -1446,6 +1467,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So17UITextInputTraitsP", "placeholder"]
 - !private ["So17UITextInputTraitsP", "text"]
+- !private ["So18UITraitEnvironmentP", "ObjectList"]
 - ["So18UITraitEnvironmentP", "Objs"]
 - ["So18UITraitEnvironmentP", "UISearchController"]
 - ["So18UITraitEnvironmentP", ""]
@@ -1499,6 +1521,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "ObjectList"]
 - ["So23UIUserActivityRestoringP", "Objs"]
 - ["So23UIUserActivityRestoringP", "UISearchController"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -1563,6 +1586,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "DetailViewController"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "ObjectList"]
 - ["So16UIViewControllerC", "Objs"]
 - ["So16UIViewControllerC", "SearchFooter"]
 - ["So16UIViewControllerC", "String"]
@@ -1674,6 +1698,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ObjectList"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Objs"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UISearchController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -1789,6 +1814,7 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "9RPM_AR_UI10ObjectListC"
 - !private "9RPM_AR_UI4ObjsV"
 - !private "Sq"
 - "Sk"
