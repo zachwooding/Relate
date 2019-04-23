@@ -16,6 +16,6 @@ struct Session{
     let secs: Int
     let date : Date
     let sessionNum : String
-    let objsPicked: Array<Objs> = Array()
-    let objsNotPicked: Array<Objs> = Array()
+    var objsPicked: Array<Objs> = Array()
+    var objsNotPicked: Array<Objs> = Array()
 }

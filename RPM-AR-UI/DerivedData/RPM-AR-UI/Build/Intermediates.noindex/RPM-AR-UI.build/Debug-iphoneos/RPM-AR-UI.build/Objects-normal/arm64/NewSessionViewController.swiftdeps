@@ -24,6 +24,7 @@ depends-top-level:
 - "Int"
 - !private "IntegerLiteralType"
 - "NewSessionViewController"
+- !private "Objs"
 - "Session"
 - "UIApplication"
 - "UIDatePicker"
@@ -39,11 +40,15 @@ depends-member:
 - !private ["9RPM_AR_UI16ARViewControllerC", "savedSessions"]
 - !private ["9RPM_AR_UI16ARViewControllerC", "sessionInfo"]
 - ["9RPM_AR_UI11AppDelegateC", "persistentContainer"]
+- !private ["Sa", "init"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["SK", "init"]
 - !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "countDownDuration"]
 - !private ["So15CALayerDelegateP", "date"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Array"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "Session"]
 - ["s7CVarArgP", "UIApplication"]
@@ -68,7 +73,9 @@ depends-member:
 - !private ["s7CVarArgP", "topViewController"]
 - ["s7CVarArgP", "viewContext"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "init"]
 - !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Array"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "Session"]
 - ["s28CustomDebugStringConvertibleP", "UIApplication"]
@@ -99,6 +106,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "Array"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "Session"]
 - ["s23CustomStringConvertibleP", "UIApplication"]
@@ -133,6 +141,7 @@ depends-member:
 - !private ["SE", "date"]
 - !private ["SE", "init"]
 - !private ["SE", "text"]
+- !private ["SQ", "Array"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "Session"]
 - ["SQ", "UIApplication"]
@@ -157,12 +166,14 @@ depends-member:
 - !private ["SQ", "topViewController"]
 - ["SQ", "viewContext"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "countDownDuration"]
 - !private ["s23ExpressibleByNilLiteralP", "date"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "Array"]
 - !private ["SH", "Int"]
 - !private ["SH", "Session"]
 - ["SH", "UIApplication"]
@@ -191,6 +202,8 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["SM", "init"]
+- !private ["So8NSCodingP", "Array"]
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "Session"]
 - ["So8NSCodingP", "UIApplication"]
@@ -209,6 +222,7 @@ depends-member:
 - !private ["So8NSCodingP", "timePicker"]
 - !private ["So8NSCodingP", "topViewController"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "Array"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "Session"]
 - ["So26NSExtensionRequestHandlingP", "UIApplication"]
@@ -228,6 +242,7 @@ depends-member:
 - ["So8NSObjectC", "AppDelegate"]
 - ["So8NSObjectC", "Array"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "Objs"]
 - ["So8NSObjectC", "Session"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIDatePicker"]
@@ -256,6 +271,7 @@ depends-member:
 - !private ["So8NSObjectC", "topViewController"]
 - ["So8NSObjectC", "viewContext"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "Array"]
 - !private ["So8NSObjectP", "Int"]
 - !private ["So8NSObjectP", "Session"]
 - ["So8NSObjectP", "UIApplication"]
@@ -284,6 +300,7 @@ depends-member:
 - ["9RPM_AR_UI24NewSessionViewControllerC", "AppDelegate"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "Array"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "Int"]
+- !private ["9RPM_AR_UI24NewSessionViewControllerC", "Objs"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "Session"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "UIApplication"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "UIDatePicker"]
@@ -293,6 +310,7 @@ depends-member:
 - !private ["9RPM_AR_UI24NewSessionViewControllerC", "appDelegate"]
 - !private ["9RPM_AR_UI24NewSessionViewControllerC", "context"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "datePicker"]
+- ["9RPM_AR_UI24NewSessionViewControllerC", "deinit"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "init"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "name"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "prepare"]
@@ -305,8 +323,11 @@ depends-member:
 - !private ["Sq", "countDownDuration"]
 - !private ["Sq", "date"]
 - !private ["Sq", "text"]
+- !private ["Sk", "init"]
+- !private ["Sm", "init"]
 - !private ["So24SCNSceneRendererDelegateP", "savedSessions"]
 - !private ["So24SCNSceneRendererDelegateP", "sessionInfo"]
+- !private ["ST", "init"]
 - !private ["9RPM_AR_UI7SessionV", "init"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
@@ -317,6 +338,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "countDownDuration"]
 - !private ["So12UIAppearanceP", "date"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Array"]
 - !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "Session"]
 - ["So21UIAppearanceContainerP", "UIApplication"]
@@ -338,6 +360,7 @@ depends-member:
 - ["So13UIApplicationC", "delegate"]
 - ["So13UIApplicationC", "shared"]
 - ["So21UIApplicationDelegateP", "persistentContainer"]
+- !private ["So18UIContentContainerP", "Array"]
 - !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "Session"]
 - ["So18UIContentContainerP", "UIApplication"]
@@ -365,6 +388,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "countDownDuration"]
 - !private ["So13UIDynamicItemP", "date"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Array"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "Session"]
 - ["So18UIFocusEnvironmentP", "UIApplication"]
@@ -391,6 +415,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So22UINavigationControllerC", "topViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "Array"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "Session"]
 - ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -416,6 +441,7 @@ depends-member:
 - ["So11UIResponderC", "AppDelegate"]
 - ["So11UIResponderC", "Array"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "Objs"]
 - ["So11UIResponderC", "Session"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIDatePicker"]
@@ -442,6 +468,7 @@ depends-member:
 - ["So11UIResponderC", "timePicker"]
 - !private ["So11UIResponderC", "topViewController"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Array"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "Session"]
 - ["So30UIResponderStandardEditActionsP", "UIApplication"]
@@ -463,6 +490,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "timePicker"]
 - !private ["So30UIResponderStandardEditActionsP", "topViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "Array"]
 - !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "Session"]
 - ["So16UIStateRestoringP", "UIApplication"]
@@ -485,6 +513,7 @@ depends-member:
 - !private ["So11UITextInputP", "text"]
 - !private ["So17UITextInputTraitsP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Array"]
 - !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "Session"]
 - ["So18UITraitEnvironmentP", "UIApplication"]
@@ -503,6 +532,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "timePicker"]
 - !private ["So18UITraitEnvironmentP", "topViewController"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Array"]
 - !private ["So23UIUserActivityRestoringP", "Int"]
 - !private ["So23UIUserActivityRestoringP", "Session"]
 - ["So23UIUserActivityRestoringP", "UIApplication"]
@@ -531,6 +561,7 @@ depends-member:
 - ["So16UIViewControllerC", "AppDelegate"]
 - ["So16UIViewControllerC", "Array"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "Objs"]
 - ["So16UIViewControllerC", "Session"]
 - ["So16UIViewControllerC", "UIApplication"]
 - ["So16UIViewControllerC", "UIDatePicker"]
@@ -556,9 +587,11 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "countDownDuration"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "date"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Session"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
@@ -592,10 +625,14 @@ depends-nominal:
 - !private "So17ARSessionObserverP"
 - !private "9RPM_AR_UI16ARViewControllerC"
 - "9RPM_AR_UI11AppDelegateC"
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "Sz"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "Sl"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
@@ -604,6 +641,7 @@ depends-nominal:
 - !private "Se"
 - !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
@@ -612,6 +650,7 @@ depends-nominal:
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "SM"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -620,7 +659,10 @@ depends-nominal:
 - "9RPM_AR_UI24NewSessionViewControllerC"
 - !private "Sj"
 - !private "Sq"
+- !private "Sk"
+- !private "Sm"
 - !private "So24SCNSceneRendererDelegateP"
+- !private "ST"
 - !private "9RPM_AR_UI7SessionV"
 - !private "SZ"
 - !private "s13SignedNumericP"
@@ -658,6 +700,7 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
