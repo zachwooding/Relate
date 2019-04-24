@@ -26,16 +26,16 @@ class ObjectList{
             //Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
     
             
-                Objs(category:"Appliances", name:"Fridge", sceneName:"ship.scn", id:"ship", icon:"\u{1F6F3}"),
-                Objs(category:"Appliances", name:"Microwave", sceneName:"microwave.scn", id:"microwave", icon:"\u{1F698}"),
-               Objs(category:"Fruit", name:"Apple", sceneName:"apple.scn", id:"apple", icon:"\u{1F34E}")
-               Objs(category:"Dessert", name:"Cake", sceneName:"mountain.scn", id:"mountain", icon:"\u{1F370}"),
-                Objs(category:"Kitchen", name:"Oven", sceneName:"oven.scn", id:"oven", icon:"\u{1F4BB}"),
-                Objs(category:"Silverwear", name:"Fork", sceneName:"MovieCamera.scn", id:"moviecamera", icon:"\u{1F3A5}"),
-                Objs(category:"Silverwear", name:"Knife", sceneName:"knife.scn", id:"knife", icon:"\u{1F52A}"),
-                Objs(category:"Science", name:"Rocket", sceneName:"rocketship.scn", id:"rocket", icon:"\u{1F680}"),
-                Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
-                ]
+            Objs(category:"Appliances", name:"Fridge", sceneName:"ship.scn", id:"ship", icon:"\u{23F2}"),
+            Objs(category:"Appliances", name:"Microwave", sceneName:"microwave.scn", id:"microwave", icon:"\u{1F698}"),
+            Objs(category:"Fruit", name:"Apple", sceneName:"apple.scn", id:"apple", icon:"\u{1F34E}"),
+            Objs(category:"Dessert", name:"Cake", sceneName:"mountain.scn", id:"mountain", icon:"\u{1F370}"),
+            Objs(category:"Kitchen", name:"Oven", sceneName:"oven.scn", id:"oven", icon:"\u{1F4BB}"),
+            Objs(category:"Silverwear", name:"Fork", sceneName:"MovieCamera.scn", id:"moviecamera", icon:"\u{1F3A5}"),
+            Objs(category:"Silverwear", name:"Knife", sceneName:"knife.scn", id:"knife", icon:"\u{1F52A}"),
+            Objs(category:"Cookware", name:"Pan", sceneName:"pan.scn", id:"pan", icon:"\u{1F373}"),
+            Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
+            ]
     }
     
     var getList: Array<Objs>{

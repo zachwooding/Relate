@@ -403,7 +403,6 @@ depends-member:
 - !private ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
-- ["9RPM_AR_UI7SessionV", "init"]
 - !private ["9RPM_AR_UI7SessionV", "name"]
 - !private ["9RPM_AR_UI20SessionTableViewCellC", "nameLabel"]
 - !private ["s12StaticStringV", "init"]
@@ -883,7 +882,7 @@ depends-nominal:
 - "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
-- "9RPM_AR_UI7SessionV"
+- !private "9RPM_AR_UI7SessionV"
 - !private "9RPM_AR_UI20SessionTableViewCellC"
 - !private "s12StaticStringV"
 - !private "SS"
@@ -981,4 +980,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4981ffa0f60fd094e76c52e49c5222d5"
+interface-hash: "82bc151cc1596a27021c43ed5260ab07"
