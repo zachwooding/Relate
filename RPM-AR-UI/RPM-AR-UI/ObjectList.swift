@@ -35,6 +35,7 @@ class ObjectList{
             Objs(category:"Silverwear", name:"Knife", sceneName:"knife.scn", id:"knife", icon:"\u{1F52A}"),
             Objs(category:"Cookware", name:"Pan", sceneName:"pan.scn", id:"pan", icon:"\u{1F373}"),
             Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
+            
             ]
     }
     
