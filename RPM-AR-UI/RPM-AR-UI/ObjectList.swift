@@ -34,7 +34,7 @@ class ObjectList{
             Objs(category:"Silverwear", name:"Fork", sceneName:"MovieCamera.scn", id:"moviecamera", icon:"\u{1F3A5}"),
             Objs(category:"Silverwear", name:"Knife", sceneName:"knife.scn", id:"knife", icon:"\u{1F52A}"),
             Objs(category:"Cookware", name:"Pan", sceneName:"pan.scn", id:"pan", icon:"\u{1F373}"),
-            Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
+            Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}"),
             Objs(category: "Jar", name: "Nutella", sceneName: "nutella.scn", id: "nutella", icon: "\u{1F330}")
             
             ]
