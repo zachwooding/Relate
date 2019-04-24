@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>67EBE9A1-EBDA-4567-A72C-DBBC666E6B6D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>67EBE9A1-EBDA-4567-A72C-DBBC666E6B6D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577831469.75050497</real>
+			<key>timeStoppedRecording</key>
+			<real>577831701.12131405</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>67EBE9A1-EBDA-4567-A72C-DBBC666E6B6D</string>
+		</dict>
 		<key>6BBC5E9D-83FC-4FA7-8312-E1CC43EC5AE7</key>
 		<dict>
 			<key>className</key>
@@ -63,6 +92,35 @@
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>83B0BF5A-4C37-43C7-8A9A-8763BBA35B37</string>
+		</dict>
+		<key>9C09CF35-4052-43B4-9D46-2DF1DD05F2A9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9C09CF35-4052-43B4-9D46-2DF1DD05F2A9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>577831703.37101197</real>
+			<key>timeStoppedRecording</key>
+			<real>577831963.90206301</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>9C09CF35-4052-43B4-9D46-2DF1DD05F2A9</string>
 		</dict>
 		<key>B1124D7A-B1CE-4F86-9351-60E0AC87949D</key>
 		<dict>

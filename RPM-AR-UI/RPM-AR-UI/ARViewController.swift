@@ -230,7 +230,7 @@ class ARViewController: UIViewController {
         //setting string to say
         let speechUtterance = AVSpeechUtterance(string: sceneObj)
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        speechUtterance.rate = 0.25
+        speechUtterance.rate = 0.4
         //speechUtterance.pitchMultiplier = 0.25
         //speechUtterance.volume = 0.75
         
