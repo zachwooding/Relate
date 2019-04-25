@@ -130,6 +130,8 @@ class ARViewController: UIViewController {
         //checking if object has already been removed
         var isRemoved = false
         
+        var objPickedName = ""
+        var objNotPickedName = ""
         //iterating through hit objects
         for pickedObj in hitTestResult{
             
@@ -146,10 +148,11 @@ class ARViewController: UIViewController {
                         
                         //object that is not selected is found here
                         if obj.name == onScreenObj.name{
-                            
+                            objPickedName = pickedObj.node.name!
                             //sending name to text to speech method
                             readObj(sceneObj: pickedObj.node.name!)
                             
+                            objNotPickedName = onScreenObj.name!
                             //removing object that was not selected
                             objectsOnScreen.remove(at: objectsOnScreen.index(of: onScreenObj)!)
                             
@@ -157,12 +160,12 @@ class ARViewController: UIViewController {
                             for theObj in allObjs{
                                 
                                 //storing selected object
-                                if theObj.name == pickedObj.node.name{
+                                if theObj.name == objPickedName{
                                     sessionInfo.objsPicked.append(theObj)
                                 }
                                 
                                 //storing not selected
-                                if theObj.name == obj.name{
+                                if theObj.name == objNotPickedName{
                                     sessionInfo.objsNotPicked.append(theObj)
                                 }
                             }
@@ -295,6 +298,10 @@ class ARViewController: UIViewController {
 
         timeLeft = Double(sessionInfo.time)
         let(h,m,s) = timeCon(seconds: Int(timeLeft!))
+        sessionInfo.hours = h
+        sessionInfo.mins = m
+        sessionInfo.secs = s
+        sessionInfo.sessionNum = "0"
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     
         
