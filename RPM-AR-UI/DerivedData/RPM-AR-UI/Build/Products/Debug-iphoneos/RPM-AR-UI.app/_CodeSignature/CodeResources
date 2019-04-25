@@ -198,7 +198,7 @@
 		</data>
 		<key>art.scnassets/apple.scn</key>
 		<data>
-		vetir/76Y3N+SpbKb/lViyrqphE=
+		ehwIfDdqTYo+F3J3B8tl4sE+8sU=
 		</data>
 		<key>art.scnassets/appleD.jpg</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>art.scnassets/banana.scn</key>
 		<data>
-		r14sJRbeV5+GMXfj+5VIkqyDTVA=
+		P8dUHqTuDBmB+yeW0ZuAhooWbd0=
 		</data>
 		<key>art.scnassets/bananaaa.mtl</key>
 		<data>
@@ -230,7 +230,7 @@
 		</data>
 		<key>art.scnassets/knife.scn</key>
 		<data>
-		LYgWNoP5lGs4VllQhYsEKd5wCHM=
+		wT7WUahVFGyGQbwymWsUOYWUSMI=
 		</data>
 		<key>art.scnassets/laptop.scn</key>
 		<data>
@@ -242,11 +242,11 @@
 		</data>
 		<key>art.scnassets/microwave.scn</key>
 		<data>
-		zwdHWmpovyBgp47LQhSJlLn9WJQ=
+		MZCZZQkKtKM9akVxteteA4vSLi8=
 		</data>
 		<key>art.scnassets/nutella.scn</key>
 		<data>
-		lFZU4niWPkn3o5lOmjtKCYuvJPY=
+		Fgs7uFZfeIwXnmSMCNhWigHL/6A=
 		</data>
 		<key>art.scnassets/nutellaLabel.jpg</key>
 		<data>
@@ -258,11 +258,11 @@
 		</data>
 		<key>art.scnassets/oven.scn</key>
 		<data>
-		rKuJdeGdkG118+ny48JnlLxsUxY=
+		oXbjCc5wSISdtvt0T2Pp+yG/RqY=
 		</data>
 		<key>art.scnassets/pan.scn</key>
 		<data>
-		CsqMKhTKy2OSv1s9AMXTyNHHIRo=
+		N5Veq9N5YD3oXRm04OrpE5wJyec=
 		</data>
 		<key>art.scnassets/rabbit.scn</key>
 		<data>
@@ -283,6 +283,50 @@
 		<key>art.scnassets/ship.scn</key>
 		<data>
 		yCkrC789x6S92dCNRQR1XitWyOM=
+		</data>
+		<key>art.scnassets/textures/apple.jpg</key>
+		<data>
+		WvFpauwWdwMMkEZi4wfL9jMAPFk=
+		</data>
+		<key>art.scnassets/textures/banana.png</key>
+		<data>
+		tCKZaLFBiCZf/SFxx6Nuff2xW3c=
+		</data>
+		<key>art.scnassets/textures/cap.jpg</key>
+		<data>
+		8GfyDHawvMTJwFdfry2tGsOpD0U=
+		</data>
+		<key>art.scnassets/textures/metal.jpg</key>
+		<data>
+		GpcZM8NNMkmzUECumXJt+zvVAlY=
+		</data>
+		<key>art.scnassets/textures/nutellaLabel.jpg</key>
+		<data>
+		Zkiou2MtTndaTlR5+zQCVqkGBUc=
+		</data>
+		<key>art.scnassets/textures/oven1.png</key>
+		<data>
+		bKOtdqN/ecpKZvCMX1U1vfoJnf4=
+		</data>
+		<key>art.scnassets/textures/oven2.png</key>
+		<data>
+		EMqZZJ+ifK5ax+cIfJMe70XRZRQ=
+		</data>
+		<key>art.scnassets/textures/oven3.jpg</key>
+		<data>
+		h2GiebSnLD8gLz31zxAW+vMfw0c=
+		</data>
+		<key>art.scnassets/textures/oven4.png</key>
+		<data>
+		de3c9Nww61urFZhlxs+d4mSCERU=
+		</data>
+		<key>art.scnassets/textures/whirlpoollogo.png</key>
+		<data>
+		de3c9Nww61urFZhlxs+d4mSCERU=
+		</data>
+		<key>art.scnassets/textures/wood.jpg</key>
+		<data>
+		0h/WUenRqI6mi875zL45Gxfr3OY=
 		</data>
 		<key>art.scnassets/wood.jpg</key>
 		<data>
@@ -625,7 +669,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9IEZEPlfnSt9JM7zX3WD37yEnYluY52d9hVgiAX2qnU=
+			/IQX3+w63D3UAve8lak5hoJTjqyIYw8qL7/G54AkL6g=
 			</data>
 		</dict>
 		<key>art.scnassets/appleD.jpg</key>
@@ -646,7 +690,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D5fpxNaIimRJAqXv7IeAvnhctReSdGg4fAf1bRQEPJE=
+			Ut6NQBuNeXpRcVdDKnw9KBOkA5BeNcxYYFMDCJAkXZQ=
 			</data>
 		</dict>
 		<key>art.scnassets/bananaaa.mtl</key>
@@ -681,7 +725,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bBnx+vkMJVsRtsZTIvTXFigEkOWsxfsvXxRo0Rjdng=
+			MYuc1wAX65nKS+TS4zJwczghu8h4PfLksoO2g2Slfws=
 			</data>
 		</dict>
 		<key>art.scnassets/laptop.scn</key>
@@ -702,14 +746,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjThpW+5U3QdsH6x6+GGDnKRiqODHcL0YtCq4apmoQU=
+			ibTwfe3IxAiVqeycH9qyAN3AJcaWakPqRw7i1hWD5oQ=
 			</data>
 		</dict>
 		<key>art.scnassets/nutella.scn</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I/or478o4kxQC8JSTThAEzfDTDDBsET4X0U5EGwDDv4=
+			m0OcSyHZYjxxU4KjefJFLrv9lwOYt4ih9Cnctbs6v0M=
 			</data>
 		</dict>
 		<key>art.scnassets/nutellaLabel.jpg</key>
@@ -730,14 +774,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6WNpsEkeQR95BF6MSNL748vSNQfu4FP2QabNW+QXQ4I=
+			ScbFOsDtiqJdHHj5nhKaHlwUheavzykvyWXxUmx3/JQ=
 			</data>
 		</dict>
 		<key>art.scnassets/pan.scn</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RYhBYQbfLMxboisFa4ciJ0TeHHhAxJM1vkVR65oluHw=
+			wNEeLTbSmP16XLRy6Hm/lcir+mc6Cv5ZsLiAQkrv/JQ=
 			</data>
 		</dict>
 		<key>art.scnassets/rabbit.scn</key>
@@ -773,6 +817,83 @@
 			<key>hash2</key>
 			<data>
 			l46EA+2x4ZStwyMe9HFHZHLqAT4s40J/59J+HrRaxwE=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/apple.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BjvnLBt84zIOWfQsTVftfsyihq+MdQYFEqT3+Cv5GDE=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/banana.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XZPnHriACXHltefG2SsATA20xYZTx7HKZ2PZ2ZjOexM=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/cap.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6knRD2uYliG0PWQVSE+GkdGc8M0XygANfxfRF3rxUw0=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/metal.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wZQCAocHILDAcxpV/vYU+dp3IVRBqgH13Az4fmJRrKQ=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/nutellaLabel.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SAbv7dW0TsQRlrJR4UlSMKihssbHqOKnQrIdZaaUqAU=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/oven1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mngkDfkpVYz3YJXYvFe0qqzcaZPG8YWXPTadQccTaGI=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/oven2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CT71vmToeA5iT+ovRNdLg3pxNJGF4IXIjk/Qon+CByM=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/oven3.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MevOYkBhh5i794/YJhi7FQ1eUM73lPw1Zra8s9/JpLU=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/oven4.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YDSfn0gDfg15+dtxdpLmTkp3mMaLUE4JC10+1YHacms=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/whirlpoollogo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YDSfn0gDfg15+dtxdpLmTkp3mMaLUE4JC10+1YHacms=
+			</data>
+		</dict>
+		<key>art.scnassets/textures/wood.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xvEUFv/8feo3cWp47rqablfg48xOwIYK0iyOS2/7AG8=
 			</data>
 		</dict>
 		<key>art.scnassets/wood.jpg</key>

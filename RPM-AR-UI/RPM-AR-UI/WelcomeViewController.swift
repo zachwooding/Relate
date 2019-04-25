@@ -11,7 +11,7 @@ import UIKit
 class WelcomeViewController: UITableViewController {
 
     var savedDataArray : Array<Session> = Array()
-    var savedSession: Session! 
+    var savedSession: Session!
     var listedSessions = [Session]()
     
     //@IBOutlet var nameLabel: UILabel!
@@ -58,7 +58,6 @@ class WelcomeViewController: UITableViewController {
         save()
         
     }
-    
     
     
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){

@@ -6,29 +6,6 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>36894988-33B1-409C-9A27-AC45A4B6D77F</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>36894988-33B1-409C-9A27-AC45A4B6D77F.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>signature</key>
-			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
-			<key>timeStartedRecording</key>
-			<real>577831701.15175903</real>
-			<key>timeStoppedRecording</key>
-			<real>577831702.83318496</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>36894988-33B1-409C-9A27-AC45A4B6D77F</string>
-		</dict>
 		<key>78FAC723-9B62-46E2-B8B9-9488127BE9D7</key>
 		<dict>
 			<key>className</key>
@@ -51,6 +28,29 @@
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>78FAC723-9B62-46E2-B8B9-9488127BE9D7</string>
+		</dict>
+		<key>FAE54A28-4E8D-490D-860C-A4DD7FD731FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>FAE54A28-4E8D-490D-860C-A4DD7FD731FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>signature</key>
+			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
+			<key>timeStartedRecording</key>
+			<real>577922285.66353703</real>
+			<key>timeStoppedRecording</key>
+			<real>577922285.94005597</real>
+			<key>title</key>
+			<string>Build target RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>FAE54A28-4E8D-490D-860C-A4DD7FD731FF</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
