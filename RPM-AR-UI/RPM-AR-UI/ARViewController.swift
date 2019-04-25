@@ -86,7 +86,14 @@ class ARViewController: UIViewController {
     //add 3D Objects to scene
     @objc func addObjectToScene(withGestureRecognizer recognizer: UIGestureRecognizer) {
         //checking # of objs on screen and that a Obj has been selected
-        if(objSelected != nil){
+        var isOnScreen = false
+        for obj in objectsOnScreen{
+            if objSelected.name == obj.name{
+                isOnScreen = true
+                break
+            }
+        }
+        if(objSelected != nil && objectsOnScreen.count < 2 && isOnScreen == false){
             
             //setting loaction for object
             let tapLocation = recognizer.location(in: arSceneView)
