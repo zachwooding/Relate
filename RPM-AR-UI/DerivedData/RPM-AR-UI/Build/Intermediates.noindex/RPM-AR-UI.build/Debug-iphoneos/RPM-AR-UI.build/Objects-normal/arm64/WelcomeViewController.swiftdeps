@@ -38,7 +38,6 @@ depends-top-level:
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
-- !private "UnicodeScalarType"
 - !private "UserDefaults"
 - "WelcomeViewController"
 - !private "fatalError"

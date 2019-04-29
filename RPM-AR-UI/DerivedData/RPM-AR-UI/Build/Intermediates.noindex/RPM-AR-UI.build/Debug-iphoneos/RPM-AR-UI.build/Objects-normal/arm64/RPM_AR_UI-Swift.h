@@ -263,7 +263,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI24NewSessionViewController")
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified datePicker;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified timePicker;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified name;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified sessionNum;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified childName;
 - (void)viewDidLoad;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

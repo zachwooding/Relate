@@ -20,7 +20,7 @@ class WelcomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let session = Session(name: "TheSesh", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: "1", objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
         listedSessions.append(session)
         
         load()

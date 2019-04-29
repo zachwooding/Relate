@@ -38,6 +38,7 @@ depends-member:
 - ["9RPM_AR_UI7SessionV", "Objs"]
 - ["9RPM_AR_UI7SessionV", "String"]
 - ["9RPM_AR_UI7SessionV", "TimeInterval"]
+- ["9RPM_AR_UI7SessionV", "childName"]
 - ["9RPM_AR_UI7SessionV", "date"]
 - ["9RPM_AR_UI7SessionV", "hours"]
 - ["9RPM_AR_UI7SessionV", "init"]
@@ -118,4 +119,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4a9b980a5cf02ba3289773d92e085a42"
+interface-hash: "20bd97e87c51f4d6b831e59a8a554704"

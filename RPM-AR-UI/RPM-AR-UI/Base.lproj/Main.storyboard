@@ -163,9 +163,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="JId-KX-mfb"/>
                     <connections>
+                        <outlet property="childName" destination="Esg-6t-35J" id="W4x-3F-3sC"/>
                         <outlet property="datePicker" destination="hPp-ED-n80" id="HLT-uh-nKe"/>
-                        <outlet property="name" destination="Esg-6t-35J" id="yQn-og-G5t"/>
-                        <outlet property="sessionNum" destination="uJf-Se-ezL" id="is3-E1-feZ"/>
+                        <outlet property="name" destination="uJf-Se-ezL" id="psX-rH-ySF"/>
                         <outlet property="timePicker" destination="tav-H0-1r4" id="dSI-fx-z4M"/>
                     </connections>
                 </viewController>

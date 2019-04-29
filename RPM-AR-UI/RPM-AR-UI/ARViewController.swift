@@ -310,7 +310,7 @@ class ARViewController: UIViewController {
         sessionInfo.hours = h
         sessionInfo.mins = m
         sessionInfo.secs = s
-        sessionInfo.sessionNum = "0"
+        sessionInfo.sessionNum = 0
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     
         
