@@ -306,6 +306,17 @@ SWIFT_CLASS("_TtC9RPM_AR_UI20SearchViewController")
 @end
 
 
+SWIFT_CLASS("_TtC9RPM_AR_UI28SessionDetailsViewController")
+@interface SessionDetailsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sessionNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified childNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sessionNumLabel;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9RPM_AR_UI20SessionTableViewCell")
 @interface SessionTableViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified nameLabel;
@@ -326,6 +337,7 @@ SWIFT_CLASS("_TtC9RPM_AR_UI21WelcomeViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)backToWelcomeWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

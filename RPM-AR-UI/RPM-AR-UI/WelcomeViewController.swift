@@ -14,6 +14,8 @@ class WelcomeViewController: UITableViewController {
     var savedSession: Session!
     var listedSessions = [Session]()
     
+    var sessionToPass: String!
+    
     //@IBOutlet var nameLabel: UILabel!
     //@IBOutlet var dateLabel: UILabel!
     @IBOutlet var table: UITableView!
@@ -67,6 +69,17 @@ class WelcomeViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Get Cell Label
+        let indexPath = table.indexPathForSelectedRow!
+        let currentCell = table.cellForRow(at: indexPath)! as! SessionTableViewCell
+        
+        sessionToPass = currentCell.nameLabel.text
+        performSegue(withIdentifier: "viewSessionDetails", sender: self)
+    }
+    
+    
+    
     
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
         if segue.destination is UINavigationController{
@@ -74,6 +87,16 @@ class WelcomeViewController: UITableViewController {
             let nsVC = navTarget.topViewController as! NewSessionViewController
             
             nsVC.savedSessions = savedDataArray
+        }
+        
+        if segue.identifier == "viewSessionDetails" && sessionToPass != nil{
+            let navTarget = segue.destination as! SessionDetailsViewController
+            for sesh in listedSessions{
+                if sessionToPass == sesh.name{
+                    navTarget.sessionInfo = sesh
+                }
+            }
+            
         }
     }
     

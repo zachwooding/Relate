@@ -62,7 +62,7 @@ class ARViewController: UIViewController {
         super.viewWillDisappear(animated)
         arSceneView.session.pause()
     }
-    
+    //configuration.planeDetection = .horizontal
     func setUpSceneView() {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
@@ -72,7 +72,7 @@ class ARViewController: UIViewController {
         arSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         //arSceneView.scene.rootNode.addChildNode(emptyNode)
        //arSceneView.scene.rootNode.addChildNode(emptyNode)
-        
+        //configuration.planeDetection = .horizontal
         
     }
     

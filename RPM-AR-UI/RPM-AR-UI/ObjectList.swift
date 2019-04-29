@@ -24,7 +24,6 @@ class ObjectList{
             //Objs(category:"Animal", name:"Rabbit", sceneName:"rabbit.scn", id:"rabbit", icon:"\u{1F407}"),
             //Objs(category:"Science", name:"Rocket", sceneName:"rocketship.scn", id:"rocket", icon:"\u{1F680}"),
             //Objs(category: "Fruit", name: "Banana", sceneName: "banana.scn", id: "banana", icon: "\u{1F34C}")
-    
             //
             //Objs(category:"Appliances", name:"Fridge", sceneName:".scn", id:"ship", icon:"\u{23F2}"),
             //upside down

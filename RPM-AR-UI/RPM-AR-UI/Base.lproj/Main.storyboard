@@ -26,6 +26,49 @@
             </objects>
             <point key="canvasLocation" x="-1259" y="134"/>
         </scene>
+        <!--Session Details View Controller-->
+        <scene sceneID="0fw-ch-PBl">
+            <objects>
+                <viewController id="3jg-6R-bdx" customClass="SessionDetailsViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbM-7e-xSh">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Session Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-9D-E6w">
+                                <rect key="frame" x="368" y="70" width="376" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVR-7x-jxS">
+                                <rect key="frame" x="500" y="168" width="112" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Session Num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbP-pz-h46">
+                                <rect key="frame" x="849" y="105" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oad-5m-9IL"/>
+                    </view>
+                    <connections>
+                        <outlet property="childNameLabel" destination="oVR-7x-jxS" id="y11-rF-kFa"/>
+                        <outlet property="sessionNameLabel" destination="KWG-9D-E6w" id="FdO-nP-ifc"/>
+                        <outlet property="sessionNumLabel" destination="lbP-pz-h46" id="9DY-LD-2yD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlU-zW-7xs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583.273381294964" y="-540.28776978417272"/>
+        </scene>
         <!--Welcome!-->
         <scene sceneID="iHp-bC-xSG">
             <objects>
@@ -60,6 +103,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="8En-Mf-0mZ" id="Yp7-gL-a5y"/>
+                                    <segue destination="3jg-6R-bdx" kind="show" identifier="viewSessionDetails" id="7sp-Tb-ynX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -81,7 +125,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaI-Kj-fau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-533.0935251798561" y="133.81294964028777"/>
+            <point key="canvasLocation" x="-583" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="57d-Ht-Jb4">
