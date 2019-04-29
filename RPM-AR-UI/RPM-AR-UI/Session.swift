@@ -10,6 +10,7 @@ import Foundation
 
 struct Session{
     let name : String
+    let childName: String
     let time : TimeInterval
     var hours: Int
     var mins: Int

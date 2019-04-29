@@ -281,7 +281,7 @@ class ARViewController: UIViewController {
         let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be lost.", preferredStyle: UIAlertController.Style.alert)
         
         quitAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
-            (action: UIAlertAction!) in self.saveDataAndExit()
+            (action: UIAlertAction!) in self.performSegue(withIdentifier: "unwindToWelcome", sender: self)
             
         }))
         
@@ -293,10 +293,12 @@ class ARViewController: UIViewController {
     }
     
     //saving session and moving to welcome screen
-    func saveDataAndExit(){
-        let wlVC = WelcomeViewController()
-        wlVC.savedSession = sessionInfo
-        performSegue(withIdentifier: "unwindToWelcome", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "unwindToWelcome" {
+            let navTarget = segue.destination as! WelcomeViewController
+            navTarget.savedSession = sessionInfo
+        }
+        
     }
     
     //managing data receved from new session page
