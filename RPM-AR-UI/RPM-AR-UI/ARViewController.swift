@@ -202,10 +202,14 @@ class ARViewController: UIViewController {
         //double tap to remove all objects off screen
         for node in arSceneView.scene.rootNode.childNodes{
             //searching for objects that are named
-            if node.name != nil {
-                //removing obj
-                node.removeFromParentNode()
+            for obj in objectsOnScreen{
+                if node.name != nil && obj.name == node.name{
+                    //removing obj
+                    node.removeFromParentNode()
+                    objectsOnScreen.removeAll()
+                }
             }
+            
         }
         
     }
@@ -219,7 +223,7 @@ class ARViewController: UIViewController {
         
         //long press to select object
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ARViewController.selectObjectsOnScreen(withGestureRecognizer:)))
-        longPressGestureRecognizer.minimumPressDuration = 1.0;
+        longPressGestureRecognizer.minimumPressDuration = 0.5;
         arSceneView.addGestureRecognizer(longPressGestureRecognizer)
         
         //double tap to remove all objects
@@ -310,7 +314,7 @@ class ARViewController: UIViewController {
         sessionInfo.hours = h
         sessionInfo.mins = m
         sessionInfo.secs = s
-        sessionInfo.sessionNum = 0
+        
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     
         

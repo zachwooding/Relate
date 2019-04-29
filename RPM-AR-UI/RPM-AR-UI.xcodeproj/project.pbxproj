@@ -23,6 +23,8 @@
 		1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7629225691A9000F9652 /* SearchFooter.swift */; };
 		1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762B225695FE000F9652 /* DetailViewController.swift */; };
 		1D6D76302256C83D000F9652 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762F2256C83D000F9652 /* ModelType.swift */; };
+		1DA84F7E2277977500F28549 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F7D2277977400F28549 /* apple.png */; };
+		1DA84F8022779C9D00F28549 /* relate.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F7F22779C9D00F28549 /* relate.png */; };
 		1DAA9783226F89060089D118 /* ObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9782226F89060089D118 /* ObjectList.swift */; };
 		1DAA9785226F9B530089D118 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */; };
 		1DACA5F5225BC67800582A69 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FA2253FC380011A730 /* art.scnassets */; };
@@ -68,6 +70,8 @@
 		1D6D7629225691A9000F9652 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		1D6D762B225695FE000F9652 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1D6D762F2256C83D000F9652 /* ModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		1DA84F7D2277977400F28549 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../../logo/apple.png; sourceTree = "<group>"; };
+		1DA84F7F22779C9D00F28549 /* relate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = relate.png; path = ../../logo/relate.png; sourceTree = "<group>"; };
 		1DAA9782226F89060089D118 /* ObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectList.swift; sourceTree = "<group>"; };
 		1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +132,7 @@
 		1D4CA5F72253FC380011A730 /* RPM-AR-UI */ = {
 			isa = PBXGroup;
 			children = (
+				1DA84F7F22779C9D00F28549 /* relate.png */,
 				1D4CA5F82253FC380011A730 /* AppDelegate.swift */,
 				1D4CA5FA2253FC380011A730 /* art.scnassets */,
 				1D105CDC22690BE300635C64 /* WelcomeViewController.swift */,
@@ -147,6 +152,7 @@
 				1D4CA6012253FC3B0011A730 /* Assets.xcassets */,
 				1D4CA6032253FC3B0011A730 /* LaunchScreen.storyboard */,
 				1D4CA6062253FC3B0011A730 /* Info.plist */,
+				1DA84F7D2277977400F28549 /* apple.png */,
 			);
 			path = "RPM-AR-UI";
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				1D4CA6052253FC3B0011A730 /* LaunchScreen.storyboard in Resources */,
 				1D4CA6022253FC3B0011A730 /* Assets.xcassets in Resources */,
 				1D4CA6002253FC380011A730 /* Main.storyboard in Resources */,
+				1DA84F8022779C9D00F28549 /* relate.png in Resources */,
+				1DA84F7E2277977500F28549 /* apple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +494,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NNEBPYXC4;
@@ -507,7 +514,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NNEBPYXC4;
