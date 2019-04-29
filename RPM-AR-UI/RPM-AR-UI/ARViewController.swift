@@ -90,7 +90,6 @@ class ARViewController: UIViewController {
         for obj in objectsOnScreen{
             if objSelected.name == obj.name{
                 isOnScreen = true
-                break
             }
         }
         if(objSelected != nil && objectsOnScreen.count < 2 && isOnScreen == false){
@@ -116,6 +115,7 @@ class ARViewController: UIViewController {
             sNode.position = SCNVector3(x,y,z)
             arSceneView.scene.rootNode.addChildNode(sNode)
             //tracking objects on screen
+            sNode.name = objSelected.name
             objectsOnScreen.append(sNode)
             
         }
@@ -202,16 +202,15 @@ class ARViewController: UIViewController {
         //double tap to remove all objects off screen
         for node in arSceneView.scene.rootNode.childNodes{
             //searching for objects that are named
-            for obj in objectsOnScreen{
-                if node.name != nil && obj.name == node.name{
-                    //removing obj
-                    node.removeFromParentNode()
-                    objectsOnScreen.removeAll()
-                }
+            
+            if node.name != nil{
+                //removing obj
+                node.removeFromParentNode()
+                
             }
             
         }
-        
+        objectsOnScreen.removeAll()
     }
     
     //adding tap gestures
