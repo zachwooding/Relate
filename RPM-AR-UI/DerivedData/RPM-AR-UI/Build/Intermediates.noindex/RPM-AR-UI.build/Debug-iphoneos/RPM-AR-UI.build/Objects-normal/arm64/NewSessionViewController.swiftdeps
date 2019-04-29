@@ -327,6 +327,7 @@ depends-member:
 - ["9RPM_AR_UI24NewSessionViewControllerC", "childName"]
 - !private ["9RPM_AR_UI24NewSessionViewControllerC", "context"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "datePicker"]
+- ["9RPM_AR_UI24NewSessionViewControllerC", "deinit"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "init"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "name"]
 - ["9RPM_AR_UI24NewSessionViewControllerC", "prepare"]
