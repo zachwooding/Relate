@@ -13,12 +13,14 @@ provides-dynamic-lookup:
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
+- !private "!="
 - !private "+="
 - "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "Data"
+- !private "Date"
 - !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
@@ -26,9 +28,11 @@ depends-top-level:
 - !private "NSKeyedArchiver"
 - !private "NSKeyedUnarchiver"
 - !private "NewSessionViewController"
+- !private "Objs"
 - "Session"
 - !private "SessionTableViewCell"
 - !private "StringLiteralType"
+- !private "TimeInterval"
 - !private "UINavigationController"
 - "UIStoryboardSegue"
 - "UITableView"
@@ -52,14 +56,17 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "row"]
 - !private ["SK", "subscript"]
+- !private ["SB", "pi"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "nameLabel"]
 - !private ["So15CALayerDelegateP", "text"]
 - ["s7CVarArgP", "Array"]
+- !private ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "NSKeyedArchiver"]
 - !private ["s7CVarArgP", "NSKeyedUnarchiver"]
 - ["s7CVarArgP", "Session"]
+- !private ["s7CVarArgP", "TimeInterval"]
 - !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
@@ -76,6 +83,7 @@ depends-member:
 - !private ["s7CVarArgP", "loadSessionToTable"]
 - !private ["s7CVarArgP", "nameLabel"]
 - !private ["s7CVarArgP", "object"]
+- !private ["s7CVarArgP", "pi"]
 - !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "savedDataArray"]
 - !private ["s7CVarArgP", "savedSession"]
@@ -93,13 +101,17 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
+- !private ["SL", "distantPast"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
+- !private ["SL", "pi"]
 - !private ["SL", "row"]
 - ["s28CustomDebugStringConvertibleP", "Array"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedArchiver"]
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedUnarchiver"]
 - ["s28CustomDebugStringConvertibleP", "Session"]
+- !private ["s28CustomDebugStringConvertibleP", "TimeInterval"]
 - !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
@@ -107,6 +119,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "distantPast"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -115,6 +128,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "loadSessionToTable"]
 - !private ["s28CustomDebugStringConvertibleP", "nameLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
+- !private ["s28CustomDebugStringConvertibleP", "pi"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "savedDataArray"]
@@ -128,20 +142,26 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "unarchiveTopLevelObjectWithData"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "distantPast"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "pi"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "distantPast"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "pi"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - ["s23CustomStringConvertibleP", "Array"]
+- !private ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "NSKeyedArchiver"]
 - !private ["s23CustomStringConvertibleP", "NSKeyedUnarchiver"]
 - ["s23CustomStringConvertibleP", "Session"]
+- !private ["s23CustomStringConvertibleP", "TimeInterval"]
 - !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
@@ -150,6 +170,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "distantPast"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -158,6 +179,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "loadSessionToTable"]
 - !private ["s23CustomStringConvertibleP", "nameLabel"]
 - !private ["s23CustomStringConvertibleP", "object"]
+- !private ["s23CustomStringConvertibleP", "pi"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "save"]
 - !private ["s23CustomStringConvertibleP", "savedDataArray"]
@@ -170,26 +192,34 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "topViewController"]
 - !private ["s23CustomStringConvertibleP", "unarchiveTopLevelObjectWithData"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["10Foundation4DateV", "distantPast"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
 - !private ["Se", "count"]
+- !private ["Se", "distantPast"]
 - ["Se", "init"]
 - !private ["Se", "init"]
+- !private ["Se", "pi"]
 - !private ["Se", "row"]
 - !private ["Se", "subscript"]
 - !private ["Se", "text"]
+- !private ["Sd", "pi"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
 - !private ["SE", "count"]
+- !private ["SE", "distantPast"]
 - ["SE", "init"]
 - !private ["SE", "init"]
+- !private ["SE", "pi"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - ["SQ", "Array"]
+- !private ["SQ", "Date"]
 - !private ["SQ", "NSKeyedArchiver"]
 - !private ["SQ", "NSKeyedUnarchiver"]
 - ["SQ", "Session"]
+- !private ["SQ", "TimeInterval"]
 - !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
@@ -198,6 +228,7 @@ depends-member:
 - !private ["SQ", "count"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "destination"]
+- !private ["SQ", "distantPast"]
 - !private ["SQ", "fatalError"]
 - ["SQ", "init"]
 - !private ["SQ", "init"]
@@ -206,6 +237,7 @@ depends-member:
 - !private ["SQ", "loadSessionToTable"]
 - !private ["SQ", "nameLabel"]
 - !private ["SQ", "object"]
+- !private ["SQ", "pi"]
 - !private ["SQ", "row"]
 - !private ["SQ", "save"]
 - !private ["SQ", "savedDataArray"]
@@ -226,15 +258,20 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "pi"]
+- !private ["s27ExpressibleByIntegerLiteralP", "pi"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", "pi"]
 - ["SH", "Array"]
+- !private ["SH", "Date"]
 - !private ["SH", "NSKeyedArchiver"]
 - !private ["SH", "NSKeyedUnarchiver"]
 - ["SH", "Session"]
+- !private ["SH", "TimeInterval"]
 - !private ["SH", "UserDefaults"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
@@ -243,6 +280,7 @@ depends-member:
 - !private ["SH", "count"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "destination"]
+- !private ["SH", "distantPast"]
 - !private ["SH", "fatalError"]
 - ["SH", "init"]
 - !private ["SH", "init"]
@@ -251,6 +289,7 @@ depends-member:
 - !private ["SH", "loadSessionToTable"]
 - !private ["SH", "nameLabel"]
 - !private ["SH", "object"]
+- !private ["SH", "pi"]
 - !private ["SH", "row"]
 - !private ["SH", "save"]
 - !private ["SH", "savedDataArray"]
@@ -267,6 +306,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "pi"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
@@ -277,9 +317,11 @@ depends-member:
 - !private ["So7NSCoderC", "archivedData"]
 - !private ["So7NSCoderC", "unarchiveTopLevelObjectWithData"]
 - ["So8NSCodingP", "Array"]
+- !private ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "NSKeyedArchiver"]
 - !private ["So8NSCodingP", "NSKeyedUnarchiver"]
 - ["So8NSCodingP", "Session"]
+- !private ["So8NSCodingP", "TimeInterval"]
 - !private ["So8NSCodingP", "UserDefaults"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
@@ -298,9 +340,11 @@ depends-member:
 - !private ["So8NSCodingP", "topViewController"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "Array"]
+- !private ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "NSKeyedArchiver"]
 - !private ["So26NSExtensionRequestHandlingP", "NSKeyedUnarchiver"]
 - ["So26NSExtensionRequestHandlingP", "Session"]
+- !private ["So26NSExtensionRequestHandlingP", "TimeInterval"]
 - !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
@@ -319,13 +363,16 @@ depends-member:
 - !private ["So17NSKeyedUnarchiverC", "unarchiveTopLevelObjectWithData"]
 - ["So8NSObjectC", "Array"]
 - !private ["So8NSObjectC", "Data"]
+- !private ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSKeyedArchiver"]
 - !private ["So8NSObjectC", "NSKeyedUnarchiver"]
 - !private ["So8NSObjectC", "NewSessionViewController"]
+- !private ["So8NSObjectC", "Objs"]
 - ["So8NSObjectC", "Session"]
 - !private ["So8NSObjectC", "SessionTableViewCell"]
+- !private ["So8NSObjectC", "TimeInterval"]
 - !private ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
@@ -358,9 +405,11 @@ depends-member:
 - !private ["So8NSObjectC", "unarchiveTopLevelObjectWithData"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectP", "Array"]
+- !private ["So8NSObjectP", "Date"]
 - !private ["So8NSObjectP", "NSKeyedArchiver"]
 - !private ["So8NSObjectP", "NSKeyedUnarchiver"]
 - ["So8NSObjectP", "Session"]
+- !private ["So8NSObjectP", "TimeInterval"]
 - !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "archivedData"]
@@ -385,6 +434,7 @@ depends-member:
 - !private ["So8NSObjectP", "unarchiveTopLevelObjectWithData"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["9RPM_AR_UI24NewSessionViewControllerC", "savedSessions"]
+- !private ["Sj", "pi"]
 - !private ["Sq", "text"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
@@ -396,6 +446,7 @@ depends-member:
 - ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "subscript"]
+- !private ["10Foundation20ReferenceConvertibleP", "distantPast"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
@@ -403,11 +454,13 @@ depends-member:
 - !private ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
-- ["9RPM_AR_UI7SessionV", "init"]
+- !private ["9RPM_AR_UI7SessionV", "init"]
 - !private ["9RPM_AR_UI7SessionV", "name"]
 - !private ["9RPM_AR_UI20SessionTableViewCellC", "nameLabel"]
+- !private ["s13SignedNumericP", "pi"]
 - !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
+- !private ["Sx", "pi"]
 - !private ["SS", "init"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
@@ -423,9 +476,11 @@ depends-member:
 - !private ["So12UIAppearanceP", "nameLabel"]
 - !private ["So12UIAppearanceP", "text"]
 - ["So21UIAppearanceContainerP", "Array"]
+- !private ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "NSKeyedArchiver"]
 - !private ["So21UIAppearanceContainerP", "NSKeyedUnarchiver"]
 - ["So21UIAppearanceContainerP", "Session"]
+- !private ["So21UIAppearanceContainerP", "TimeInterval"]
 - !private ["So21UIAppearanceContainerP", "UserDefaults"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
@@ -444,9 +499,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "topViewController"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "Array"]
+- !private ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "NSKeyedArchiver"]
 - !private ["So18UIContentContainerP", "NSKeyedUnarchiver"]
 - ["So18UIContentContainerP", "Session"]
+- !private ["So18UIContentContainerP", "TimeInterval"]
 - !private ["So18UIContentContainerP", "UserDefaults"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "fatalError"]
@@ -470,9 +527,11 @@ depends-member:
 - !private ["So13UIDynamicItemP", "nameLabel"]
 - !private ["So13UIDynamicItemP", "text"]
 - ["So18UIFocusEnvironmentP", "Array"]
+- !private ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "NSKeyedArchiver"]
 - !private ["So18UIFocusEnvironmentP", "NSKeyedUnarchiver"]
 - ["So18UIFocusEnvironmentP", "Session"]
+- !private ["So18UIFocusEnvironmentP", "TimeInterval"]
 - !private ["So18UIFocusEnvironmentP", "UserDefaults"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
@@ -501,9 +560,11 @@ depends-member:
 - !private ["So7UILabelC", "text"]
 - !private ["So22UINavigationControllerC", "topViewController"]
 - ["So30UIPasteConfigurationSupportingP", "Array"]
+- !private ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedArchiver"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedUnarchiver"]
 - ["So30UIPasteConfigurationSupportingP", "Session"]
+- !private ["So30UIPasteConfigurationSupportingP", "TimeInterval"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
@@ -523,13 +584,16 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Array"]
 - !private ["So11UIResponderC", "Data"]
+- !private ["So11UIResponderC", "Date"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSKeyedArchiver"]
 - !private ["So11UIResponderC", "NSKeyedUnarchiver"]
 - !private ["So11UIResponderC", "NewSessionViewController"]
+- !private ["So11UIResponderC", "Objs"]
 - ["So11UIResponderC", "Session"]
 - !private ["So11UIResponderC", "SessionTableViewCell"]
+- !private ["So11UIResponderC", "TimeInterval"]
 - !private ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
@@ -556,9 +620,11 @@ depends-member:
 - !private ["So11UIResponderC", "topViewController"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "Array"]
+- !private ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedArchiver"]
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedUnarchiver"]
 - ["So30UIResponderStandardEditActionsP", "Session"]
+- !private ["So30UIResponderStandardEditActionsP", "TimeInterval"]
 - !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
@@ -578,9 +644,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - ["So20UIScrollViewDelegateP", "Array"]
+- !private ["So20UIScrollViewDelegateP", "Date"]
 - !private ["So20UIScrollViewDelegateP", "NSKeyedArchiver"]
 - !private ["So20UIScrollViewDelegateP", "NSKeyedUnarchiver"]
 - ["So20UIScrollViewDelegateP", "Session"]
+- !private ["So20UIScrollViewDelegateP", "TimeInterval"]
 - !private ["So20UIScrollViewDelegateP", "UserDefaults"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "fatalError"]
@@ -595,9 +663,11 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - ["So16UIStateRestoringP", "Array"]
+- !private ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "NSKeyedArchiver"]
 - !private ["So16UIStateRestoringP", "NSKeyedUnarchiver"]
 - ["So16UIStateRestoringP", "Session"]
+- !private ["So16UIStateRestoringP", "TimeInterval"]
 - !private ["So16UIStateRestoringP", "UserDefaults"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "fatalError"]
@@ -617,13 +687,16 @@ depends-member:
 - !private ["So15UITableViewCellC", "nameLabel"]
 - ["So21UITableViewControllerC", "Array"]
 - !private ["So21UITableViewControllerC", "Data"]
+- !private ["So21UITableViewControllerC", "Date"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
 - !private ["So21UITableViewControllerC", "NSKeyedArchiver"]
 - !private ["So21UITableViewControllerC", "NSKeyedUnarchiver"]
 - !private ["So21UITableViewControllerC", "NewSessionViewController"]
+- !private ["So21UITableViewControllerC", "Objs"]
 - ["So21UITableViewControllerC", "Session"]
 - !private ["So21UITableViewControllerC", "SessionTableViewCell"]
+- !private ["So21UITableViewControllerC", "TimeInterval"]
 - !private ["So21UITableViewControllerC", "UINavigationController"]
 - ["So21UITableViewControllerC", "UIStoryboardSegue"]
 - ["So21UITableViewControllerC", "UITableView"]
@@ -646,9 +719,11 @@ depends-member:
 - ["So21UITableViewControllerC", "tableView"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
 - ["So21UITableViewDataSourceP", "Array"]
+- !private ["So21UITableViewDataSourceP", "Date"]
 - !private ["So21UITableViewDataSourceP", "NSKeyedArchiver"]
 - !private ["So21UITableViewDataSourceP", "NSKeyedUnarchiver"]
 - ["So21UITableViewDataSourceP", "Session"]
+- !private ["So21UITableViewDataSourceP", "TimeInterval"]
 - !private ["So21UITableViewDataSourceP", "UserDefaults"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "fatalError"]
@@ -662,9 +737,11 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "savedSession"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
 - ["So19UITableViewDelegateP", "Array"]
+- !private ["So19UITableViewDelegateP", "Date"]
 - !private ["So19UITableViewDelegateP", "NSKeyedArchiver"]
 - !private ["So19UITableViewDelegateP", "NSKeyedUnarchiver"]
 - ["So19UITableViewDelegateP", "Session"]
+- !private ["So19UITableViewDelegateP", "TimeInterval"]
 - !private ["So19UITableViewDelegateP", "UserDefaults"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "fatalError"]
@@ -678,9 +755,11 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "savedSession"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "Array"]
+- !private ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "NSKeyedArchiver"]
 - !private ["So18UITraitEnvironmentP", "NSKeyedUnarchiver"]
 - ["So18UITraitEnvironmentP", "Session"]
+- !private ["So18UITraitEnvironmentP", "TimeInterval"]
 - !private ["So18UITraitEnvironmentP", "UserDefaults"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
@@ -699,9 +778,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "topViewController"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "Array"]
+- !private ["So23UIUserActivityRestoringP", "Date"]
 - !private ["So23UIUserActivityRestoringP", "NSKeyedArchiver"]
 - !private ["So23UIUserActivityRestoringP", "NSKeyedUnarchiver"]
 - ["So23UIUserActivityRestoringP", "Session"]
+- !private ["So23UIUserActivityRestoringP", "TimeInterval"]
 - !private ["So23UIUserActivityRestoringP", "UserDefaults"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
@@ -724,13 +805,16 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Array"]
 - !private ["So16UIViewControllerC", "Data"]
+- !private ["So16UIViewControllerC", "Date"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSKeyedArchiver"]
 - !private ["So16UIViewControllerC", "NSKeyedUnarchiver"]
 - !private ["So16UIViewControllerC", "NewSessionViewController"]
+- !private ["So16UIViewControllerC", "Objs"]
 - ["So16UIViewControllerC", "Session"]
 - !private ["So16UIViewControllerC", "SessionTableViewCell"]
+- !private ["So16UIViewControllerC", "TimeInterval"]
 - !private ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -758,13 +842,16 @@ depends-member:
 - !private ["So14NSUserDefaultsC", "standard"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "Array"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "Data"]
+- !private ["9RPM_AR_UI21WelcomeViewControllerC", "Date"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "IndexPath"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "Int"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "NSKeyedArchiver"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "NSKeyedUnarchiver"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "NewSessionViewController"]
+- !private ["9RPM_AR_UI21WelcomeViewControllerC", "Objs"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "Session"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "SessionTableViewCell"]
+- !private ["9RPM_AR_UI21WelcomeViewControllerC", "TimeInterval"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "UINavigationController"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "UIStoryboardSegue"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "UITableView"]
@@ -784,6 +871,8 @@ depends-member:
 - ["9RPM_AR_UI21WelcomeViewControllerC", "table"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "tableView"]
 - ["9RPM_AR_UI21WelcomeViewControllerC", "viewDidLoad"]
+- !private ["s15_CVarArgAlignedP", "pi"]
+- !private ["s22_CVarArgPassedAsDoubleP", "pi"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "nameLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -794,6 +883,8 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "pi"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "pi"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -805,11 +896,14 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "pi"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedArchiver"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedUnarchiver"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Session"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeInterval"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "archivedData"]
@@ -836,8 +930,10 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "distantPast"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "pi"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
@@ -847,6 +943,7 @@ depends-nominal:
 - "Sa"
 - "s13ArrayProtocolP"
 - "SK"
+- !private "SB"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -856,15 +953,20 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
 - "Se"
+- !private "Sd"
 - "SE"
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "s25LosslessStringConvertibleP"
@@ -878,14 +980,17 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "9RPM_AR_UI24NewSessionViewControllerC"
+- !private "Sj"
 - !private "Sq"
 - "Sk"
 - "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
-- "9RPM_AR_UI7SessionV"
+- !private "9RPM_AR_UI7SessionV"
 - !private "9RPM_AR_UI20SessionTableViewCellC"
+- !private "s13SignedNumericP"
 - !private "s12StaticStringV"
+- !private "Sx"
 - !private "SS"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
@@ -924,10 +1029,14 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "So14NSUserDefaultsC"
 - "9RPM_AR_UI21WelcomeViewControllerC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -981,4 +1090,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4981ffa0f60fd094e76c52e49c5222d5"
+interface-hash: "82bc151cc1596a27021c43ed5260ab07"

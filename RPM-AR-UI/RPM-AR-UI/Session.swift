@@ -10,12 +10,13 @@ import Foundation
 
 struct Session{
     let name : String
+    let childName: String
     let time : TimeInterval
     var hours: Int
     var mins: Int
     var secs: Int
     let date : Date
-    var sessionNum : String
+    var sessionNum : Int
     var objsPicked: Array<Objs> = Array()
     var objsNotPicked: Array<Objs> = Array()
 }

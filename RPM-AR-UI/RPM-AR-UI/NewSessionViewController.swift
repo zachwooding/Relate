@@ -19,7 +19,8 @@ class NewSessionViewController: UIViewController {
     @IBOutlet weak var datePicker : UIDatePicker!
     @IBOutlet weak var timePicker : UIDatePicker!
     @IBOutlet weak var name : UITextField!
-    @IBOutlet weak var sessionNum : UITextField!
+    @IBOutlet weak var childName: UITextField!
+    
     
     //var newSession: Session = Session(name: "New Session", time: 1000.0, date: Date(), sessionNum: "1")
 
@@ -30,7 +31,6 @@ class NewSessionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     func timeCon (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
@@ -40,7 +40,7 @@ class NewSessionViewController: UIViewController {
         if segue.destination is UINavigationController{
             let navTarget = segue.destination as! UINavigationController
             let (h,m,s) = timeCon(seconds: Int(timePicker.countDownDuration))
-            let newSession = Session(name: name!.text!, time: timePicker.countDownDuration, hours: h, mins: m, secs: s ,date: datePicker.date, sessionNum: sessionNum.text!, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+            let newSession = Session(name: name!.text!, childName: childName.text!, time: timePicker.countDownDuration, hours: h, mins: m, secs: s ,date: datePicker.date, sessionNum: savedSessions.count+1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
             let arVC = navTarget.topViewController as! ARViewController
             
             arVC.sessionInfo = newSession

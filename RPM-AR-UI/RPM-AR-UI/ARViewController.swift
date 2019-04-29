@@ -86,7 +86,14 @@ class ARViewController: UIViewController {
     //add 3D Objects to scene
     @objc func addObjectToScene(withGestureRecognizer recognizer: UIGestureRecognizer) {
         //checking # of objs on screen and that a Obj has been selected
-        if(objSelected != nil){
+        var isOnScreen = false
+        for obj in objectsOnScreen{
+            if objSelected.name == obj.name{
+                isOnScreen = true
+                break
+            }
+        }
+        if(objSelected != nil && objectsOnScreen.count < 2 && isOnScreen == false){
             
             //setting loaction for object
             let tapLocation = recognizer.location(in: arSceneView)
@@ -274,7 +281,7 @@ class ARViewController: UIViewController {
         let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be lost.", preferredStyle: UIAlertController.Style.alert)
         
         quitAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
-            (action: UIAlertAction!) in self.saveDataAndExit()
+            (action: UIAlertAction!) in self.performSegue(withIdentifier: "unwindToWelcome", sender: self)
             
         }))
         
@@ -286,10 +293,12 @@ class ARViewController: UIViewController {
     }
     
     //saving session and moving to welcome screen
-    func saveDataAndExit(){
-        let wlVC = WelcomeViewController()
-        wlVC.savedSession = sessionInfo
-        performSegue(withIdentifier: "unwindToWelcome", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "unwindToWelcome" {
+            let navTarget = segue.destination as! WelcomeViewController
+            navTarget.savedSession = sessionInfo
+        }
+        
     }
     
     //managing data receved from new session page
@@ -301,7 +310,7 @@ class ARViewController: UIViewController {
         sessionInfo.hours = h
         sessionInfo.mins = m
         sessionInfo.secs = s
-        sessionInfo.sessionNum = "0"
+        sessionInfo.sessionNum = 0
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     
         

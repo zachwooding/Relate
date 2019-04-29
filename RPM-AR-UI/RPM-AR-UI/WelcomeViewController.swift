@@ -20,8 +20,10 @@ class WelcomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        listedSessions.append(session)
         
-        load();
+        load()
         loadSessionToTable()
     
         // Do any additional setup after loading the view.
@@ -36,12 +38,13 @@ class WelcomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cellId = "SessionTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SessionTableViewCell else{
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+            fatalError("The dequeued cell is not an instance of SessionTableViewCell.")
         }
-        
         let session = listedSessions[indexPath.row]
+        //let session = Session(name: "TheSesh", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: "1", objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
         cell.nameLabel.text = session.name
         
         return cell
@@ -54,8 +57,13 @@ class WelcomeViewController: UITableViewController {
     }
     
     @IBAction func backToWelcome(unwindSegue: UIStoryboardSegue){
-        savedDataArray.append(savedSession)
-        save()
+        if savedSession != nil{
+            savedDataArray.append(savedSession)
+            listedSessions.append(savedSession)
+            save()
+            load()
+            
+        }
         
     }
     
