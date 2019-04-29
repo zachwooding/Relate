@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>15784E08-74AF-4D59-A9AC-F53839E6EDD5</key>
+		<key>2EC56482-C9A0-4558-9F5A-17FEF07B3403</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>15784E08-74AF-4D59-A9AC-F53839E6EDD5.xcactivitylog</string>
+			<string>2EC56482-C9A0-4558-9F5A-17FEF07B3403.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,140 @@
 			<key>signature</key>
 			<string>Debug RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-			<real>578260211.01874804</real>
+			<real>578263368.51142704</real>
 			<key>timeStoppedRecording</key>
-			<real>578260238.49686801</real>
+			<real>578263607.89670002</real>
 			<key>title</key>
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>15784E08-74AF-4D59-A9AC-F53839E6EDD5</string>
+			<string>2EC56482-C9A0-4558-9F5A-17FEF07B3403</string>
+<<<<<<< HEAD
+		</dict>
+<<<<<<< HEAD
+		<key>198D6B28-669C-4389-A282-6EF44BDE36B1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>198D6B28-669C-4389-A282-6EF44BDE36B1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578262108.37810898</real>
+			<key>timeStoppedRecording</key>
+			<real>578262252.11532903</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>198D6B28-669C-4389-A282-6EF44BDE36B1</string>
+		</dict>
+		<key>21E3E76E-F387-44AD-869E-1909D1216E41</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>21E3E76E-F387-44AD-869E-1909D1216E41.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578263609.59791803</real>
+			<key>timeStoppedRecording</key>
+			<real>578263637.62560403</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>21E3E76E-F387-44AD-869E-1909D1216E41</string>
+		</dict>
+		<key>297E84BA-3717-4BAC-A615-42322FC724AE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>297E84BA-3717-4BAC-A615-42322FC724AE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578264307.07336795</real>
+			<key>timeStoppedRecording</key>
+			<real>578264385.14729202</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>297E84BA-3717-4BAC-A615-42322FC724AE</string>
+		</dict>
+		<key>31098026-82CF-41EA-B059-2D5292B69DB3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>31098026-82CF-41EA-B059-2D5292B69DB3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578262030.65923798</real>
+			<key>timeStoppedRecording</key>
+			<real>578262107.019786</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>31098026-82CF-41EA-B059-2D5292B69DB3</string>
 		</dict>
 		<key>4E063FB1-9DA4-4DC0-9A14-D765CBE05305</key>
+=======
+		<key>92CA78EF-51BF-4D7B-86D6-B3A4294ABF8D</key>
+>>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
+=======
+		</dict>
+		<key>92CA78EF-51BF-4D7B-86D6-B3A4294ABF8D</key>
+>>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -44,7 +169,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>4E063FB1-9DA4-4DC0-9A14-D765CBE05305.xcactivitylog</string>
+			<string>92CA78EF-51BF-4D7B-86D6-B3A4294ABF8D.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,12 +181,14 @@
 			<key>signature</key>
 			<string>Debug RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-			<real>578260402.00069404</real>
+			<real>578263345.36908102</real>
 			<key>timeStoppedRecording</key>
-			<real>578260415.618222</real>
+			<real>578263354.382007</real>
 			<key>title</key>
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
+<<<<<<< HEAD
+<<<<<<< HEAD
 			<string>4E063FB1-9DA4-4DC0-9A14-D765CBE05305</string>
 		</dict>
 		<key>53DD773B-6D3F-486B-BBE9-454F35614DC1</key>
@@ -93,6 +220,64 @@
 			<key>uniqueIdentifier</key>
 			<string>53DD773B-6D3F-486B-BBE9-454F35614DC1</string>
 		</dict>
+		<key>65DBD15E-4A95-48B2-B5DE-2F3813A8E4B9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>65DBD15E-4A95-48B2-B5DE-2F3813A8E4B9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578262386.13553095</real>
+			<key>timeStoppedRecording</key>
+			<real>578262512.568223</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>65DBD15E-4A95-48B2-B5DE-2F3813A8E4B9</string>
+		</dict>
+		<key>6FFF466B-C80A-4F08-818A-340876B94432</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6FFF466B-C80A-4F08-818A-340876B94432.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578263485.14997005</real>
+			<key>timeStoppedRecording</key>
+			<real>578263607.45531702</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>6FFF466B-C80A-4F08-818A-340876B94432</string>
+		</dict>
 		<key>7C13AC07-212F-44F5-BBB7-35DC27D7764D</key>
 		<dict>
 			<key>className</key>
@@ -121,6 +306,35 @@
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>7C13AC07-212F-44F5-BBB7-35DC27D7764D</string>
+		</dict>
+		<key>8194F7D9-9AE8-4E86-A83E-55438F94EB66</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8194F7D9-9AE8-4E86-A83E-55438F94EB66.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578262587.70660603</real>
+			<key>timeStoppedRecording</key>
+			<real>578263481.29558396</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>8194F7D9-9AE8-4E86-A83E-55438F94EB66</string>
 		</dict>
 		<key>951010B4-A630-4A5A-A06C-F3C85133322C</key>
 		<dict>
@@ -238,6 +452,35 @@
 			<key>uniqueIdentifier</key>
 			<string>AB6C1246-3A8E-47F1-AEC0-81CC3DA1F20D</string>
 		</dict>
+		<key>B3BD200D-FCE4-4330-9AF1-6E40061F9387</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B3BD200D-FCE4-4330-9AF1-6E40061F9387.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578261827.00984704</real>
+			<key>timeStoppedRecording</key>
+			<real>578261859.96075702</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>B3BD200D-FCE4-4330-9AF1-6E40061F9387</string>
+		</dict>
 		<key>B7DDFBCF-FF46-4A33-9CE9-6274E3B3805A</key>
 		<dict>
 			<key>className</key>
@@ -266,6 +509,35 @@
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>B7DDFBCF-FF46-4A33-9CE9-6274E3B3805A</string>
+		</dict>
+		<key>BA6EABC5-6E67-4F89-8405-0358F6A97044</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BA6EABC5-6E67-4F89-8405-0358F6A97044.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578261865.21453905</real>
+			<key>timeStoppedRecording</key>
+			<real>578261879.95259297</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>BA6EABC5-6E67-4F89-8405-0358F6A97044</string>
 		</dict>
 		<key>BA9DF127-73D7-43DA-9D13-2CB3E16CBE8E</key>
 		<dict>
@@ -353,6 +625,35 @@
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>D27A0C9B-0557-4706-BEDF-CDE3923EE5F7</string>
+		</dict>
+		<key>DAEDA4AD-A8B2-4773-9DAD-6B34901655DD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DAEDA4AD-A8B2-4773-9DAD-6B34901655DD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578261767.63002503</real>
+			<key>timeStoppedRecording</key>
+			<real>578261824.79206896</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>DAEDA4AD-A8B2-4773-9DAD-6B34901655DD</string>
 		</dict>
 		<key>DC975C3A-2E6B-4EBA-8A3B-CBB6881E788F</key>
 		<dict>
@@ -469,6 +770,12 @@
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>FF77D6E0-E9E6-4678-B9A1-D418F1BC1638</string>
+=======
+			<string>92CA78EF-51BF-4D7B-86D6-B3A4294ABF8D</string>
+>>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
+=======
+			<string>92CA78EF-51BF-4D7B-86D6-B3A4294ABF8D</string>
+>>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
 		</dict>
 	</dict>
 </dict>
