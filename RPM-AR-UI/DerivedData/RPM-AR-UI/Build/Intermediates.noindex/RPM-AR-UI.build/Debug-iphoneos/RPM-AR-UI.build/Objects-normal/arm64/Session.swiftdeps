@@ -1,45 +1,305 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Info"
 - "Session"
 provides-nominal:
+- "9RPM_AR_UI4InfoV"
 - "9RPM_AR_UI7SessionV"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
 provides-member:
+- ["9RPM_AR_UI4InfoV", ""]
 - ["9RPM_AR_UI7SessionV", ""]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "=="
 - "Array"
+- "AssignmentPrecedence"
+- "Codable"
+- "CodingKey"
 - "Date"
+- "Decoder"
+- "Encoder"
+- "Info"
 - "Int"
 - "Objs"
 - "Session"
 - "String"
+- "StringLiteralType"
 - "TimeInterval"
+- !private "_findStringSwitchCase"
+- !private "~="
 depends-member:
-- ["Sa", "init"]
-- ["s13ArrayProtocolP", "init"]
 - ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- !private ["s9CodingKeyP", "childName"]
+- !private ["s9CodingKeyP", "date"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- !private ["s9CodingKeyP", "hours"]
+- ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- !private ["s9CodingKeyP", "mins"]
+- !private ["s9CodingKeyP", "name"]
+- !private ["s9CodingKeyP", "objsNotPicked"]
+- !private ["s9CodingKeyP", "objsPicked"]
+- ["s9CodingKeyP", "rawValue"]
+- !private ["s9CodingKeyP", "secs"]
+- !private ["s9CodingKeyP", "sessionNum"]
+- ["s9CodingKeyP", "stringValue"]
+- !private ["s9CodingKeyP", "time"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "RawValue"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "_Default_RawValue"]
+- !private ["9RPM_AR_UI7SessionV10CodingKeysO", "_findStringSwitchCase"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "childName"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "date"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "debugDescription"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "deinit"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "description"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "hash"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "hashValue"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "hours"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "init"]
+- !private ["9RPM_AR_UI7SessionV10CodingKeysO", "init"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "intValue"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "mins"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "name"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "objsNotPicked"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "objsPicked"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "rawValue"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "secs"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "sessionNum"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "stringValue"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "time"]
 - ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- !private ["s28CustomDebugStringConvertibleP", "childName"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "hours"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s28CustomDebugStringConvertibleP", "mins"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "objsNotPicked"]
+- !private ["s28CustomDebugStringConvertibleP", "objsPicked"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "secs"]
+- !private ["s28CustomDebugStringConvertibleP", "sessionNum"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "time"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "childName"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "hours"]
 - ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- !private ["s23CustomStringConvertibleP", "mins"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "objsNotPicked"]
+- !private ["s23CustomStringConvertibleP", "objsPicked"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- !private ["s23CustomStringConvertibleP", "secs"]
+- !private ["s23CustomStringConvertibleP", "sessionNum"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "time"]
+- !private ["Se", "Array"]
+- !private ["Se", "CodingKeys"]
+- !private ["Se", "Date"]
+- !private ["Se", "Int"]
+- !private ["Se", "String"]
+- !private ["Se", "TimeInterval"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "childName"]
+- !private ["Se", "date"]
+- ["Se", "encode"]
+- !private ["Se", "hours"]
 - ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "mins"]
+- !private ["Se", "name"]
+- !private ["Se", "objsNotPicked"]
+- !private ["Se", "objsPicked"]
+- !private ["Se", "secs"]
+- !private ["Se", "session"]
+- !private ["Se", "sessionNum"]
+- !private ["Se", "time"]
+- !private ["s7DecoderP", "container"]
+- !private ["SE", "Array"]
+- !private ["SE", "CodingKeys"]
+- !private ["SE", "Date"]
+- !private ["SE", "Int"]
+- !private ["SE", "String"]
+- !private ["SE", "TimeInterval"]
+- ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "childName"]
+- !private ["SE", "date"]
+- ["SE", "encode"]
+- !private ["SE", "hours"]
 - ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "mins"]
+- !private ["SE", "name"]
+- !private ["SE", "objsNotPicked"]
+- !private ["SE", "objsPicked"]
+- !private ["SE", "secs"]
+- !private ["SE", "session"]
+- !private ["SE", "sessionNum"]
+- !private ["SE", "time"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "childName"]
+- !private ["SQ", "date"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "hours"]
 - ["SQ", "init"]
-- ["s25ExpressibleByArrayLiteralP", "init"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- !private ["SQ", "mins"]
+- !private ["SQ", "name"]
+- !private ["SQ", "objsNotPicked"]
+- !private ["SQ", "objsPicked"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "secs"]
+- !private ["SQ", "sessionNum"]
+- ["SQ", "stringValue"]
+- !private ["SQ", "time"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "childName"]
+- !private ["SH", "date"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "hours"]
 - ["SH", "init"]
-- ["SM", "init"]
-- ["Sk", "init"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- !private ["SH", "mins"]
+- !private ["SH", "name"]
+- !private ["SH", "objsNotPicked"]
+- !private ["SH", "objsPicked"]
+- ["SH", "rawValue"]
+- !private ["SH", "secs"]
+- !private ["SH", "sessionNum"]
+- ["SH", "stringValue"]
+- !private ["SH", "time"]
+- !private ["s6HasherV", "combine"]
+- ["9RPM_AR_UI4InfoV", "Session"]
+- ["9RPM_AR_UI4InfoV", "deinit"]
+- ["9RPM_AR_UI4InfoV", "encode"]
+- ["9RPM_AR_UI4InfoV", "init"]
+- ["9RPM_AR_UI4InfoV", "session"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["9RPM_AR_UI4ObjsV", "deinit"]
 - ["Sm", "init"]
+- ["Sm", "init"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- !private ["SY", "childName"]
+- !private ["SY", "date"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "hours"]
+- ["SY", "init"]
+- !private ["SY", "init"]
+- ["SY", "intValue"]
+- !private ["SY", "mins"]
+- !private ["SY", "name"]
+- !private ["SY", "objsNotPicked"]
+- !private ["SY", "objsPicked"]
+- ["SY", "rawValue"]
+- !private ["SY", "secs"]
+- !private ["SY", "sessionNum"]
+- ["SY", "stringValue"]
+- !private ["SY", "time"]
+- ["ST", "init"]
 - ["ST", "init"]
 - ["9RPM_AR_UI7SessionV", "Array"]
+- ["9RPM_AR_UI7SessionV", "CodingKey"]
+- ["9RPM_AR_UI7SessionV", "CodingKeys"]
 - ["9RPM_AR_UI7SessionV", "Date"]
+- ["9RPM_AR_UI7SessionV", "Decoder"]
+- ["9RPM_AR_UI7SessionV", "Encoder"]
 - ["9RPM_AR_UI7SessionV", "Int"]
 - ["9RPM_AR_UI7SessionV", "Objs"]
 - ["9RPM_AR_UI7SessionV", "String"]
 - ["9RPM_AR_UI7SessionV", "TimeInterval"]
+- !private ["9RPM_AR_UI7SessionV", "_findStringSwitchCase"]
 - ["9RPM_AR_UI7SessionV", "childName"]
 - ["9RPM_AR_UI7SessionV", "date"]
+- ["9RPM_AR_UI7SessionV", "deinit"]
+- ["9RPM_AR_UI7SessionV", "encode"]
 - ["9RPM_AR_UI7SessionV", "hours"]
 - ["9RPM_AR_UI7SessionV", "init"]
 - ["9RPM_AR_UI7SessionV", "mins"]
@@ -49,31 +309,89 @@ depends-member:
 - ["9RPM_AR_UI7SessionV", "secs"]
 - ["9RPM_AR_UI7SessionV", "sessionNum"]
 - ["9RPM_AR_UI7SessionV", "time"]
-- ["s24_DestructorSafeContainerP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- "Sa"
-- "s13ArrayProtocolP"
 - "SK"
+- !private "Sb"
 - "s7CVarArgP"
+- "s9CodingKeyP"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
+- "9RPM_AR_UI7SessionV10CodingKeysO"
 - "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
+- !private "s7DecoderP"
 - "SE"
+- !private "s7EncoderP"
 - "SQ"
-- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
-- "SM"
-- "Sk"
+- !private "s6HasherV"
+- "9RPM_AR_UI4InfoV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "9RPM_AR_UI4ObjsV"
 - "Sm"
+- "SY"
 - "ST"
 - "9RPM_AR_UI7SessionV"
-- "s24_DestructorSafeContainerP"
-- "s35_HasCustomAnyHashableRepresentationP"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
 - "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
@@ -119,4 +437,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "20bd97e87c51f4d6b831e59a8a554704"
+interface-hash: "18ced0b6f3c3e6effa7d1cebdf5a7d08"

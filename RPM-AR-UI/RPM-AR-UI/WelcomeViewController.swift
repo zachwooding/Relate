@@ -13,8 +13,12 @@ class WelcomeViewController: UITableViewController {
     var savedDataArray : Array<Session> = Array()
     var savedSession: Session!
     var listedSessions = [Session]()
+    var loadedData :[Session]!
+    var pathToSave: String!
+    var loadedSesh: Session!
     
     var sessionToPass: String!
+    var json: Data!
     
     //@IBOutlet var nameLabel: UILabel!
     //@IBOutlet var dateLabel: UILabel!
@@ -22,14 +26,21 @@ class WelcomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //createFile()
+        //loadedData = loadJson(filename: "sessionDocs")
         let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        savedSession = session
+        //save()
         listedSessions.append(session)
         
-        load()
-        loadSessionToTable()
+        //savedDataArray.append(load()!)
+        //loadSessionToTable()
     
         // Do any additional setup after loading the view.
     }
+    
+   
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -53,7 +64,7 @@ class WelcomeViewController: UITableViewController {
     }
     
     private func loadSessionToTable(){
-        for session in savedDataArray{
+        for session in loadedData{
             listedSessions += [session]
         }
     }
@@ -62,8 +73,7 @@ class WelcomeViewController: UITableViewController {
         if savedSession != nil{
             savedDataArray.append(savedSession)
             listedSessions.append(savedSession)
-            save()
-            load()
+            //save()
             
         }
         
@@ -100,23 +110,78 @@ class WelcomeViewController: UITableViewController {
         }
     }
     
-    func load() {
-        let defaults = UserDefaults.standard
+//    func load() {
+//        let defaults = UserDefaults.standard
+//
+//        if let savedData = defaults.object(forKey: "savedDataArray") as? Data {
+//            if let decodedData = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? [Session]{
+//                savedDataArray = decodedData!
+//            }
+//        }
+//
+//    }
+//
+//    func save() {
+//
+////        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: savedDataArray, requiringSecureCoding: false){
+////            let defaults = UserDefaults.standard
+////            defaults.set(savedData, forKey: "sID")
+////        }
+//
+//
+//    }
     
-        if let savedData = defaults.object(forKey: "savedDataArray") as? Data {
-            if let decodedData = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? [Session]{
-                savedDataArray = decodedData!
-            }
-        }
-        
-    }
-    
-    func save() {
-        
-        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: savedDataArray, requiringSecureCoding: false){
-            let defaults = UserDefaults.standard
-            defaults.set(savedData, forKey: "sID")
-        }
-    }
-
+//    func save() {
+////        do{
+////            json = try JSONEncoder().encode(savedSession)
+////        }catch{
+////
+////        }
+//
+//        let file = "SavedSessions.json"
+//
+//        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//
+//            let fileURL = dir.appendingPathComponent(file)
+//
+//            do {
+//                let jsonData = try JSONEncoder().encode(savedDataArray)
+//                try jsonData.write(to: fileURL)
+//            }
+//            catch {/* error handling here */}
+//        }
+//
+//    }
+//
+//    func load() -> Session? {
+//        let loadedData = try? JSONDecoder().decode(Session.self, from: json)
+//        return loadedData
+//    }
+//
+//    func createFile() -> String{
+//        //let data = savedSession.data(using: Session.Encoding.utf8)
+//        let filemgr = FileManager.default
+//        let path = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("sessionFile")
+//        //pathToSave = path?.absoluteString
+//        if !filemgr.fileExists(atPath: (path?.absoluteString)!) {
+//            filemgr.createFile(atPath: (path?.absoluteString)!, contents: nil, attributes: nil)
+//
+//        }
+//        return (path?.absoluteString)!
+//    }
+//
+//    func loadJson(filename fileName: String) -> [Session]? {
+//        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: url)
+//                let decoder = JSONDecoder()
+//                let jsonData = try decoder.decode(Info.self, from: data)
+//                return jsonData.session
+//            } catch {
+//                print("error:\(error)")
+//            }
+//        }
+//        return nil
+//    }
+//
 }

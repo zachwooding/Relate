@@ -54,6 +54,7 @@ depends-member:
 - ["9RPM_AR_UI10ObjectListC", "getList"]
 - ["9RPM_AR_UI10ObjectListC", "init"]
 - !private ["9RPM_AR_UI10ObjectListC", "objsList"]
+- !private ["9RPM_AR_UI4ObjsV", "deinit"]
 - !private ["9RPM_AR_UI4ObjsV", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]

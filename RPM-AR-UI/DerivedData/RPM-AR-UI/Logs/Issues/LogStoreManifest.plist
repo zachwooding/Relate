@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>5AE20522-D6F7-48CA-8D71-722D831158E1</key>
+		<key>02C4B749-16ED-4C0C-9F5A-ACCFAB73861A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,42 +15,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>5AE20522-D6F7-48CA-8D71-722D831158E1.xcactivitylog</string>
+			<string>02C4B749-16ED-4C0C-9F5A-ACCFAB73861A.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>signature</key>
-			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
+			<string>RPM-AR-UI-gwyyqtrvzhurkmabqbfbodhzysyg</string>
 			<key>timeStartedRecording</key>
-			<real>578271820.25780106</real>
+			<real>578351114.01253998</real>
 			<key>timeStoppedRecording</key>
-			<real>578271825.073264</real>
+			<real>578351121.73115206</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>5AE20522-D6F7-48CA-8D71-722D831158E1</string>
-		</dict>
-		<key>78FAC723-9B62-46E2-B8B9-9488127BE9D7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>78FAC723-9B62-46E2-B8B9-9488127BE9D7.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>signature</key>
-			<string>RPM-AR-UI-chbqztrfltijnnasfatwvhomzucw</string>
-			<key>timeStartedRecording</key>
-			<real>577830025.11071706</real>
-			<key>timeStoppedRecording</key>
-			<real>577830025.43382895</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>78FAC723-9B62-46E2-B8B9-9488127BE9D7</string>
+			<string>02C4B749-16ED-4C0C-9F5A-ACCFAB73861A</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

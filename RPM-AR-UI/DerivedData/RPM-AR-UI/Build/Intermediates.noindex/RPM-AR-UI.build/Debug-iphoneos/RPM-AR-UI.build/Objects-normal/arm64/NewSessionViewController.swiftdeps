@@ -348,6 +348,7 @@ depends-member:
 - !private ["So24SCNSceneRendererDelegateP", "sessionInfo"]
 - !private ["ST", "count"]
 - !private ["ST", "init"]
+- !private ["9RPM_AR_UI7SessionV", "deinit"]
 - !private ["9RPM_AR_UI7SessionV", "init"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
