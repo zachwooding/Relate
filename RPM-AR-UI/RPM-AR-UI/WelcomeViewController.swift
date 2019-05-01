@@ -171,7 +171,7 @@ class WelcomeViewController: UITableViewController {
         imageView.contentMode = .scaleAspectFit
         
         // 4
-        let image = UIImage(named: "apple.png")
+        let image = UIImage(named: "launchScreenFull Load.png")
         imageView.image = image
         
         // 5
