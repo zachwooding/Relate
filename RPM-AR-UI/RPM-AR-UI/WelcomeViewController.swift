@@ -31,8 +31,8 @@ class WelcomeViewController: UITableViewController {
         
         //createFile()
         //loadedData = loadJson(filename: "sessionDocs")
-        let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
-        savedSession = session
+        //let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date(), sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        //savedSession = session
         
         //listedSessions.append(session)
         
@@ -44,27 +44,23 @@ class WelcomeViewController: UITableViewController {
         
         //May 1st
         //url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
+        
         let filemgr = FileManager.default
         
         url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions.json")
-            
+        
         if !filemgr.fileExists(atPath: (url?.absoluteString)!) {
             filemgr.createFile(atPath: (url?.absoluteString)!, contents: nil, attributes: nil)
             
+        }else{
+            do{
+                json = try Data.init(contentsOf: url) as Data
+                loadJson()
+            }catch{
+                print(error)
+            }
         }
         
-            
-    
-        
-        
-        
-        do{
-            json = try Data.init(contentsOf: url) as Data
-            saveToJson()
-            loadJson()
-        }catch{
-            print(error)
-        }
     }
     
    
@@ -101,6 +97,7 @@ class WelcomeViewController: UITableViewController {
             savedDataArray.append(savedSession)
             listedSessions.append(savedSession)
             saveToJson()
+            loadJson()
             
         }
         
