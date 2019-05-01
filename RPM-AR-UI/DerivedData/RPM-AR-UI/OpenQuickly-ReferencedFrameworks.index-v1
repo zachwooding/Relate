@@ -3,9 +3,9 @@
 <plist version="1.0">
 <array>
 	<string>SceneKit</string>
+	<string>XCTest</string>
 	<string>AVFoundation</string>
 	<string>ARKit</string>
-	<string>XCTest</string>
 	<string>CoreData</string>
 	<string>UIKit</string>
 	<string>Foundation</string>
