@@ -6,13 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>20437A76-D7BA-4E79-935E-5845CCBD3AC1</key>
-=======
-=======
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-		<key>6CF85FED-00A5-4611-BA12-72EDC630AE7A</key>
+		<key>42C8EBFF-2AE4-408E-A606-8D9B119FD7C0</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -21,34 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>6CF85FED-00A5-4611-BA12-72EDC630AE7A.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>RPM-AR-UI-chbqztrfltijnnasfatwvhomzucw</string>
-			<key>timeStartedRecording</key>
-			<real>578435148.48184896</real>
-			<key>timeStoppedRecording</key>
-			<real>578435149.69438303</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>6CF85FED-00A5-4611-BA12-72EDC630AE7A</string>
-		</dict>
-		<key>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>20437A76-D7BA-4E79-935E-5845CCBD3AC1.xcactivitylog</string>
+			<string>42C8EBFF-2AE4-408E-A606-8D9B119FD7C0.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -57,13 +24,13 @@
 			<key>signature</key>
 			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
 			<key>timeStartedRecording</key>
-			<real>578434176.02904105</real>
+			<real>578437814.82344699</real>
 			<key>timeStoppedRecording</key>
-			<real>578434181.13226604</real>
+			<real>578437819.33675694</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>20437A76-D7BA-4E79-935E-5845CCBD3AC1</string>
+			<string>42C8EBFF-2AE4-408E-A606-8D9B119FD7C0</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

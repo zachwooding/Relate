@@ -31,9 +31,9 @@ class WelcomeViewController: UITableViewController {
         
         //createFile()
         //loadedData = loadJson(filename: "sessionDocs")
-        //let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
-        //savedSession = session
-        //save()
+        let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        savedSession = session
+        
         //listedSessions.append(session)
         
         //savedDataArray.append(load()!)
@@ -43,9 +43,23 @@ class WelcomeViewController: UITableViewController {
         
         
         //May 1st
-        url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
+        //url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
+        let filemgr = FileManager.default
+        
+        url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions")
+            
+        if url == nil {
+            filemgr.createFile(atPath: (url?.absoluteString)!, contents: nil, attributes: nil)
+        }
+        
+            
+    
+        
+        
+        
         do{
             json = try Data.init(contentsOf: url) as Data
+            saveToJson()
             loadJson()
         }catch{
             print(error)
@@ -127,6 +141,7 @@ class WelcomeViewController: UITableViewController {
         do {
             let jsonData = try JSONDecoder().decode(Session.self, from: json)
             listedSessions.append(jsonData)
+            
         }
         catch {
             print(error)
@@ -193,7 +208,7 @@ class WelcomeViewController: UITableViewController {
 //    func createFile() -> String{
 //        //let data = savedSession.data(using: Session.Encoding.utf8)
 //        let filemgr = FileManager.default
-//        let path = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("sessionFile")
+//        let path = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions")
 //        //pathToSave = path?.absoluteString
 //        if !filemgr.fileExists(atPath: (path?.absoluteString)!) {
 //            filemgr.createFile(atPath: (path?.absoluteString)!, contents: nil, attributes: nil)
