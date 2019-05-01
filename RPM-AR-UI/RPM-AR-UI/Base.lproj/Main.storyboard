@@ -10,20 +10,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Vmh-0R-tYw">
+        <!--Tutorial-->
+        <scene sceneID="ziL-E7-aw8">
             <objects>
-                <viewController id="WNF-Gp-Yud" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mDA-fA-4gX">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HlK-99-POa"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ob4-4e-Lk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <avPlayerViewController title="Tutorial" videoGravity="AVLayerVideoGravityResizeAspect" id="pNv-Sg-xgc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6a-3D-0Oo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1258" y="-551"/>
+            <point key="canvasLocation" x="-1277" y="-540"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HHt-ak-tOZ">
@@ -130,7 +123,7 @@
                     <navigationItem key="navigationItem" title="Welcome!" id="ZpF-jn-OLa">
                         <barButtonItem key="leftBarButtonItem" title="Tutorial" id="Nog-Xc-f9U">
                             <connections>
-                                <segue destination="WNF-Gp-Yud" kind="show" id="Rnn-4o-xqb"/>
+                                <segue destination="pNv-Sg-xgc" kind="show" id="hhW-xf-xDE"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Session" id="kHA-tK-Pd3">
