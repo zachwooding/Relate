@@ -6,6 +6,32 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>6CF85FED-00A5-4611-BA12-72EDC630AE7A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>6CF85FED-00A5-4611-BA12-72EDC630AE7A.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>RPM-AR-UI-chbqztrfltijnnasfatwvhomzucw</string>
+			<key>timeStartedRecording</key>
+			<real>578435148.48184896</real>
+			<key>timeStoppedRecording</key>
+			<real>578435149.69438303</real>
+			<key>title</key>
+			<string>Build target RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>6CF85FED-00A5-4611-BA12-72EDC630AE7A</string>
+		</dict>
 		<key>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</key>
 		<dict>
 			<key>className</key>
