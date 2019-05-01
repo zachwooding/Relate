@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>02C4B749-16ED-4C0C-9F5A-ACCFAB73861A</key>
+		<key>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,19 +15,22 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>02C4B749-16ED-4C0C-9F5A-ACCFAB73861A.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
 			<key>signature</key>
-			<string>RPM-AR-UI-gwyyqtrvzhurkmabqbfbodhzysyg</string>
+			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
 			<key>timeStartedRecording</key>
-			<real>578351114.01253998</real>
+			<real>578425745.14294899</real>
 			<key>timeStoppedRecording</key>
-			<real>578351121.73115206</real>
+			<real>578425750.72027695</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>02C4B749-16ED-4C0C-9F5A-ACCFAB73861A</string>
+			<string>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

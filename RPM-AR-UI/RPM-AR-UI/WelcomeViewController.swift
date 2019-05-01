@@ -29,15 +29,25 @@ class WelcomeViewController: UITableViewController {
         
         //createFile()
         //loadedData = loadJson(filename: "sessionDocs")
-        let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
-        savedSession = session
+        //let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        //savedSession = session
         //save()
-        listedSessions.append(session)
+        //listedSessions.append(session)
         
         //savedDataArray.append(load()!)
         //loadSessionToTable()
     
         // Do any additional setup after loading the view.
+        
+        
+        //May 1st
+        let url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
+        do{
+            json = try Data.init(contentsOf: url) as Data
+            loadJson()
+        }catch{
+            print(error)
+        }
     }
     
    
@@ -73,7 +83,7 @@ class WelcomeViewController: UITableViewController {
         if savedSession != nil{
             savedDataArray.append(savedSession)
             listedSessions.append(savedSession)
-            //save()
+            saveToJson()
             
         }
         
@@ -107,6 +117,25 @@ class WelcomeViewController: UITableViewController {
                 }
             }
             
+        }
+    }
+    
+    func loadJson(){
+        
+        do {
+            let jsonData = try JSONDecoder().decode(Session.self, from: json)
+            listedSessions.append(jsonData)
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    func saveToJson(){
+        do{
+            json = try JSONEncoder().encode(savedSession)
+        }catch{
+            print(error)
         }
     }
     

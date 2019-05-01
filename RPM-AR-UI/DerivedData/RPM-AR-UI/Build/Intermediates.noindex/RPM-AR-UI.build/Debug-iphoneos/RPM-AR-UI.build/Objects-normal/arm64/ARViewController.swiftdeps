@@ -289,6 +289,8 @@ depends-member:
 - !private ["So17AVSpeechUtteranceC", "init"]
 - !private ["So17AVSpeechUtteranceC", "rate"]
 - !private ["So17AVSpeechUtteranceC", "voice"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["s18AdditiveArithmeticP", "pi"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "first"]
@@ -296,25 +298,16 @@ depends-member:
 - ["Sa", "init"]
 - !private ["Sa", "remove"]
 - !private ["Sa", "removeAll"]
-- !private ["s13ArrayProtocolP", "append"]
-- !private ["s13ArrayProtocolP", "count"]
-- !private ["s13ArrayProtocolP", "first"]
-- !private ["s13ArrayProtocolP", "index"]
-- ["s13ArrayProtocolP", "init"]
-- !private ["s13ArrayProtocolP", "remove"]
-- !private ["s13ArrayProtocolP", "removeAll"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
 - !private ["SK", "first"]
 - !private ["SK", "index"]
 - ["SK", "init"]
-- !private ["SK", "init"]
 - !private ["SK", "remove"]
 - !private ["SK", "removeAll"]
 - !private ["SB", "init"]
 - !private ["SB", "pi"]
 - !private ["Sz", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "autoenablesDefaultLighting"]
 - !private ["So15CALayerDelegateP", "automaticallyUpdatesLighting"]
@@ -349,7 +342,6 @@ depends-member:
 - !private ["s7CVarArgP", "UILongPressGestureRecognizer"]
 - !private ["s7CVarArgP", "UITapGestureRecognizer"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addChildNode"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
@@ -437,16 +429,17 @@ depends-member:
 - !private ["Sl", "first"]
 - !private ["Sl", "index"]
 - ["Sl", "init"]
-- !private ["Sl", "init"]
-- !private ["Sl", "pi"]
 - !private ["Sl", "remove"]
 - !private ["Sl", "removeAll"]
-- !private ["Sl", "x"]
-- !private ["Sl", "y"]
-- !private ["Sl", "z"]
-- !private ["SL", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "pi"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "index"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "remove"]
+- !private ["10Foundation15ContiguousBytesP", "removeAll"]
 - !private ["s28CustomDebugStringConvertibleP", "ARSCNDebugOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "ARViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "ARWorldTrackingConfiguration"]
@@ -567,11 +560,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "z"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "pi"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "addGestureRecognizer"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "autoenablesDefaultLighting"]
@@ -585,7 +573,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "id"]
 - !private ["s17CustomReflectableP", "index"]
 - ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "mins"]
 - !private ["s17CustomReflectableP", "name"]
 - !private ["s17CustomReflectableP", "objsNotPicked"]
@@ -624,7 +611,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UILongPressGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "UITapGestureRecognizer"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addChildNode"]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
@@ -707,7 +693,16 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "voice"]
 - !private ["s23CustomStringConvertibleP", "width"]
 - !private ["s23CustomStringConvertibleP", "worldTransform"]
-- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "x"]
+- !private ["s23CustomStringConvertibleP", "y"]
+- !private ["s23CustomStringConvertibleP", "z"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "index"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "remove"]
+- !private ["10Foundation12DataProtocolP", "removeAll"]
 - !private ["Se", "addGestureRecognizer"]
 - !private ["Se", "append"]
 - !private ["Se", "autoenablesDefaultLighting"]
@@ -721,7 +716,6 @@ depends-member:
 - !private ["Se", "id"]
 - !private ["Se", "index"]
 - ["Se", "init"]
-- !private ["Se", "init"]
 - !private ["Se", "mins"]
 - !private ["Se", "name"]
 - !private ["Se", "objsNotPicked"]
@@ -736,9 +730,11 @@ depends-member:
 - !private ["Se", "text"]
 - !private ["Se", "time"]
 - !private ["Se", "title"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["Se", "z"]
 - !private ["Sd", "init"]
 - !private ["Sd", "pi"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "addGestureRecognizer"]
 - !private ["SE", "append"]
 - !private ["SE", "autoenablesDefaultLighting"]
@@ -752,7 +748,6 @@ depends-member:
 - !private ["SE", "id"]
 - !private ["SE", "index"]
 - ["SE", "init"]
-- !private ["SE", "init"]
 - !private ["SE", "mins"]
 - !private ["SE", "name"]
 - !private ["SE", "objsNotPicked"]
@@ -767,6 +762,9 @@ depends-member:
 - !private ["SE", "text"]
 - !private ["SE", "time"]
 - !private ["SE", "title"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SE", "z"]
 - !private ["SQ", "ARSCNDebugOptions"]
 - !private ["SQ", "ARViewController"]
 - !private ["SQ", "ARWorldTrackingConfiguration"]
@@ -791,7 +789,6 @@ depends-member:
 - !private ["SQ", "UILongPressGestureRecognizer"]
 - !private ["SQ", "UITapGestureRecognizer"]
 - ["SQ", ""]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "addAction"]
 - !private ["SQ", "addChildNode"]
 - !private ["SQ", "addGestureRecognizer"]
@@ -901,15 +898,12 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
 - !private ["s25ExpressibleByArrayLiteralP", "index"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
-- !private ["s25ExpressibleByArrayLiteralP", "pi"]
 - !private ["s25ExpressibleByArrayLiteralP", "remove"]
 - !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
 - !private ["s25ExpressibleByArrayLiteralP", "showFeaturePoints"]
 - !private ["s25ExpressibleByArrayLiteralP", "x"]
 - !private ["s25ExpressibleByArrayLiteralP", "y"]
 - !private ["s25ExpressibleByArrayLiteralP", "z"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "pi"]
@@ -934,9 +928,8 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s23ExpressibleByNilLiteralP", "time"]
 - !private ["s23ExpressibleByNilLiteralP", "title"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["Sf", "pi"]
@@ -966,7 +959,6 @@ depends-member:
 - !private ["SH", "UILongPressGestureRecognizer"]
 - !private ["SH", "UITapGestureRecognizer"]
 - ["SH", ""]
-- !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "addAction"]
 - !private ["SH", "addChildNode"]
 - !private ["SH", "addGestureRecognizer"]
@@ -1060,12 +1052,12 @@ depends-member:
 - !private ["SH", "voice"]
 - !private ["SH", "width"]
 - !private ["SH", "worldTransform"]
+- !private ["SH", "x"]
+- !private ["SH", "y"]
+- !private ["SH", "z"]
 - !private ["Si", "init"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "pi"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
@@ -1074,6 +1066,13 @@ depends-member:
 - ["SM", "init"]
 - !private ["SM", "remove"]
 - !private ["SM", "removeAll"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "index"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "remove"]
+- !private ["10Foundation19MutableDataProtocolP", "removeAll"]
 - !private ["So8NSCodingP", "ARSCNDebugOptions"]
 - !private ["So8NSCodingP", "ARViewController"]
 - !private ["So8NSCodingP", "ARWorldTrackingConfiguration"]
@@ -1526,7 +1525,6 @@ depends-member:
 - !private ["Sm", "first"]
 - !private ["Sm", "index"]
 - ["Sm", "init"]
-- !private ["Sm", "init"]
 - !private ["Sm", "remove"]
 - !private ["Sm", "removeAll"]
 - !private ["SY", "alert"]
@@ -1675,18 +1673,30 @@ depends-member:
 - !private ["So7SCNViewC", "hitTest"]
 - !private ["So7SCNViewC", "scene"]
 - !private ["So7SCNViewC", "session"]
+- !private ["s4SIMDP", "init"]
+- !private ["s4SIMDP", "x"]
+- !private ["s4SIMDP", "y"]
+- !private ["s4SIMDP", "z"]
+- !private ["s5SIMD3V", "init"]
+- !private ["s5SIMD3V", "x"]
+- !private ["s5SIMD3V", "y"]
+- !private ["s5SIMD3V", "z"]
+- !private ["s5SIMD4V", "x"]
+- !private ["s5SIMD4V", "y"]
+- !private ["s5SIMD4V", "z"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["s10SIMDScalarP", "pi"]
+- !private ["s11SIMDStorageP", "init"]
+- !private ["s11SIMDStorageP", "x"]
+- !private ["s11SIMDStorageP", "y"]
+- !private ["s11SIMDStorageP", "z"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "first"]
 - !private ["ST", "index"]
 - ["ST", "init"]
-- !private ["ST", "init"]
-- !private ["ST", "pi"]
 - !private ["ST", "remove"]
 - !private ["ST", "removeAll"]
-- !private ["ST", "x"]
-- !private ["ST", "y"]
-- !private ["ST", "z"]
 - !private ["9RPM_AR_UI7SessionV", "hours"]
 - !private ["9RPM_AR_UI7SessionV", "mins"]
 - !private ["9RPM_AR_UI7SessionV", "name"]
@@ -1703,16 +1713,13 @@ depends-member:
 - !private ["Sx", "init"]
 - !private ["Sx", "pi"]
 - !private ["SS", "init"]
-- !private ["SS", "init"]
-- !private ["Sy", "init"]
 - !private ["Sy", "init"]
 - !private ["So22UIAlertControllerStyleV", "alert"]
 - !private ["So18UIAlertActionStyleV", "cancel"]
 - !private ["So18UIAlertActionStyleV", "default"]
 - !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "pi"]
 - !private ["So7NSTimerC", "invalidate"]
 - !private ["So7NSTimerC", "scheduledTimer"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
@@ -2502,20 +2509,19 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "viewWillDisappear"]
 - !private ["9RPM_AR_UI21WelcomeViewControllerC", "savedSession"]
-- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "index"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "remove"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s15_CVarArgAlignedP", "pi"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "pi"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "autoenablesDefaultLighting"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "automaticallyUpdatesLighting"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "debugOptions"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "hitTest"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "scene"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "session"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "pi"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "first"]
@@ -2523,24 +2529,23 @@ depends-member:
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "remove"]
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "pi"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "pi"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "UIColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "transparentLightBlue"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "index"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "remove"]
+- !private ["s19_HasContiguousBytesP", "removeAll"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
@@ -2648,7 +2653,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "voice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "width"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "worldTransform"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "addGestureRecognizer"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "autoenablesDefaultLighting"]
@@ -2662,7 +2666,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "id"]
 - !private ["s21_ObjectiveCBridgeableP", "index"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "mins"]
 - !private ["s21_ObjectiveCBridgeableP", "name"]
 - !private ["s21_ObjectiveCBridgeableP", "objsNotPicked"]
@@ -2678,50 +2681,18 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "time"]
 - !private ["s21_ObjectiveCBridgeableP", "title"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["4simd7double2V", "pi"]
-- !private ["4simd7double3V", "pi"]
-- !private ["4simd7double4V", "pi"]
-- !private ["4simd6float2V", "pi"]
-- !private ["4simd6float3V", "init"]
-- !private ["4simd6float3V", "pi"]
-- !private ["4simd6float3V", "x"]
-- !private ["4simd6float3V", "y"]
-- !private ["4simd6float3V", "z"]
-- !private ["4simd6float4V", "pi"]
-- !private ["4simd6float4V", "x"]
-- !private ["4simd6float4V", "y"]
-- !private ["4simd6float4V", "z"]
-- !private ["4simd4int2V", "pi"]
-- !private ["4simd4int3V", "pi"]
-- !private ["4simd4int4V", "pi"]
-- !private ["So14simd_double2x2a", "pi"]
-- !private ["So14simd_double2x3a", "pi"]
-- !private ["So14simd_double2x4a", "pi"]
-- !private ["So14simd_double3x2a", "pi"]
-- !private ["So14simd_double3x3a", "pi"]
-- !private ["So14simd_double3x4a", "pi"]
-- !private ["So14simd_double4x2a", "pi"]
-- !private ["So14simd_double4x3a", "pi"]
-- !private ["So14simd_double4x4a", "pi"]
-- !private ["So13simd_float2x2a", "pi"]
-- !private ["So13simd_float2x3a", "pi"]
-- !private ["So13simd_float2x4a", "pi"]
-- !private ["So13simd_float3x2a", "pi"]
-- !private ["So13simd_float3x3a", "pi"]
-- !private ["So13simd_float3x4a", "pi"]
-- !private ["So13simd_float4x2a", "pi"]
-- !private ["So13simd_float4x3a", "pi"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "autoenablesDefaultLighting"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "automaticallyUpdatesLighting"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "debugOptions"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "hitTest"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "scene"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "session"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["So13simd_float4x4a", "columns"]
 - ["So13simd_float4x4a", "float3"]
-- !private ["So13simd_float4x4a", "pi"]
 - ["So13simd_float4x4a", "translation"]
-- !private ["So10simd_quatda", "pi"]
-- !private ["So10simd_quatfa", "pi"]
-- !private ["4simd5uint2V", "pi"]
-- !private ["4simd5uint3V", "pi"]
-- !private ["4simd5uint4V", "pi"]
 depends-nominal:
 - !private "So8ARAnchorC"
 - !private "So15ARAnchorCopyingP"
@@ -2737,31 +2708,31 @@ depends-nominal:
 - !private "So22AVSpeechSynthesisVoiceC"
 - !private "So19AVSpeechSynthesizerC"
 - !private "So17AVSpeechUtteranceC"
+- !private "s18AdditiveArithmeticP"
 - "Sa"
-- "s13ArrayProtocolP"
 - "SK"
 - !private "SB"
 - !private "Sz"
-- !private "Sb"
 - !private "So15CALayerDelegateP"
 - !private "12CoreGraphics7CGFloatV"
 - "s7CVarArgP"
 - "Sl"
 - !private "SL"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
 - "Se"
 - !private "Sd"
 - "SE"
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
@@ -2772,6 +2743,7 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -2807,6 +2779,11 @@ depends-nominal:
 - !private "So19SCNTechniqueSupportP"
 - !private "So10SCNVector3V"
 - !private "So7SCNViewC"
+- !private "s4SIMDP"
+- !private "s5SIMD3V"
+- !private "s5SIMD4V"
+- !private "s10SIMDScalarP"
+- !private "s11SIMDStorageP"
 - "ST"
 - !private "9RPM_AR_UI7SessionV"
 - !private "s10SetAlgebraP"
@@ -2853,59 +2830,25 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "9RPM_AR_UI21WelcomeViewControllerC"
-- !private "s18_BitwiseOperationsP"
+- "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
-- !private "4simd7double2V"
-- !private "4simd7double3V"
-- !private "4simd7double4V"
-- !private "4simd6float2V"
-- !private "4simd6float3V"
-- !private "4simd6float4V"
-- !private "4simd4int2V"
-- !private "4simd4int3V"
-- !private "4simd4int4V"
-- !private "So14simd_double2x2a"
-- !private "So14simd_double2x3a"
-- !private "So14simd_double2x4a"
-- !private "So14simd_double3x2a"
-- !private "So14simd_double3x3a"
-- !private "So14simd_double3x4a"
-- !private "So14simd_double4x2a"
-- !private "So14simd_double4x3a"
-- !private "So14simd_double4x4a"
-- !private "So13simd_float2x2a"
-- !private "So13simd_float2x3a"
-- !private "So13simd_float2x4a"
-- !private "So13simd_float3x2a"
-- !private "So13simd_float3x3a"
-- !private "So13simd_float3x4a"
-- !private "So13simd_float4x2a"
-- !private "So13simd_float4x3a"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 - "So13simd_float4x4a"
-- !private "So10simd_quatda"
-- !private "So10simd_quatfa"
-- !private "4simd5uint2V"
-- !private "4simd5uint3V"
-- !private "4simd5uint4V"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
@@ -2928,24 +2871,25 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1a1f24626f6a06004944fabf2094250d"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "427e5f1463fc5446c680abb77578703d"

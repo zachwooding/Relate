@@ -41,6 +41,7 @@
 		1DAA9783226F89060089D118 /* ObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9782226F89060089D118 /* ObjectList.swift */; };
 		1DAA9785226F9B530089D118 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */; };
 		1DACA5F5225BC67800582A69 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FA2253FC380011A730 /* art.scnassets */; };
+		1DE804762279FF0D009D4019 /* SavedSession.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE804752279FF0D009D4019 /* SavedSession.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		1DA84FA02277AD9B00F28549 /* SessionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailsViewController.swift; sourceTree = "<group>"; };
 		1DAA9782226F89060089D118 /* ObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectList.swift; sourceTree = "<group>"; };
 		1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
+		1DE804752279FF0D009D4019 /* SavedSession.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SavedSession.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		1D4CA5EC2253FC380011A730 = {
 			isa = PBXGroup;
 			children = (
+				1DE804752279FF0D009D4019 /* SavedSession.json */,
 				1D4CA5F72253FC380011A730 /* RPM-AR-UI */,
 				1D4CA6192253FC3B0011A730 /* RPM-AR-UIUITests */,
 				1D4CA5F62253FC380011A730 /* Products */,
@@ -338,6 +341,7 @@
 				1DA84F992277A62800F28549 /* ipadSpotlight80.png in Resources */,
 				1DA84F942277A62800F28549 /* launchScreenFull Load.png in Resources */,
 				1DA84F9D2277A62800F28549 /* ipadnotif40.png in Resources */,
+				1DE804762279FF0D009D4019 /* SavedSession.json in Resources */,
 				1DA84F9A2277A62800F28549 /* ipadApp152.png in Resources */,
 				1DA84F932277A62800F28549 /* apple.png in Resources */,
 				1DA84F922277A62800F28549 /* launchscreenfull2048.png in Resources */,

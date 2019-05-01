@@ -10,6 +10,10 @@ import Foundation
 
 struct Info:Codable{
     let session: [Session]
+    
+    init(session: [Session]){
+        self.session = session
+    }
 }
 
 
@@ -26,6 +30,7 @@ struct Session: Codable{
     var objsNotPicked: Array<Objs>
     
     enum CodingKeys: String, CodingKey {
+        case session
         case name
         case childName
         case time
@@ -67,11 +72,14 @@ struct Session: Codable{
         
         name = try container.decode(String.self, forKey: .name)
         childName = try container.decode(String.self, forKey: .childName)
-        time = try container.decode(TimeInterval.self, forKey: .time)
+        time = try container.decode(Double.self, forKey: .time)
         hours = try container.decode(Int.self, forKey: .hours)
         mins = try container.decode(Int.self, forKey: .mins)
         secs = try container.decode(Int.self, forKey: .secs)
-        date = try container.decode(Date.self, forKey: .date)
+        let dString = try container.decode(String.self, forKey: .date)
+        let format = DateFormatter()
+        format.dateFormat = "MM-dd-yyyy"
+        date = format.date(from: dString)!
         sessionNum = try container.decode(Int.self, forKey: .sessionNum)
         objsPicked = try container.decode(Array<Objs>.self, forKey: .objsPicked)
         objsNotPicked = try container.decode(Array<Objs>.self, forKey: .objsNotPicked)

@@ -18,7 +18,9 @@ depends-top-level:
 - "Codable"
 - "CodingKey"
 - "Date"
+- !private "DateFormatter"
 - "Decoder"
+- !private "Double"
 - "Encoder"
 - "Info"
 - "Int"
@@ -30,16 +32,15 @@ depends-top-level:
 - !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
-- ["SK", "init"]
-- ["SK", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
-- ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "init"]
+- ["s9CodingKeyP", "=="]
 - ["s9CodingKeyP", "RawValue"]
 - ["s9CodingKeyP", ""]
 - ["s9CodingKeyP", "_Default_RawValue"]
 - !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
 - !private ["s9CodingKeyP", "childName"]
 - !private ["s9CodingKeyP", "date"]
 - ["s9CodingKeyP", "debugDescription"]
@@ -59,9 +60,11 @@ depends-member:
 - !private ["s9CodingKeyP", "sessionNum"]
 - ["s9CodingKeyP", "stringValue"]
 - !private ["s9CodingKeyP", "time"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "=="]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "RawValue"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "_Default_RawValue"]
 - !private ["9RPM_AR_UI7SessionV10CodingKeysO", "_findStringSwitchCase"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "_rawHashValue"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "childName"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "date"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "debugDescription"]
@@ -79,26 +82,26 @@ depends-member:
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "objsPicked"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "rawValue"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "secs"]
+- ["9RPM_AR_UI7SessionV10CodingKeysO", "session"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "sessionNum"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "stringValue"]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", "time"]
-- ["Sl", "init"]
-- ["Sl", "init"]
-- ["SL", "init"]
-- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "=="]
 - ["s28CustomDebugStringConvertibleP", "RawValue"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
 - !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
 - !private ["s28CustomDebugStringConvertibleP", "childName"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
 - !private ["s28CustomDebugStringConvertibleP", "hours"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
 - !private ["s28CustomDebugStringConvertibleP", "mins"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
@@ -109,26 +112,22 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "sessionNum"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "time"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "=="]
 - ["s23CustomStringConvertibleP", "RawValue"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "_Default_RawValue"]
 - !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
 - !private ["s23CustomStringConvertibleP", "childName"]
 - !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
 - ["s23CustomStringConvertibleP", "description"]
 - ["s23CustomStringConvertibleP", "hash"]
 - ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "hours"]
 - ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
 - !private ["s23CustomStringConvertibleP", "mins"]
 - !private ["s23CustomStringConvertibleP", "name"]
@@ -139,20 +138,21 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sessionNum"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "time"]
+- !private ["So15NSDateFormatterC", "date"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
 - !private ["Se", "Array"]
 - !private ["Se", "CodingKeys"]
-- !private ["Se", "Date"]
+- !private ["Se", "DateFormatter"]
+- !private ["Se", "Double"]
 - !private ["Se", "Int"]
 - !private ["Se", "String"]
-- !private ["Se", "TimeInterval"]
 - ["Se", ""]
 - !private ["Se", "_findStringSwitchCase"]
-- !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "childName"]
 - !private ["Se", "date"]
 - ["Se", "encode"]
 - !private ["Se", "hours"]
-- ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "mins"]
 - !private ["Se", "name"]
@@ -165,18 +165,16 @@ depends-member:
 - !private ["s7DecoderP", "container"]
 - !private ["SE", "Array"]
 - !private ["SE", "CodingKeys"]
-- !private ["SE", "Date"]
+- !private ["SE", "DateFormatter"]
+- !private ["SE", "Double"]
 - !private ["SE", "Int"]
 - !private ["SE", "String"]
-- !private ["SE", "TimeInterval"]
 - ["SE", ""]
 - !private ["SE", "_findStringSwitchCase"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "childName"]
 - !private ["SE", "date"]
 - ["SE", "encode"]
 - !private ["SE", "hours"]
-- ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "mins"]
 - !private ["SE", "name"]
@@ -187,20 +185,22 @@ depends-member:
 - !private ["SE", "sessionNum"]
 - !private ["SE", "time"]
 - !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
 - ["SQ", "RawValue"]
 - ["SQ", ""]
 - ["SQ", "_Default_RawValue"]
 - !private ["SQ", "_findStringSwitchCase"]
-- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "_rawHashValue"]
 - !private ["SQ", "childName"]
 - !private ["SQ", "date"]
+- !private ["SQ", "dateFormat"]
 - ["SQ", "debugDescription"]
 - ["SQ", "description"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
 - !private ["SQ", "hours"]
 - ["SQ", "init"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - ["SQ", "intValue"]
 - !private ["SQ", "mins"]
 - !private ["SQ", "name"]
@@ -211,27 +211,25 @@ depends-member:
 - !private ["SQ", "sessionNum"]
 - ["SQ", "stringValue"]
 - !private ["SQ", "time"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So11NSFormatterC", "date"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- ["SH", "=="]
 - ["SH", "RawValue"]
 - ["SH", ""]
 - ["SH", "_Default_RawValue"]
 - !private ["SH", "_findStringSwitchCase"]
-- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "_rawHashValue"]
 - !private ["SH", "childName"]
 - !private ["SH", "date"]
+- !private ["SH", "dateFormat"]
 - ["SH", "debugDescription"]
 - ["SH", "description"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
 - !private ["SH", "hours"]
 - ["SH", "init"]
-- ["SH", "init"]
+- !private ["SH", "init"]
 - ["SH", "intValue"]
 - !private ["SH", "mins"]
 - !private ["SH", "name"]
@@ -252,18 +250,25 @@ depends-member:
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s22KeyedEncodingContainerV", "encode"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "date"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "date"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So8NSObjectC", "date"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "date"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
 - !private ["9RPM_AR_UI4ObjsV", "deinit"]
-- ["Sm", "init"]
-- ["Sm", "init"]
+- ["SY", "=="]
 - ["SY", "RawValue"]
 - ["SY", ""]
 - ["SY", "_Default_RawValue"]
 - !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
 - !private ["SY", "childName"]
 - !private ["SY", "date"]
 - ["SY", "debugDescription"]
@@ -283,13 +288,13 @@ depends-member:
 - !private ["SY", "sessionNum"]
 - ["SY", "stringValue"]
 - !private ["SY", "time"]
-- ["ST", "init"]
-- ["ST", "init"]
 - ["9RPM_AR_UI7SessionV", "Array"]
 - ["9RPM_AR_UI7SessionV", "CodingKey"]
 - ["9RPM_AR_UI7SessionV", "CodingKeys"]
 - ["9RPM_AR_UI7SessionV", "Date"]
+- !private ["9RPM_AR_UI7SessionV", "DateFormatter"]
 - ["9RPM_AR_UI7SessionV", "Decoder"]
+- !private ["9RPM_AR_UI7SessionV", "Double"]
 - ["9RPM_AR_UI7SessionV", "Encoder"]
 - ["9RPM_AR_UI7SessionV", "Int"]
 - ["9RPM_AR_UI7SessionV", "Objs"]
@@ -309,38 +314,14 @@ depends-member:
 - ["9RPM_AR_UI7SessionV", "secs"]
 - ["9RPM_AR_UI7SessionV", "sessionNum"]
 - ["9RPM_AR_UI7SessionV", "time"]
-- !private ["s12StaticStringV", "init"]
-- !private ["s12StaticStringV", "init"]
-- ["SS", "init"]
-- ["SS", "init"]
-- ["Sy", "init"]
-- ["Sy", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
-- "SK"
-- !private "Sb"
-- "s7CVarArgP"
+- !private "s7CVarArgP"
 - "s9CodingKeyP"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
+- !private "9RPM_AR_UI7SessionV10CodingKeysO"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
@@ -350,21 +331,15 @@ depends-nominal:
 - "9RPM_AR_UI7SessionV10CodingKeysO"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
-- "Sl"
-- "SL"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "So15NSDateFormatterC"
 - "Se"
 - !private "s7DecoderP"
 - "SE"
 - !private "s7EncoderP"
 - "SQ"
-- !private "s27ExpressibleByBooleanLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So11NSFormatterC"
 - "SH"
 - !private "s6HasherV"
 - "9RPM_AR_UI4InfoV"
@@ -372,29 +347,16 @@ depends-nominal:
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s22KeyedEncodingContainerV"
 - !private "s30KeyedEncodingContainerProtocolP"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
 - !private "9RPM_AR_UI4ObjsV"
-- "Sm"
 - "SY"
-- "ST"
 - "9RPM_AR_UI7SessionV"
-- !private "s12StaticStringV"
-- "SS"
-- "Sy"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
-- "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
@@ -417,24 +379,25 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "18ced0b6f3c3e6effa7d1cebdf5a7d08"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ffc2de66af9ddd0611ac42e1ba66188c"
