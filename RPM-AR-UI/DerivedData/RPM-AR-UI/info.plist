@@ -3,15 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>LastAccessedDate</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<date>2019-05-01T20:09:35Z</date>
-=======
-	<date>2019-05-01T20:25:48Z</date>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-=======
-	<date>2019-05-01T20:25:48Z</date>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
+	<date>2019-05-01T21:09:35Z</date>
 	<key>WorkspacePath</key>
 	<string>../../RPM-AR-UI.xcodeproj</string>
 </dict>

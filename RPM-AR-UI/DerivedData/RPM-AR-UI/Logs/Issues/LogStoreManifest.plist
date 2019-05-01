@@ -6,40 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>20437A76-D7BA-4E79-935E-5845CCBD3AC1</key>
-=======
-=======
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-		<key>6CF85FED-00A5-4611-BA12-72EDC630AE7A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>6CF85FED-00A5-4611-BA12-72EDC630AE7A.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>RPM-AR-UI-chbqztrfltijnnasfatwvhomzucw</string>
-			<key>timeStartedRecording</key>
-			<real>578435148.48184896</real>
-			<key>timeStoppedRecording</key>
-			<real>578435149.69438303</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>6CF85FED-00A5-4611-BA12-72EDC630AE7A</string>
-		</dict>
 		<key>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -48,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>20437A76-D7BA-4E79-935E-5845CCBD3AC1.xcactivitylog</string>
+			<string>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -57,13 +24,39 @@
 			<key>signature</key>
 			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
 			<key>timeStartedRecording</key>
-			<real>578434176.02904105</real>
+			<real>578425745.14294899</real>
 			<key>timeStoppedRecording</key>
-			<real>578434181.13226604</real>
+			<real>578425750.72027695</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>20437A76-D7BA-4E79-935E-5845CCBD3AC1</string>
+			<string>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</string>
+		</dict>
+		<key>E71AA7BC-2F03-4264-AE2B-91AC7A98C4D7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>E71AA7BC-2F03-4264-AE2B-91AC7A98C4D7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>RPM-AR-UI-chbqztrfltijnnasfatwvhomzucw</string>
+			<key>timeStartedRecording</key>
+			<real>578437775.262532</real>
+			<key>timeStoppedRecording</key>
+			<real>578437784.06747794</real>
+			<key>title</key>
+			<string>Build target RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>E71AA7BC-2F03-4264-AE2B-91AC7A98C4D7</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

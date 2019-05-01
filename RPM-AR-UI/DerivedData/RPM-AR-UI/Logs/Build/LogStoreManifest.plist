@@ -6,18 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>2037AAD0-573A-4A45-9CA0-5D14837F70A3</key>
-=======
-<<<<<<< HEAD
-=======
 		<key>092B685B-3C64-4A49-B93E-0648C6FA0A5A</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-=======
-=======
-		<key>092B685B-3C64-4A49-B93E-0648C6FA0A5A</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -26,23 +15,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<string>2037AAD0-573A-4A45-9CA0-5D14837F70A3.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-=======
-=======
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 			<string>092B685B-3C64-4A49-B93E-0648C6FA0A5A.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
 				<string>E</string>
-<<<<<<< HEAD
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -51,66 +28,17 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-<<<<<<< HEAD
-			<string>Build RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-			<real>578432794.22454906</real>
-			<key>timeStoppedRecording</key>
-			<real>578432799.72587001</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>2037AAD0-573A-4A45-9CA0-5D14837F70A3</string>
-		</dict>
-		<key>22081B81-4169-45CA-B959-84131670360E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>22081B81-4169-45CA-B959-84131670360E.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-=======
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>RPM-AR-UI project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>RPM-AR-UI</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-<<<<<<< HEAD
-			<string>Build RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-			<real>578433246.30897403</real>
-			<key>timeStoppedRecording</key>
-			<real>578433251.08958805</real>
-=======
 			<string>Convert RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
 			<real>578433802.90218997</real>
 			<key>timeStoppedRecording</key>
 			<real>578433807.49331295</real>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 			<key>title</key>
 			<string>Convert RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-<<<<<<< HEAD
-			<string>22081B81-4169-45CA-B959-84131670360E</string>
-		</dict>
-		<key>43EDF716-E918-4F43-874A-BA0DA73B2540</key>
-=======
 			<string>092B685B-3C64-4A49-B93E-0648C6FA0A5A</string>
 		</dict>
 		<key>0B63CFC7-9FB4-4739-B9DE-CD075F8A30FD</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -119,11 +47,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
-			<string>43EDF716-E918-4F43-874A-BA0DA73B2540.xcactivitylog</string>
-=======
 			<string>0B63CFC7-9FB4-4739-B9DE-CD075F8A30FD.xcactivitylog</string>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -138,82 +62,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
-			<real>578433442.65138197</real>
-			<key>timeStoppedRecording</key>
-			<real>578433447.09474301</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>43EDF716-E918-4F43-874A-BA0DA73B2540</string>
-		</dict>
-		<key>8C9110DD-856C-4904-9506-12B18758C09E</key>
-=======
-			<real>578435148.39935994</real>
-			<key>timeStoppedRecording</key>
-			<real>578435150.21926403</real>
-=======
-			<string>Convert RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-			<real>578433802.90218997</real>
-			<key>timeStoppedRecording</key>
-			<real>578433807.49331295</real>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-			<key>title</key>
-			<string>Convert RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-<<<<<<< HEAD
-			<string>0B63CFC7-9FB4-4739-B9DE-CD075F8A30FD</string>
-		</dict>
-		<key>7CC401ED-4A82-46FA-96A8-10AC0C8B09B7</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-=======
-			<string>092B685B-3C64-4A49-B93E-0648C6FA0A5A</string>
-		</dict>
-		<key>0B63CFC7-9FB4-4739-B9DE-CD075F8A30FD</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<string>8C9110DD-856C-4904-9506-12B18758C09E.xcactivitylog</string>
-=======
-			<string>7CC401ED-4A82-46FA-96A8-10AC0C8B09B7.xcactivitylog</string>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-=======
-			<string>0B63CFC7-9FB4-4739-B9DE-CD075F8A30FD.xcactivitylog</string>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>RPM-AR-UI project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>RPM-AR-UI</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<real>578434175.93641996</real>
-			<key>timeStoppedRecording</key>
-			<real>578434181.79796696</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>8C9110DD-856C-4904-9506-12B18758C09E</string>
-=======
-=======
 			<real>578435148.39935994</real>
 			<key>timeStoppedRecording</key>
 			<real>578435150.21926403</real>
@@ -221,6 +69,38 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>0B63CFC7-9FB4-4739-B9DE-CD075F8A30FD</string>
+		</dict>
+		<key>6AFEB9E0-996B-4D83-AD08-144127A65D9F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6AFEB9E0-996B-4D83-AD08-144127A65D9F.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578437775.14309096</real>
+			<key>timeStoppedRecording</key>
+			<real>578437784.78310502</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>6AFEB9E0-996B-4D83-AD08-144127A65D9F</string>
 		</dict>
 		<key>7CC401ED-4A82-46FA-96A8-10AC0C8B09B7</key>
 		<dict>
@@ -246,7 +126,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 			<real>578434963.31235003</real>
 			<key>timeStoppedRecording</key>
 			<real>578434963.89247501</real>
@@ -350,12 +229,7 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>CC369279-23B6-4DB4-B523-E920B6E78478</string>
-<<<<<<< HEAD
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-=======
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
 		</dict>
->>>>>>> 3800be9d7f64979d292c8a2246a77e5809390c95
 		<key>E11BA326-C618-4FF8-A84F-F9C50B6D33D4</key>
 		<dict>
 			<key>className</key>

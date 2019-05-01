@@ -27,7 +27,7 @@
 		1DA84F912277A62800F28549 /* ipadPro167.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F832277A62800F28549 /* ipadPro167.png */; };
 		1DA84F922277A62800F28549 /* launchscreenfull2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F842277A62800F28549 /* launchscreenfull2048.png */; };
 		1DA84F932277A62800F28549 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F852277A62800F28549 /* apple.png */; };
-		1DA84F942277A62800F28549 /* launchScreenFull Load.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F862277A62800F28549 /* launchScreenFull Load.png */; };
+		1DA84F942277A62800F28549 /* launchScreenFull Load.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F862277A62800F28549 /* launchScreenFull Load.png */; settings = {ASSET_TAGS = (apple, ); }; };
 		1DA84F952277A62800F28549 /* ipadsetting29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F872277A62800F28549 /* ipadsetting29.png */; };
 		1DA84F962277A62800F28549 /* ipadnotification20.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F882277A62800F28549 /* ipadnotification20.png */; };
 		1DA84F972277A62800F28549 /* ipadspotlight40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F892277A62800F28549 /* ipadspotlight40.png */; };
@@ -286,6 +286,9 @@
 		1D4CA5ED2253FC380011A730 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					apple,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Zachary Wooding";
