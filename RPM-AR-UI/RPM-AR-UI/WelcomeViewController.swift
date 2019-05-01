@@ -16,6 +16,8 @@ class WelcomeViewController: UITableViewController {
     var loadedData :[Session]!
     var pathToSave: String!
     var loadedSesh: Session!
+    var url: URL!
+    var file = FileManager()
     
     var sessionToPass: String!
     var json: Data!
@@ -41,7 +43,7 @@ class WelcomeViewController: UITableViewController {
         
         
         //May 1st
-        let url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
+        url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
         do{
             json = try Data.init(contentsOf: url) as Data
             loadJson()
@@ -133,7 +135,8 @@ class WelcomeViewController: UITableViewController {
     
     func saveToJson(){
         do{
-            json = try JSONEncoder().encode(savedSession)
+            let dataToSave = try JSONEncoder().encode(savedSession)
+            try dataToSave.write(to: url)
         }catch{
             print(error)
         }

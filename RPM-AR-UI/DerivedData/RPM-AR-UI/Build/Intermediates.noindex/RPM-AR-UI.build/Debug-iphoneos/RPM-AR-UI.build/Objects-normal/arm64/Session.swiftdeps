@@ -27,7 +27,6 @@ depends-top-level:
 - "Objs"
 - "Session"
 - "String"
-- "StringLiteralType"
 - "TimeInterval"
 - !private "_findStringSwitchCase"
 - !private "~="

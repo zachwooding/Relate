@@ -10,6 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Vmh-0R-tYw">
+            <objects>
+                <viewController id="WNF-Gp-Yud" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mDA-fA-4gX">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HlK-99-POa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ob4-4e-Lk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1258" y="-551"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HHt-ak-tOZ">
             <objects>
@@ -113,6 +128,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Welcome!" id="ZpF-jn-OLa">
+                        <barButtonItem key="leftBarButtonItem" title="Tutorial" id="Nog-Xc-f9U">
+                            <connections>
+                                <segue destination="WNF-Gp-Yud" kind="show" id="Rnn-4o-xqb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Session" id="kHA-tK-Pd3">
                             <connections>
                                 <segue destination="Sqk-E8-aay" kind="show" id="CLe-12-DiC"/>
@@ -209,6 +229,20 @@
                                                     <!--2019-04-16 19:42:41 +0000-->
                                                 </date>
                                             </datePicker>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Session :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7D-fR-SPS">
+                                                <rect key="frame" x="162" y="209" width="134" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Length of Session :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSO-Kl-OVz">
+                                                <rect key="frame" x="149" y="434" width="147" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
