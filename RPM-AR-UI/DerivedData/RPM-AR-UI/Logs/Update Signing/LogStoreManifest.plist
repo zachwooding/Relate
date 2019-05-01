@@ -6,7 +6,11 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+<<<<<<< HEAD
 		<key>BCE44E2B-5E78-4129-9BB6-61CF31815AAD</key>
+=======
+		<key>1C6A8172-703E-4186-979A-B954B2F510DF</key>
+>>>>>>> 3800be9d7f64979d292c8a2246a77e5809390c95
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +19,89 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
 			<key>fileName</key>
+<<<<<<< HEAD
 			<string>BCE44E2B-5E78-4129-9BB6-61CF31815AAD.xcactivitylog</string>
+=======
+			<string>1C6A8172-703E-4186-979A-B954B2F510DF.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Update Signing</string>
+			<key>timeStartedRecording</key>
+			<real>578434564.09453595</real>
+			<key>timeStoppedRecording</key>
+			<real>578434565.01185799</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>1C6A8172-703E-4186-979A-B954B2F510DF</string>
+		</dict>
+		<key>A2562D0F-9C1D-432F-98A1-C7E5CF472ABD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
+			<key>fileName</key>
+			<string>A2562D0F-9C1D-432F-98A1-C7E5CF472ABD.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Update Signing</string>
+			<key>timeStartedRecording</key>
+			<real>578433777.35021698</real>
+			<key>timeStoppedRecording</key>
+			<real>578433779.10998499</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>A2562D0F-9C1D-432F-98A1-C7E5CF472ABD</string>
+		</dict>
+		<key>CD39746E-F74D-4145-A983-F3F5C28A6B37</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
+			<key>fileName</key>
+			<string>CD39746E-F74D-4145-A983-F3F5C28A6B37.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Update Signing</string>
+			<key>timeStartedRecording</key>
+			<real>578433787.823722</real>
+			<key>timeStoppedRecording</key>
+			<real>578433788.40414298</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>CD39746E-F74D-4145-A983-F3F5C28A6B37</string>
+		</dict>
+		<key>E0AAA258-BA4C-4BBA-90D7-F0A2C3AE8076</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
+			<key>fileName</key>
+			<string>E0AAA258-BA4C-4BBA-90D7-F0A2C3AE8076.xcactivitylog</string>
+>>>>>>> 3800be9d7f64979d292c8a2246a77e5809390c95
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -24,6 +110,7 @@
 			<key>signature</key>
 			<string>Update Signing</string>
 			<key>timeStartedRecording</key>
+<<<<<<< HEAD
 			<real>578434023.867751</real>
 			<key>timeStoppedRecording</key>
 			<real>578434024.55288601</real>
@@ -31,6 +118,15 @@
 			<string>Update Signing</string>
 			<key>uniqueIdentifier</key>
 			<string>BCE44E2B-5E78-4129-9BB6-61CF31815AAD</string>
+=======
+			<real>578433696.11804295</real>
+			<key>timeStoppedRecording</key>
+			<real>578433696.518152</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>E0AAA258-BA4C-4BBA-90D7-F0A2C3AE8076</string>
+>>>>>>> 3800be9d7f64979d292c8a2246a77e5809390c95
 		</dict>
 		<key>F5136073-94C5-4885-9031-D908A937CED4</key>
 		<dict>
