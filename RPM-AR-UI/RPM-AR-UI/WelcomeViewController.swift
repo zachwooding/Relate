@@ -46,10 +46,11 @@ class WelcomeViewController: UITableViewController {
         //url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
         let filemgr = FileManager.default
         
-        url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions")
+        url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions.json")
             
-        if url == nil {
+        if !filemgr.fileExists(atPath: (url?.absoluteString)!) {
             filemgr.createFile(atPath: (url?.absoluteString)!, contents: nil, attributes: nil)
+            
         }
         
             
@@ -175,7 +176,9 @@ class WelcomeViewController: UITableViewController {
         
         // 5
         navigationItem.titleView = imageView
-    }    }
+    }
+    
+}
     //    func load() {
 //        let defaults = UserDefaults.standard
 //
