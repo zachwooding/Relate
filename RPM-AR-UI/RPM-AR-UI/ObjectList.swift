@@ -33,7 +33,7 @@ class ObjectList{
             
             //Objs(category:"Dessert", name:"Cake", sceneName:"mountain.scn", id:"mountain", icon:"\u{1F370}"),
             //rotate
-            Objs(category:"Kitchen", name:"Oven", sceneName:"oven.scn", id:"oven", icon:"\u{1F4BB}"),
+            Objs(category:"Kitchen", name:"Oven", sceneName:"oven.scn", id:"oven", icon:"\u{1F967}"),
             //Objs(category:"Silverwear", name:"Fork", sceneName:"MovieCamera.scn", id:"moviecamera", icon:"\u{1F3A5}"),
             //too big
             Objs(category:"Silverwear", name:"Knife", sceneName:"knife.scn", id:"knife", icon:"\u{1F52A}"),
