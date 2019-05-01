@@ -1,12 +1,10 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-<<<<<<< HEAD
-<<<<<<< HEAD
 options: "befc5d703efc35902d2980bd67101911"
-build_time: [1556741376, 32930000]
+build_time: [1556744726, 134472000]
 inputs:
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/ObjectList.swift": [1556726350, 809169217]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SearchViewController.swift": [1556137488, 708571178]
-  "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/WelcomeViewController.swift": [1556741375, 947115165]
+  "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/WelcomeViewController.swift": [1556744726, 70795672]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/NewSessionViewController.swift": [1556726350, 808967528]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SessionDetailsViewController.swift": [1556726350, 809984723]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/Objs.swift": [1556726350, 809486185]
@@ -19,31 +17,3 @@ inputs:
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SearchFooter.swift": [1556137488, 708089321]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/DetailViewController.swift": [1556137488, 703863566]
   "/Users/zacharywooding/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/Session.swift": [1556732060, 100411866]
-=======
-options: "4e55de86d7f743d8ea7135b9d27c4b62"
-build_time: [1556741778, 142860000]
-inputs:
-=======
-options: "4e55de86d7f743d8ea7135b9d27c4b62"
-build_time: [1556741778, 142860000]
-inputs:
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/ObjectList.swift": [1556739918, 729131810]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SearchViewController.swift": [1556739918, 729983920]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/WelcomeViewController.swift": [1556739918, 730509080]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/NewSessionViewController.swift": [1556739918, 729022261]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SessionDetailsViewController.swift": [1556739918, 730234841]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/Objs.swift": [1556739918, 729429723]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/LoadSave.swift": [1556739918, 728793605]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/ModelType.swift": [1556739918, 728901018]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SaveData.swift": [1556739918, 729640965]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SessionTableViewCell.swift": [1556739918, 730341037]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/ARViewController.swift": [1556739918, 719599779]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/AppDelegate.swift": [1556739918, 719721264]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/SearchFooter.swift": [1556739918, 729859800]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/DetailViewController.swift": [1556739918, 728553794]
-  "/Users/christinetodd143/Documents/GitHub/RPM-AR-Therapy/RPM-AR-UI/RPM-AR-UI/Session.swift": [1556739918, 730134794]
-<<<<<<< HEAD
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece
-=======
->>>>>>> 9a65dd0cc6b57f4ad5119d936a3a3a6973dd5ece

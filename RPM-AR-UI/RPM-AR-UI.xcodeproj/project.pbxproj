@@ -139,7 +139,6 @@
 		1D4CA5EC2253FC380011A730 = {
 			isa = PBXGroup;
 			children = (
-				1DE804752279FF0D009D4019 /* SavedSession.json */,
 				1D4CA5F72253FC380011A730 /* RPM-AR-UI */,
 				1D4CA6192253FC3B0011A730 /* RPM-AR-UIUITests */,
 				1D4CA5F62253FC380011A730 /* Products */,
@@ -161,6 +160,7 @@
 		1D4CA5F72253FC380011A730 /* RPM-AR-UI */ = {
 			isa = PBXGroup;
 			children = (
+				1DE804752279FF0D009D4019 /* SavedSession.json */,
 				1D4CA5FA2253FC380011A730 /* art.scnassets */,
 				1DA84F812277A62800F28549 /* apple logos resized */,
 				1D4CA5F82253FC380011A730 /* AppDelegate.swift */,
