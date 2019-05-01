@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>42C8EBFF-2AE4-408E-A606-8D9B119FD7C0</key>
+		<key>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>42C8EBFF-2AE4-408E-A606-8D9B119FD7C0.xcactivitylog</string>
+			<string>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -24,13 +24,13 @@
 			<key>signature</key>
 			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
 			<key>timeStartedRecording</key>
-			<real>578437814.82344699</real>
+			<real>578425745.14294899</real>
 			<key>timeStoppedRecording</key>
-			<real>578437819.33675694</real>
+			<real>578425750.72027695</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>42C8EBFF-2AE4-408E-A606-8D9B119FD7C0</string>
+			<string>A4934A4C-7C0E-4FCB-BC96-C7BAA2D5A3C3</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
