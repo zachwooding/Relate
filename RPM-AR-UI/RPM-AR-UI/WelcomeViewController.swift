@@ -31,10 +31,10 @@ class WelcomeViewController: UITableViewController {
         
         //createFile()
         //loadedData = loadJson(filename: "sessionDocs")
-        //let session = Session(name: "TheSesh", childName: "Bob", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date(), sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
-        //savedSession = session
+        let session = Session(name: "TestSesh", childName: "John Smith", time: 300.0, hours: 0, mins: 5, secs: 0, date: "05-02-2019", sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
         
-        //listedSessions.append(session)
+        
+        listedSessions.append(session)
         
         //savedDataArray.append(load()!)
         //loadSessionToTable()
@@ -44,24 +44,28 @@ class WelcomeViewController: UITableViewController {
         
         //May 1st
         //url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
-        
         let filemgr = FileManager.default
         
         url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions.json")
         
-        if !filemgr.fileExists(atPath: (url?.absoluteString)!) {
-            filemgr.createFile(atPath: (url?.absoluteString)!, contents: nil, attributes: nil)
-            
-        }else{
+        if filemgr.fileExists(atPath: (url?.absoluteString)!) {
             do{
-                json = try Data.init(contentsOf: url) as Data
+                filemgr.createFile(atPath: (url?.absoluteString)!, contents: try JSONEncoder().encode(listedSessions), attributes: nil)
+                saveToJson()
                 loadJson()
             }catch{
                 print(error)
             }
+           
+            
+        }else{
+            loadJson()
         }
         
+        
+        
     }
+
     
    
     
@@ -86,11 +90,6 @@ class WelcomeViewController: UITableViewController {
         return cell
     }
     
-    private func loadSessionToTable(){
-        for session in loadedData{
-            listedSessions += [session]
-        }
-    }
     
     @IBAction func backToWelcome(unwindSegue: UIStoryboardSegue){
         if savedSession != nil{
@@ -98,6 +97,7 @@ class WelcomeViewController: UITableViewController {
             listedSessions.append(savedSession)
             saveToJson()
             loadJson()
+            table.reloadData()
             
         }
         
@@ -137,25 +137,40 @@ class WelcomeViewController: UITableViewController {
     func loadJson(){
         
         do {
-            let jsonData = try JSONDecoder().decode(Session.self, from: json)
-            listedSessions.append(jsonData)
-            
+            json = try Data.init(contentsOf: url) as Data
+            let jsonData = try JSONDecoder().decode(Array<Session>.self, from: json)
+            //print(jsonData)
+            listedSessions = jsonData
         }
         catch {
             print(error)
         }
+//        do {
+//            let text2 = try String(contentsOf: url, encoding: .utf8)
+//            print(text2)
+//        }
+//        catch {/* error handling here */}
     }
     
     func saveToJson(){
         do{
-            let dataToSave = try JSONEncoder().encode(savedSession)
+            let dataToSave = try JSONEncoder().encode(listedSessions)
+            //print(dataToSave.description)
             try dataToSave.write(to: url)
         }catch{
             print(error)
         }
+        
+//        do {
+//            let text2 = try String(contentsOf: url, encoding: .utf8)
+//            print(text2)
+//        }
+//        catch {/* error handling here */}
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        
         // 1
         let nav = self.navigationController?.navigationBar
         
@@ -176,78 +191,3 @@ class WelcomeViewController: UITableViewController {
     }
     
 }
-    //    func load() {
-//        let defaults = UserDefaults.standard
-//
-//        if let savedData = defaults.object(forKey: "savedDataArray") as? Data {
-//            if let decodedData = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? [Session]{
-//                savedDataArray = decodedData!
-//            }
-//        }
-//
-//    }
-//
-//    func save() {
-//
-////        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: savedDataArray, requiringSecureCoding: false){
-////            let defaults = UserDefaults.standard
-////            defaults.set(savedData, forKey: "sID")
-////        }
-//
-//
-//    }
-    
-//    func save() {
-////        do{
-////            json = try JSONEncoder().encode(savedSession)
-////        }catch{
-////
-////        }
-//
-//        let file = "SavedSessions.json"
-//
-//        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-//
-//            let fileURL = dir.appendingPathComponent(file)
-//
-//            do {
-//                let jsonData = try JSONEncoder().encode(savedDataArray)
-//                try jsonData.write(to: fileURL)
-//            }
-//            catch {/* error handling here */}
-//        }
-//
-//    }
-//
-//    func load() -> Session? {
-//        let loadedData = try? JSONDecoder().decode(Session.self, from: json)
-//        return loadedData
-//    }
-//
-//    func createFile() -> String{
-//        //let data = savedSession.data(using: Session.Encoding.utf8)
-//        let filemgr = FileManager.default
-//        let path = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions")
-//        //pathToSave = path?.absoluteString
-//        if !filemgr.fileExists(atPath: (path?.absoluteString)!) {
-//            filemgr.createFile(atPath: (path?.absoluteString)!, contents: nil, attributes: nil)
-//
-//        }
-//        return (path?.absoluteString)!
-//    }
-//
-//    func loadJson(filename fileName: String) -> [Session]? {
-//        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
-//            do {
-//                let data = try Data(contentsOf: url)
-//                let decoder = JSONDecoder()
-//                let jsonData = try decoder.decode(Info.self, from: data)
-//                return jsonData.session
-//            } catch {
-//                print("error:\(error)")
-//            }
-//        }
-//        return nil
-//    }
-//
-

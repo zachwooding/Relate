@@ -1,13 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "Info"
 - "Session"
 provides-nominal:
-- "9RPM_AR_UI4InfoV"
 - "9RPM_AR_UI7SessionV"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
 provides-member:
-- ["9RPM_AR_UI4InfoV", ""]
 - ["9RPM_AR_UI7SessionV", ""]
 - ["9RPM_AR_UI7SessionV10CodingKeysO", ""]
 provides-dynamic-lookup:
@@ -17,12 +14,9 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Codable"
 - "CodingKey"
-- "Date"
-- !private "DateFormatter"
 - "Decoder"
 - !private "Double"
 - "Encoder"
-- "Info"
 - "Int"
 - "Objs"
 - "Session"
@@ -31,9 +25,6 @@ depends-top-level:
 - !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
-- !private ["s7CVarArgP", "date"]
-- !private ["s7CVarArgP", "dateFormat"]
-- !private ["s7CVarArgP", "init"]
 - ["s9CodingKeyP", "=="]
 - ["s9CodingKeyP", "RawValue"]
 - ["s9CodingKeyP", ""]
@@ -93,7 +84,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
 - !private ["s28CustomDebugStringConvertibleP", "childName"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
-- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
@@ -119,7 +109,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
 - !private ["s23CustomStringConvertibleP", "childName"]
 - !private ["s23CustomStringConvertibleP", "date"]
-- !private ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
 - ["s23CustomStringConvertibleP", "description"]
 - ["s23CustomStringConvertibleP", "hash"]
@@ -137,12 +126,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sessionNum"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "time"]
-- !private ["So15NSDateFormatterC", "date"]
-- !private ["So15NSDateFormatterC", "dateFormat"]
-- !private ["So15NSDateFormatterC", "init"]
 - !private ["Se", "Array"]
 - !private ["Se", "CodingKeys"]
-- !private ["Se", "DateFormatter"]
 - !private ["Se", "Double"]
 - !private ["Se", "Int"]
 - !private ["Se", "String"]
@@ -158,13 +143,11 @@ depends-member:
 - !private ["Se", "objsNotPicked"]
 - !private ["Se", "objsPicked"]
 - !private ["Se", "secs"]
-- !private ["Se", "session"]
 - !private ["Se", "sessionNum"]
 - !private ["Se", "time"]
 - !private ["s7DecoderP", "container"]
 - !private ["SE", "Array"]
 - !private ["SE", "CodingKeys"]
-- !private ["SE", "DateFormatter"]
 - !private ["SE", "Double"]
 - !private ["SE", "Int"]
 - !private ["SE", "String"]
@@ -180,7 +163,6 @@ depends-member:
 - !private ["SE", "objsNotPicked"]
 - !private ["SE", "objsPicked"]
 - !private ["SE", "secs"]
-- !private ["SE", "session"]
 - !private ["SE", "sessionNum"]
 - !private ["SE", "time"]
 - !private ["s7EncoderP", "container"]
@@ -192,7 +174,6 @@ depends-member:
 - ["SQ", "_rawHashValue"]
 - !private ["SQ", "childName"]
 - !private ["SQ", "date"]
-- !private ["SQ", "dateFormat"]
 - ["SQ", "debugDescription"]
 - ["SQ", "description"]
 - ["SQ", "hash"]
@@ -210,9 +191,6 @@ depends-member:
 - !private ["SQ", "sessionNum"]
 - ["SQ", "stringValue"]
 - !private ["SQ", "time"]
-- !private ["So11NSFormatterC", "date"]
-- !private ["So11NSFormatterC", "dateFormat"]
-- !private ["So11NSFormatterC", "init"]
 - ["SH", "=="]
 - ["SH", "RawValue"]
 - ["SH", ""]
@@ -221,7 +199,6 @@ depends-member:
 - ["SH", "_rawHashValue"]
 - !private ["SH", "childName"]
 - !private ["SH", "date"]
-- !private ["SH", "dateFormat"]
 - ["SH", "debugDescription"]
 - ["SH", "description"]
 - ["SH", "hash"]
@@ -239,28 +216,10 @@ depends-member:
 - !private ["SH", "sessionNum"]
 - ["SH", "stringValue"]
 - !private ["SH", "time"]
-- !private ["s6HasherV", "combine"]
-- ["9RPM_AR_UI4InfoV", "Session"]
-- ["9RPM_AR_UI4InfoV", "deinit"]
-- ["9RPM_AR_UI4InfoV", "encode"]
-- ["9RPM_AR_UI4InfoV", "init"]
-- ["9RPM_AR_UI4InfoV", "session"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s22KeyedEncodingContainerV", "encode"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
-- !private ["So8NSCodingP", "date"]
-- !private ["So8NSCodingP", "dateFormat"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "date"]
-- !private ["So9NSCopyingP", "dateFormat"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So8NSObjectC", "date"]
-- !private ["So8NSObjectC", "dateFormat"]
-- !private ["So8NSObjectC", "init"]
-- !private ["So8NSObjectP", "date"]
-- !private ["So8NSObjectP", "dateFormat"]
-- !private ["So8NSObjectP", "init"]
 - !private ["9RPM_AR_UI4ObjsV", "deinit"]
 - ["SY", "=="]
 - ["SY", "RawValue"]
@@ -290,8 +249,6 @@ depends-member:
 - ["9RPM_AR_UI7SessionV", "Array"]
 - ["9RPM_AR_UI7SessionV", "CodingKey"]
 - ["9RPM_AR_UI7SessionV", "CodingKeys"]
-- ["9RPM_AR_UI7SessionV", "Date"]
-- !private ["9RPM_AR_UI7SessionV", "DateFormatter"]
 - ["9RPM_AR_UI7SessionV", "Decoder"]
 - !private ["9RPM_AR_UI7SessionV", "Double"]
 - ["9RPM_AR_UI7SessionV", "Encoder"]
@@ -313,47 +270,24 @@ depends-member:
 - ["9RPM_AR_UI7SessionV", "secs"]
 - ["9RPM_AR_UI7SessionV", "sessionNum"]
 - ["9RPM_AR_UI7SessionV", "time"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
-- !private "s7CVarArgP"
 - "s9CodingKeyP"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- !private "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
-- "9RPM_AR_UI7SessionV10CodingKeysO"
 - "9RPM_AR_UI7SessionV10CodingKeysO"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
-- !private "So15NSDateFormatterC"
 - "Se"
 - !private "s7DecoderP"
 - "SE"
 - !private "s7EncoderP"
 - "SQ"
-- !private "So11NSFormatterC"
 - "SH"
-- !private "s6HasherV"
-- "9RPM_AR_UI4InfoV"
 - !private "s22KeyedDecodingContainerV"
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s22KeyedEncodingContainerV"
 - !private "s30KeyedEncodingContainerProtocolP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
 - !private "9RPM_AR_UI4ObjsV"
 - "SY"
 - "9RPM_AR_UI7SessionV"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -399,4 +333,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ffc2de66af9ddd0611ac42e1ba66188c"
+interface-hash: "3f572f51e6cad45acac2e75963d2ae4b"

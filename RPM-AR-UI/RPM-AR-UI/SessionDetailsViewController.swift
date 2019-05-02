@@ -14,17 +14,27 @@ class SessionDetailsViewController: UIViewController {
     @IBOutlet weak var childNameLabel: UILabel!
     @IBOutlet weak var sessionNumLabel: UILabel!
     
+    @IBOutlet weak var objectsNotPickedTable: UITableView!
+    @IBOutlet weak var objectsPickedTable: UITableView!
+    var tablePick: UITableViewController!
     var sessionInfo:Session!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
+        tablePick.tableView(objectsPickedTable, Sections)
+        // Do any additional setup after loading the view.
+//        objectsPickedTable
+//        for obj in sessionInfo.objsPicked{
+//            objectsPickedTable.
+//        }
+//
         sessionNameLabel.text = sessionInfo.name
         childNameLabel.text = sessionInfo.childName
         sessionNumLabel.text = String(sessionInfo.sessionNum)
     }
+    
+    
     
 
     /*
@@ -38,3 +48,6 @@ class SessionDetailsViewController: UIViewController {
     */
 
 }
+
+
+

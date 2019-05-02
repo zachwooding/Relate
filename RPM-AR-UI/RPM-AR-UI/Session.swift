@@ -8,15 +8,6 @@
 
 import Foundation
 
-struct Info:Codable{
-    let session: [Session]
-    
-    init(session: [Session]){
-        self.session = session
-    }
-}
-
-
 struct Session: Codable{
     let name : String
     let childName: String
@@ -24,7 +15,7 @@ struct Session: Codable{
     var hours: Int
     var mins: Int
     var secs: Int
-    let date : Date
+    let date : String
     var sessionNum : Int
     var objsPicked: Array<Objs>
     var objsNotPicked: Array<Objs>
@@ -42,7 +33,7 @@ struct Session: Codable{
         case objsPicked
         case objsNotPicked
     }
-    init(name : String, childName: String, time : TimeInterval, hours: Int, mins: Int, secs: Int, date : Date, sessionNum : Int, objsPicked: Array<Objs>, objsNotPicked: Array<Objs>) {
+    init(name : String, childName: String, time : TimeInterval, hours: Int, mins: Int, secs: Int, date : String, sessionNum : Int, objsPicked: Array<Objs>, objsNotPicked: Array<Objs>) {
         self.name = name
         self.childName = childName
         self.time = time
@@ -76,10 +67,10 @@ struct Session: Codable{
         hours = try container.decode(Int.self, forKey: .hours)
         mins = try container.decode(Int.self, forKey: .mins)
         secs = try container.decode(Int.self, forKey: .secs)
-        let dString = try container.decode(String.self, forKey: .date)
-        let format = DateFormatter()
-        format.dateFormat = "MM-dd-yyyy"
-        date = format.date(from: dString)!
+        date = try container.decode(String.self, forKey: .date)
+//        let format = DateFormatter()
+//        format.dateFormat = "MM-dd-yyyy"
+//        date = format.date(from: dString)!
         sessionNum = try container.decode(Int.self, forKey: .sessionNum)
         objsPicked = try container.decode(Array<Objs>.self, forKey: .objsPicked)
         objsNotPicked = try container.decode(Array<Objs>.self, forKey: .objsNotPicked)

@@ -274,6 +274,17 @@ SWIFT_CLASS("_TtC9RPM_AR_UI24NewSessionViewController")
 @end
 
 
+SWIFT_CLASS("_TtC9RPM_AR_UI17ObjsTableViewCell")
+@interface ObjsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pictureLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified objsNameLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9RPM_AR_UI12SearchFooter")
 @interface SearchFooter : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -285,7 +296,6 @@ SWIFT_CLASS("_TtC9RPM_AR_UI12SearchFooter")
 
 @class UISearchBar;
 @class UITableView;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC9RPM_AR_UI20SearchViewController")
 @interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -314,6 +324,8 @@ SWIFT_CLASS("_TtC9RPM_AR_UI28SessionDetailsViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sessionNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified childNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sessionNumLabel;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified objectsNotPickedTable;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified objectsPickedTable;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

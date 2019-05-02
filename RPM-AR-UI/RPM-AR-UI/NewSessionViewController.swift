@@ -40,7 +40,10 @@ class NewSessionViewController: UIViewController {
         if segue.destination is UINavigationController{
             let navTarget = segue.destination as! UINavigationController
             let (h,m,s) = timeCon(seconds: Int(timePicker.countDownDuration))
-            let newSession = Session(name: name!.text!, childName: childName.text!, time: timePicker.countDownDuration, hours: h, mins: m, secs: s ,date: datePicker.date, sessionNum: savedSessions.count+1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+            let format = DateFormatter()
+            format.dateFormat = "MM-dd-yyyy"
+            let sDate = format.string(from: datePicker.date)
+            let newSession = Session(name: name!.text!, childName: childName.text!, time: timePicker.countDownDuration, hours: h, mins: m, secs: s ,date: sDate, sessionNum: savedSessions.count+1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
             let arVC = navTarget.topViewController as! ARViewController
             
             arVC.sessionInfo = newSession
