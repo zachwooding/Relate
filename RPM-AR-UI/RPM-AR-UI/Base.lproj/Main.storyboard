@@ -13,7 +13,7 @@
         <!--Tutorial-->
         <scene sceneID="ziL-E7-aw8">
             <objects>
-                <avPlayerViewController title="Tutorial" videoGravity="AVLayerVideoGravityResizeAspect" id="pNv-Sg-xgc" sceneMemberID="viewController"/>
+                <avPlayerViewController title="Tutorial" videoGravity="AVLayerVideoGravityResizeAspect" id="pNv-Sg-xgc" customClass="TutorialViewController" customModule="RPM_AR_UI" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6a-3D-0Oo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1277" y="-540"/>

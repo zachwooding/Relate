@@ -42,6 +42,7 @@
 		1DAA9785226F9B530089D118 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */; };
 		1DACA5F5225BC67800582A69 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FA2253FC380011A730 /* art.scnassets */; };
 		1DE804762279FF0D009D4019 /* SavedSession.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE804752279FF0D009D4019 /* SavedSession.json */; };
+		84ACE68A227B8F5800FAAFDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACE689227B8F5800FAAFDA /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		1DAA9782226F89060089D118 /* ObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectList.swift; sourceTree = "<group>"; };
 		1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		1DE804752279FF0D009D4019 /* SavedSession.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SavedSession.json; sourceTree = "<group>"; };
+		84ACE689227B8F5800FAAFDA /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				1D6D762722568E01000F9652 /* Objs.swift */,
 				1DAA9782226F89060089D118 /* ObjectList.swift */,
 				1D4CA5FE2253FC380011A730 /* Main.storyboard */,
+				84ACE689227B8F5800FAAFDA /* TutorialViewController.swift */,
 				1D4CA6012253FC3B0011A730 /* Assets.xcassets */,
 				1D4CA6032253FC3B0011A730 /* LaunchScreen.storyboard */,
 				1D4CA6062253FC3B0011A730 /* Info.plist */,
@@ -387,6 +390,7 @@
 				1D4CA5FD2253FC380011A730 /* ARViewController.swift in Sources */,
 				1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */,
 				1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */,
+				84ACE68A227B8F5800FAAFDA /* TutorialViewController.swift in Sources */,
 				1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */,
 				0DF85C51226796120084147A /* Session.swift in Sources */,
 			);
