@@ -16,13 +16,14 @@ class SessionDetailsViewController: UIViewController {
     
     @IBOutlet weak var objectsNotPickedTable: UITableView!
     @IBOutlet weak var objectsPickedTable: UITableView!
-    var tablePick: UITableViewController!
+    var tablePick: UITableViewController! = ObjectInSessionTableViewController()
     var sessionInfo:Session!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tablePick.tableView(objectsPickedTable, Sections)
+        tablePick.tableView(objectsPickedTable, numberOfRowsInSection: sessionInfo.objsPicked.count)
+        //tablePick.sessionInfo = sessionInfo
         // Do any additional setup after loading the view.
 //        objectsPickedTable
 //        for obj in sessionInfo.objsPicked{

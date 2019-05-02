@@ -3,31 +3,12 @@
 <plist version="1.0">
 <array>
 	<string>XCTest</string>
-	<string>SceneKit</string>
-	<string>AVFoundation</string>
-	<string>ARKit</string>
 	<string>CoreData</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<string>UIKit</string>
-=======
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 	<string>SceneKit</string>
 	<string>AVKit</string>
 	<string>ARKit</string>
 	<string>UIKit</string>
 	<string>AVFoundation</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 	<string>Foundation</string>
 </array>
 </plist>

@@ -6,19 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<key>013589BB-3D34-485A-93AE-280BFE9900CB</key>
-=======
-		<key>06647E2D-D8AD-4253-9023-034226C13D20</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
-		<key>06647E2D-D8AD-4253-9023-034226C13D20</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
-		<key>06647E2D-D8AD-4253-9023-034226C13D20</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -27,9 +15,6 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			<string>013589BB-3D34-485A-93AE-280BFE9900CB.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
@@ -191,9 +176,6 @@
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
 			<string>09CDA98F-5E30-439A-8428-3D1DBE09651D.xcactivitylog</string>
-=======
-			<string>06647E2D-D8AD-4253-9023-034226C13D20.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -206,7 +188,6 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-<<<<<<< HEAD
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
 			<real>578511428.48122895</real>
@@ -280,6 +261,38 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>130B55C7-C101-465D-A74E-4EBC81469CE8</string>
+		</dict>
+		<key>1B72E2AF-9410-40E3-9D52-94D14DF8E510</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1B72E2AF-9410-40E3-9D52-94D14DF8E510.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578531525.919572</real>
+			<key>timeStoppedRecording</key>
+			<real>578531536.28915799</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>1B72E2AF-9410-40E3-9D52-94D14DF8E510</string>
 		</dict>
 		<key>1F634E3C-29B0-4689-81B3-C2BF25F484EF</key>
 		<dict>
@@ -473,6 +486,38 @@
 			<key>uniqueIdentifier</key>
 			<string>2BB1ADFE-E810-4FFC-B97B-0868E6629BCF</string>
 		</dict>
+		<key>2D0D1DB8-6319-471B-8821-BD5BEB2380E3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2D0D1DB8-6319-471B-8821-BD5BEB2380E3.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578531540.04425895</real>
+			<key>timeStoppedRecording</key>
+			<real>578531544.40085995</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>2D0D1DB8-6319-471B-8821-BD5BEB2380E3</string>
+		</dict>
 		<key>354C68F4-47F6-4BD9-A372-9D6074CC2781</key>
 		<dict>
 			<key>className</key>
@@ -634,19 +679,6 @@
 			<string>3C1BE6F3-C9C3-40D1-95B4-DD309EE83246</string>
 		</dict>
 		<key>3E52DBB4-E907-4A1F-816E-CEA60167325A</key>
-=======
-			<string>Build RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-			<real>578530449.287673</real>
-			<key>timeStoppedRecording</key>
-			<real>578530451.97741497</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>06647E2D-D8AD-4253-9023-034226C13D20</string>
-		</dict>
-		<key>22745D9A-5A86-4958-B00E-3604ED0F3FCE</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -655,7 +687,6 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>3E52DBB4-E907-4A1F-816E-CEA60167325A.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
@@ -885,13 +916,6 @@
 			<dict>
 				<key>highLevelStatus</key>
 				<string>W</string>
-=======
-			<string>22745D9A-5A86-4958-B00E-3604ED0F3FCE.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -902,7 +926,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578512585.38433897</real>
 			<key>timeStoppedRecording</key>
 			<real>578512585.99239802</real>
@@ -944,17 +967,6 @@
 			<string>61D176A0-BCBA-401C-9E99-EB68547C5D91</string>
 		</dict>
 		<key>6452E46A-48C7-421D-AAA4-E66C2644B259</key>
-=======
-			<real>578529063.13425398</real>
-			<key>timeStoppedRecording</key>
-			<real>578529067.17104697</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>22745D9A-5A86-4958-B00E-3604ED0F3FCE</string>
-		</dict>
-		<key>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -963,15 +975,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>6452E46A-48C7-421D-AAA4-E66C2644B259.xcactivitylog</string>
-=======
-			<string>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -982,7 +990,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578522186.66857803</real>
 			<key>timeStoppedRecording</key>
 			<real>578522193.61475003</real>
@@ -992,17 +999,6 @@
 			<string>6452E46A-48C7-421D-AAA4-E66C2644B259</string>
 		</dict>
 		<key>6848E3FA-75CE-420C-9F0A-E8BFD630FF7E</key>
-=======
-			<real>578521115.51959097</real>
-			<key>timeStoppedRecording</key>
-			<real>578521115.62317598</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7</string>
-		</dict>
-		<key>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1011,15 +1007,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>6848E3FA-75CE-420C-9F0A-E8BFD630FF7E.xcactivitylog</string>
-=======
-			<string>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -1030,7 +1022,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578523526.01565897</real>
 			<key>timeStoppedRecording</key>
 			<real>578523533.28467405</real>
@@ -1040,17 +1031,6 @@
 			<string>6848E3FA-75CE-420C-9F0A-E8BFD630FF7E</string>
 		</dict>
 		<key>6D6E57CF-8BE5-4AB6-B859-C79BD3D35A3A</key>
-=======
-			<real>578523139.61484206</real>
-			<key>timeStoppedRecording</key>
-			<real>578523143.36317599</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C</string>
-		</dict>
-		<key>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1059,11 +1039,71 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>6D6E57CF-8BE5-4AB6-B859-C79BD3D35A3A.xcactivitylog</string>
-=======
-			<string>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578519198.26331997</real>
+			<key>timeStoppedRecording</key>
+			<real>578519207.89184999</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>6D6E57CF-8BE5-4AB6-B859-C79BD3D35A3A</string>
+		</dict>
+		<key>6F2B57F1-D50C-49EE-8D9E-D27D88A5C0D7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6F2B57F1-D50C-49EE-8D9E-D27D88A5C0D7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578531493.27865398</real>
+			<key>timeStoppedRecording</key>
+			<real>578531493.757653</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>6F2B57F1-D50C-49EE-8D9E-D27D88A5C0D7</string>
+		</dict>
+		<key>7112E547-D9F5-4882-93F4-DFE4246BE468</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7112E547-D9F5-4882-93F4-DFE4246BE468.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -1076,16 +1116,47 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
+			<string>Clean RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578531536.56763995</real>
+			<key>timeStoppedRecording</key>
+			<real>578531536.818506</real>
+			<key>title</key>
+			<string>Clean RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>7112E547-D9F5-4882-93F4-DFE4246BE468</string>
+		</dict>
+		<key>73EB3C3F-38B6-441F-B739-7D77B44956E8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>73EB3C3F-38B6-441F-B739-7D77B44956E8.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
-			<real>578519198.26331997</real>
+			<real>578531557.99942195</real>
 			<key>timeStoppedRecording</key>
-			<real>578519207.89184999</real>
+			<real>578531563.95202398</real>
 			<key>title</key>
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>6D6E57CF-8BE5-4AB6-B859-C79BD3D35A3A</string>
+			<string>73EB3C3F-38B6-441F-B739-7D77B44956E8</string>
 		</dict>
 		<key>744277DC-75F0-4929-8900-F9D4561287A1</key>
 		<dict>
@@ -1257,9 +1328,6 @@
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
 			<string>8515AE0D-0E56-4C62-B0A4-06B6483C658D.xcactivitylog</string>
-=======
-			<string>06647E2D-D8AD-4253-9023-034226C13D20.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -1272,7 +1340,6 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-<<<<<<< HEAD
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
 			<real>578523858.975811</real>
@@ -1325,9 +1392,6 @@
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
 			<string>945D86E9-D96B-4222-8D25-C570A4A6B523.xcactivitylog</string>
-=======
-			<string>06647E2D-D8AD-4253-9023-034226C13D20.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -1340,7 +1404,6 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-<<<<<<< HEAD
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
 			<real>578522089.29066002</real>
@@ -1415,6 +1478,38 @@
 			<key>uniqueIdentifier</key>
 			<string>A331C71B-18E4-4B42-8DCE-61D7C67AA125</string>
 		</dict>
+		<key>A495F98F-E429-4BEF-A060-10211B77057E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A495F98F-E429-4BEF-A060-10211B77057E.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578531544.66967595</real>
+			<key>timeStoppedRecording</key>
+			<real>578531544.87512898</real>
+			<key>title</key>
+			<string>Clean RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>A495F98F-E429-4BEF-A060-10211B77057E</string>
+		</dict>
 		<key>A5A7AB8E-6CE0-45C5-99B7-05743C478551</key>
 		<dict>
 			<key>className</key>
@@ -1478,6 +1573,38 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>A6A5A622-A8EE-49D6-8CF0-F490EEA9B0CC</string>
+		</dict>
+		<key>B60A3813-8121-4890-9F82-0F6553A09FBC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B60A3813-8121-4890-9F82-0F6553A09FBC.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>578531548.90639806</real>
+			<key>timeStoppedRecording</key>
+			<real>578531549.12553096</real>
+			<key>title</key>
+			<string>Clean RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>B60A3813-8121-4890-9F82-0F6553A09FBC</string>
 		</dict>
 		<key>B881AC0A-6644-40CA-B263-7F6E124CC8A6</key>
 		<dict>
@@ -1704,19 +1831,6 @@
 			<string>CB27E590-2F63-4FCB-BBDD-2C3FD878F615</string>
 		</dict>
 		<key>D1D1D370-99B3-4FC9-B46D-EFA003E26323</key>
-=======
-			<string>Build RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-			<real>578530449.287673</real>
-			<key>timeStoppedRecording</key>
-			<real>578530451.97741497</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>06647E2D-D8AD-4253-9023-034226C13D20</string>
-		</dict>
-		<key>22745D9A-5A86-4958-B00E-3604ED0F3FCE</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1725,7 +1839,6 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>D1D1D370-99B3-4FC9-B46D-EFA003E26323.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
@@ -1814,19 +1927,6 @@
 			<string>D7746D49-8384-4DE6-BCDC-5B9D08C77801</string>
 		</dict>
 		<key>D829CE0C-8A36-426F-88AC-2FE01B0D154D</key>
-=======
-			<string>Build RPM-AR-UI</string>
-			<key>timeStartedRecording</key>
-			<real>578530449.287673</real>
-			<key>timeStoppedRecording</key>
-			<real>578530451.97741497</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>06647E2D-D8AD-4253-9023-034226C13D20</string>
-		</dict>
-		<key>22745D9A-5A86-4958-B00E-3604ED0F3FCE</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1835,7 +1935,6 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>D829CE0C-8A36-426F-88AC-2FE01B0D154D.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
@@ -1937,13 +2036,6 @@
 			<dict>
 				<key>highLevelStatus</key>
 				<string>W</string>
-=======
-			<string>22745D9A-5A86-4958-B00E-3604ED0F3FCE.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -1954,7 +2046,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578512532.27940404</real>
 			<key>timeStoppedRecording</key>
 			<real>578512537.56406796</real>
@@ -1964,17 +2055,6 @@
 			<string>E6E5DA7A-73B4-4E40-9F2F-0BE539132185</string>
 		</dict>
 		<key>E9467C93-FE7A-49E5-BFC9-B6EA819087F4</key>
-=======
-			<real>578529063.13425398</real>
-			<key>timeStoppedRecording</key>
-			<real>578529067.17104697</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>22745D9A-5A86-4958-B00E-3604ED0F3FCE</string>
-		</dict>
-		<key>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1983,15 +2063,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>E9467C93-FE7A-49E5-BFC9-B6EA819087F4.xcactivitylog</string>
-=======
-			<string>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -2002,7 +2078,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578512634.62014496</real>
 			<key>timeStoppedRecording</key>
 			<real>578512639.88399696</real>
@@ -2012,17 +2087,6 @@
 			<string>E9467C93-FE7A-49E5-BFC9-B6EA819087F4</string>
 		</dict>
 		<key>EDD03B96-99A4-45A9-BE7F-4A54B12A3474</key>
-=======
-			<real>578521115.51959097</real>
-			<key>timeStoppedRecording</key>
-			<real>578521115.62317598</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7</string>
-		</dict>
-		<key>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2031,15 +2095,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>EDD03B96-99A4-45A9-BE7F-4A54B12A3474.xcactivitylog</string>
-=======
-			<string>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -2050,7 +2110,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578517393.18053699</real>
 			<key>timeStoppedRecording</key>
 			<real>578517393.787956</real>
@@ -2059,18 +2118,7 @@
 			<key>uniqueIdentifier</key>
 			<string>EDD03B96-99A4-45A9-BE7F-4A54B12A3474</string>
 		</dict>
-		<key>FADDB563-031B-41C3-B29B-7C5136A9DE6C</key>
-=======
-			<real>578523139.61484206</real>
-			<key>timeStoppedRecording</key>
-			<real>578523143.36317599</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C</string>
-		</dict>
-		<key>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
+		<key>F2D68CBF-25DF-4683-9932-2F2A1786F3A2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2079,19 +2127,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
-			<string>FADDB563-031B-41C3-B29B-7C5136A9DE6C.xcactivitylog</string>
+			<string>F2D68CBF-25DF-4683-9932-2F2A1786F3A2.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
-=======
-			<string>22745D9A-5A86-4958-B00E-3604ED0F3FCE.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
+				<string>E</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -2102,7 +2142,38 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
+			<real>578531425.11161995</real>
+			<key>timeStoppedRecording</key>
+			<real>578531426.29863596</real>
+			<key>title</key>
+			<string>Build RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>F2D68CBF-25DF-4683-9932-2F2A1786F3A2</string>
+		</dict>
+		<key>FADDB563-031B-41C3-B29B-7C5136A9DE6C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FADDB563-031B-41C3-B29B-7C5136A9DE6C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
 			<real>578528722.95106804</real>
 			<key>timeStoppedRecording</key>
 			<real>578528730.86079299</real>
@@ -2112,17 +2183,6 @@
 			<string>FADDB563-031B-41C3-B29B-7C5136A9DE6C</string>
 		</dict>
 		<key>FC8BA80A-D3AB-40DD-A16E-BF3C684B05DF</key>
-=======
-			<real>578529063.13425398</real>
-			<key>timeStoppedRecording</key>
-			<real>578529067.17104697</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>22745D9A-5A86-4958-B00E-3604ED0F3FCE</string>
-		</dict>
-		<key>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2131,15 +2191,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>FC8BA80A-D3AB-40DD-A16E-BF3C684B05DF.xcactivitylog</string>
-=======
-			<string>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -2150,7 +2206,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578524527.99009895</real>
 			<key>timeStoppedRecording</key>
 			<real>578524536.25043297</real>
@@ -2160,17 +2215,6 @@
 			<string>FC8BA80A-D3AB-40DD-A16E-BF3C684B05DF</string>
 		</dict>
 		<key>FDD2A07E-C376-4B9A-8E4D-4CF7765E317B</key>
-=======
-			<real>578521115.51959097</real>
-			<key>timeStoppedRecording</key>
-			<real>578521115.62317598</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>33A27E41-C9A8-44D9-AC9E-90AD21B27EC7</string>
-		</dict>
-		<key>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2179,15 +2223,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>FDD2A07E-C376-4B9A-8E4D-4CF7765E317B.xcactivitylog</string>
-=======
-			<string>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -2198,7 +2238,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
 			<real>578518410.05436397</real>
 			<key>timeStoppedRecording</key>
 			<real>578518410.66396105</real>
@@ -2208,17 +2247,6 @@
 			<string>FDD2A07E-C376-4B9A-8E4D-4CF7765E317B</string>
 		</dict>
 		<key>FED069C1-FE23-4B17-A717-EC6DA97AAF88</key>
-=======
-			<real>578523139.61484206</real>
-			<key>timeStoppedRecording</key>
-			<real>578523143.36317599</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>70FCE10E-A39B-4E2A-9BD2-B27F95C06B7C</string>
-		</dict>
-		<key>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -2227,21 +2255,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-<<<<<<< HEAD
 			<string>FED069C1-FE23-4B17-A717-EC6DA97AAF88.xcactivitylog</string>
-=======
-			<string>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB.xcactivitylog</string>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-=======
-			<string>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>RPM-AR-UI project</string>
@@ -2252,8 +2270,6 @@
 			<key>signature</key>
 			<string>Build RPM-AR-UI</string>
 			<key>timeStartedRecording</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
 			<real>578512969.86775696</real>
 			<key>timeStoppedRecording</key>
 			<real>578512975.23496604</real>
@@ -2261,25 +2277,6 @@
 			<string>Build RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>FED069C1-FE23-4B17-A717-EC6DA97AAF88</string>
-=======
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-			<real>578530346.31049597</real>
-			<key>timeStoppedRecording</key>
-			<real>578530349.05812597</real>
-			<key>title</key>
-			<string>Build RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>951BFFE1-36BD-4DFB-803D-BD7FA6323CAB</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
-=======
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 		</dict>
 	</dict>
 </dict>

@@ -44,6 +44,7 @@
 		1DE1803B227B781F00586C57 /* SessionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1803A227B781F00586C57 /* SessionList.swift */; };
 		1DE1803D227B7F7500586C57 /* Sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1803C227B7F7500586C57 /* Sessions.json */; };
 		1DE1803F227B9B8600586C57 /* ObjsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1803E227B9B8600586C57 /* ObjsTableViewCell.swift */; };
+		1DE18043227BB3B800586C57 /* ObjectInSessionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE18042227BB3B800586C57 /* ObjectInSessionTableViewController.swift */; };
 		1DE804762279FF0D009D4019 /* SavedSession.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE804752279FF0D009D4019 /* SavedSession.json */; };
 		84ACE68A227B8F5800FAAFDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACE689227B8F5800FAAFDA /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
@@ -108,6 +109,7 @@
 		1DE1803A227B781F00586C57 /* SessionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionList.swift; sourceTree = "<group>"; };
 		1DE1803C227B7F7500586C57 /* Sessions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sessions.json; sourceTree = "<group>"; };
 		1DE1803E227B9B8600586C57 /* ObjsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjsTableViewCell.swift; sourceTree = "<group>"; };
+		1DE18042227BB3B800586C57 /* ObjectInSessionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectInSessionTableViewController.swift; sourceTree = "<group>"; };
 		1DE804752279FF0D009D4019 /* SavedSession.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SavedSession.json; sourceTree = "<group>"; };
 		84ACE689227B8F5800FAAFDA /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				1DE1803E227B9B8600586C57 /* ObjsTableViewCell.swift */,
 				1DA84FA02277AD9B00F28549 /* SessionDetailsViewController.swift */,
 				1D4CA5FC2253FC380011A730 /* ARViewController.swift */,
+				1DE18042227BB3B800586C57 /* ObjectInSessionTableViewController.swift */,
 				1D4CA6282253FDA40011A730 /* NewSessionViewController.swift */,
 				1D6D762F2256C83D000F9652 /* ModelType.swift */,
 				1D6D762B225695FE000F9652 /* DetailViewController.swift */,
@@ -401,6 +404,7 @@
 				1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */,
 				1DE1803B227B781F00586C57 /* SessionList.swift in Sources */,
 				1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */,
+				1DE18043227BB3B800586C57 /* ObjectInSessionTableViewController.swift in Sources */,
 				84ACE68A227B8F5800FAAFDA /* TutorialViewController.swift in Sources */,
 				1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */,
 				1DE1803F227B9B8600586C57 /* ObjsTableViewCell.swift in Sources */,

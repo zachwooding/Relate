@@ -7,6 +7,8 @@ provides-member:
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", ""]
 provides-dynamic-lookup:
 - "childNameLabel"
+- "objectsNotPickedTable"
+- "objectsPickedTable"
 - "sessionNameLabel"
 - "sessionNumLabel"
 - "viewDidLoad"
@@ -16,6 +18,8 @@ depends-top-level:
 - "SessionDetailsViewController"
 - !private "String"
 - "UILabel"
+- "UITableView"
+- "UITableViewController"
 - "UIViewController"
 depends-member:
 - !private ["SK", "init"]
@@ -128,12 +132,17 @@ depends-member:
 - ["So8NSObjectC", "Session"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITableView"]
+- ["So8NSObjectC", "UITableViewController"]
 - ["So8NSObjectC", "childNameLabel"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "objectsNotPickedTable"]
+- ["So8NSObjectC", "objectsPickedTable"]
 - ["So8NSObjectC", "sessionInfo"]
 - ["So8NSObjectC", "sessionNameLabel"]
 - ["So8NSObjectC", "sessionNumLabel"]
+- ["So8NSObjectC", "tablePick"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "String"]
@@ -158,12 +167,17 @@ depends-member:
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "Session"]
 - !private ["9RPM_AR_UI28SessionDetailsViewControllerC", "String"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "UILabel"]
+- ["9RPM_AR_UI28SessionDetailsViewControllerC", "UITableView"]
+- ["9RPM_AR_UI28SessionDetailsViewControllerC", "UITableViewController"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "childNameLabel"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "deinit"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "init"]
+- ["9RPM_AR_UI28SessionDetailsViewControllerC", "objectsNotPickedTable"]
+- ["9RPM_AR_UI28SessionDetailsViewControllerC", "objectsPickedTable"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "sessionInfo"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "sessionNameLabel"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "sessionNumLabel"]
+- ["9RPM_AR_UI28SessionDetailsViewControllerC", "tablePick"]
 - ["9RPM_AR_UI28SessionDetailsViewControllerC", "viewDidLoad"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
@@ -219,12 +233,17 @@ depends-member:
 - ["So11UIResponderC", "Session"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITableView"]
+- ["So11UIResponderC", "UITableViewController"]
 - ["So11UIResponderC", "childNameLabel"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "objectsNotPickedTable"]
+- ["So11UIResponderC", "objectsPickedTable"]
 - ["So11UIResponderC", "sessionInfo"]
 - ["So11UIResponderC", "sessionNameLabel"]
 - ["So11UIResponderC", "sessionNumLabel"]
+- ["So11UIResponderC", "tablePick"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
@@ -270,13 +289,18 @@ depends-member:
 - ["So16UIViewControllerC", "Session"]
 - !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UITableView"]
+- ["So16UIViewControllerC", "UITableViewController"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "childNameLabel"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "objectsNotPickedTable"]
+- ["So16UIViewControllerC", "objectsPickedTable"]
 - ["So16UIViewControllerC", "sessionInfo"]
 - ["So16UIViewControllerC", "sessionNameLabel"]
 - ["So16UIViewControllerC", "sessionNumLabel"]
+- ["So16UIViewControllerC", "tablePick"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -398,10 +422,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1f280b887338c4b7931e4ead63886d19"
+interface-hash: "c427530af21d537bf1b4d61eb356646a"

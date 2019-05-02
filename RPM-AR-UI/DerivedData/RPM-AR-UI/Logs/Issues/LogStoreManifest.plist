@@ -5,11 +5,8 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-<<<<<<< HEAD
-	<dict/>
-=======
 	<dict>
-		<key>3BF66CA8-FA1C-42FE-B439-18D1D4BFD168</key>
+		<key>2BA5A930-4384-49A3-B0B5-61F8569ABB9C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -18,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>3BF66CA8-FA1C-42FE-B439-18D1D4BFD168.xcactivitylog</string>
+			<string>2BA5A930-4384-49A3-B0B5-61F8569ABB9C.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -27,42 +24,15 @@
 			<key>signature</key>
 			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
 			<key>timeStartedRecording</key>
-			<real>578439735.286412</real>
+			<real>578531558.118487</real>
 			<key>timeStoppedRecording</key>
-			<real>578439740.02023697</real>
+			<real>578531563.84779799</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>3BF66CA8-FA1C-42FE-B439-18D1D4BFD168</string>
-		</dict>
-		<key>62773C33-7D43-4460-9C65-3AEF59ACABBB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>62773C33-7D43-4460-9C65-3AEF59ACABBB.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>RPM-AR-UI-cdvhwpwdcxemysgpqifxnrsfvdrv</string>
-			<key>timeStartedRecording</key>
-			<real>578530449.37554896</real>
-			<key>timeStoppedRecording</key>
-			<real>578530451.925632</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>62773C33-7D43-4460-9C65-3AEF59ACABBB</string>
+			<string>2BA5A930-4384-49A3-B0B5-61F8569ABB9C</string>
 		</dict>
 	</dict>
->>>>>>> bd9dbce04072a8196230a2253466562b1ebaaa35
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>
