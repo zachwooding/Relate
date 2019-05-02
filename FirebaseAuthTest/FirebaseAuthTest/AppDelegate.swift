@@ -2,6 +2,7 @@
 //  AppDelegate.swift
 //  FirebaseAuthTest
 //
+// tutorial followed for firebase from https://www.youtube.com/watch?v=brpt9Thi6GU
 
 import UIKit
 import Firebase
