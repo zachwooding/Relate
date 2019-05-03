@@ -18,7 +18,7 @@ class TutorialViewController: AVPlayerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let url = URL(string: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"){
+        if let url = URL(string: "https://www.youtube.com/watch?v=NJVIc4E0uVI&feature=youtu.be"){
             UIApplication.shared.open(url)
         }
     
