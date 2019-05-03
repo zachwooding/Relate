@@ -3,18 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>0FFB8849-5CB8-47B0-BF6C-436C13EAABBE</key>
-=======
-		<key>E261D232-001B-4E13-9120-21DD18D546C0</key>
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
-=======
-		<key>E261D232-001B-4E13-9120-21DD18D546C0</key>
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
+		<key>2BA5A930-4384-49A3-B0B5-61F8569ABB9C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -23,68 +15,22 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<string>0FFB8849-5CB8-47B0-BF6C-436C13EAABBE.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
+			<string>2BA5A930-4384-49A3-B0B5-61F8569ABB9C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
 			<key>signature</key>
 			<string>RPM-AR-UI-dpfqlhdopkastiecvsxosgnmqack</string>
 			<key>timeStartedRecording</key>
-			<real>578264385.74673605</real>
+			<real>578531558.118487</real>
 			<key>timeStoppedRecording</key>
-			<real>578264393.35992897</real>
+			<real>578531563.84779799</real>
 			<key>title</key>
 			<string>Build target RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
-			<string>0FFB8849-5CB8-47B0-BF6C-436C13EAABBE</string>
-		</dict>
-		<key>78FAC723-9B62-46E2-B8B9-9488127BE9D7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>78FAC723-9B62-46E2-B8B9-9488127BE9D7.xcactivitylog</string>
-=======
-			<string>E261D232-001B-4E13-9120-21DD18D546C0.xcactivitylog</string>
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
-=======
-			<string>E261D232-001B-4E13-9120-21DD18D546C0.xcactivitylog</string>
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>signature</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<string>RPM-AR-UI-chbqztrfltijnnasfatwvhomzucw</string>
-			<key>timeStartedRecording</key>
-			<real>577830025.11071706</real>
-			<key>timeStoppedRecording</key>
-			<real>577830025.43382895</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>78FAC723-9B62-46E2-B8B9-9488127BE9D7</string>
-=======
-=======
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
-			<string>RPM-AR-UI-cdvhwpwdcxemysgpqifxnrsfvdrv</string>
-			<key>timeStartedRecording</key>
-			<real>578263624.25905204</real>
-			<key>timeStoppedRecording</key>
-			<real>578263627.42781103</real>
-			<key>title</key>
-			<string>Build target RPM-AR-UI</string>
-			<key>uniqueIdentifier</key>
-			<string>E261D232-001B-4E13-9120-21DD18D546C0</string>
-<<<<<<< HEAD
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
-=======
->>>>>>> d2ff375eab1ea064ed6f3be38ecdd3bcd1996da2
+			<string>2BA5A930-4384-49A3-B0B5-61F8569ABB9C</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

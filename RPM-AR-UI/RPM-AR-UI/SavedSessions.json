@@ -1,0 +1,13 @@
+{
+    “name”:”Lion”,
+    “childName”:”Sparrow”,
+    “time”:”1000.0”,
+    “hours”:”1”,
+    “mins”:”2”,
+    “secs”:”3”,
+    “date”:”05-20-2019”,
+    “sessionNum”:”1”,
+    “objsPicked”:”[Apple]”,
+    “objsNotPicked”:”[Banana]”,
+    
+}
