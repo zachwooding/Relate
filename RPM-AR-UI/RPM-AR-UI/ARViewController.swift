@@ -17,6 +17,7 @@ class ARViewController: UIViewController {
     //timer setup
     var timer: Timer?
     var timeLeft: Double? = 1000.0
+    var timeElapsed: Double? = 0.0
     
     //control for whats on screen
     var objectsOnScreen: Array<SCNNode> = Array()
@@ -39,6 +40,7 @@ class ARViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        visualStyle()
         
         let objListControl = ObjectList()
         allObjs = objListControl.get()
@@ -51,6 +53,15 @@ class ARViewController: UIViewController {
         
         
             
+    }
+    
+    func visualStyle(){
+        let nav = self.navigationController?.navigationBar
+        
+        nav?.barStyle = UIBarStyle.black
+        nav?.tintColor = UIColor.yellow
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -256,10 +267,15 @@ class ARViewController: UIViewController {
     //Timer functionality
     @objc func onTimerFires(){
         timeLeft! -= 1.0
+        timeElapsed! += 1.0
         
         //setting timer label
         let(h,m,s) = timeCon(seconds: Int(timeLeft!))
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
+        
+        if(timeLeft! <= 0.0){
+            performSegue(withIdentifier: "unwindToWelcome", sender: self)
+        }
     }
     
     //starting timer
@@ -281,7 +297,7 @@ class ARViewController: UIViewController {
     
     //quit session with stop button press
     @IBAction func quitSession(){
-        let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be lost.", preferredStyle: UIAlertController.Style.alert)
+        let quitAlert = UIAlertController(title: "Are you sure you want to quit?", message: "All session data will be saved.", preferredStyle: UIAlertController.Style.alert)
         
         quitAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
             (action: UIAlertAction!) in self.performSegue(withIdentifier: "unwindToWelcome", sender: self)
@@ -298,6 +314,10 @@ class ARViewController: UIViewController {
     //saving session and moving to welcome screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "unwindToWelcome" {
+            let (h,m,s) = timeCon(seconds: Int(timeElapsed!))
+            sessionInfo.hours = h
+            sessionInfo.mins = m
+            sessionInfo.secs = s
             let navTarget = segue.destination as! WelcomeViewController
             navTarget.savedSession = sessionInfo
         }
@@ -307,13 +327,13 @@ class ARViewController: UIViewController {
     //managing data receved from new session page
     func manageSession(){
         titleOfSession.title = sessionInfo.name
-
+        
+        sessionInfo.hours = 0
+        sessionInfo.mins = 0
+        sessionInfo.secs = 0
+        
         timeLeft = Double(sessionInfo.time)
         let(h,m,s) = timeCon(seconds: Int(timeLeft!))
-        sessionInfo.hours = h
-        sessionInfo.mins = m
-        sessionInfo.secs = s
-        
         timeLeftLabel.text = String(h) + ":" + String(m) + ":" + String(s)
     
         

@@ -274,6 +274,20 @@ SWIFT_CLASS("_TtC9RPM_AR_UI24NewSessionViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC9RPM_AR_UI34ObjectInSessionTableViewController")
+@interface ObjectInSessionTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9RPM_AR_UI17ObjsTableViewCell")
 @interface ObjsTableViewCell : UITableViewCell
@@ -296,7 +310,6 @@ SWIFT_CLASS("_TtC9RPM_AR_UI12SearchFooter")
 
 
 @class UISearchBar;
-@class UITableView;
 
 SWIFT_CLASS("_TtC9RPM_AR_UI20SearchViewController")
 @interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

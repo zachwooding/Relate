@@ -26,20 +26,22 @@ class ObjectInSessionTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return sessionInfo.objsPicked.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectsPickedCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectsPickedCell", for: indexPath) as? ObjsTableViewCell else{
+            fatalError("The dequeued cell is not an instance of ObjsTableViewCell.")
+        }
 
-        //cell.objsNameLabel.text = sessionInfo.objectsPicked[0].name
-       // cell.picture
+        cell.objsNameLabel.text = sessionInfo.objsPicked[indexPath.row].name
+        cell.pictureLabel.text = sessionInfo.objsPicked[indexPath.row].icon
 
         return cell
     }

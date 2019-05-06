@@ -25,31 +25,20 @@ class WelcomeViewController: UITableViewController {
     //@IBOutlet var nameLabel: UILabel!
     //@IBOutlet var dateLabel: UILabel!
     @IBOutlet var table: UITableView!
+    @IBOutlet weak var tutBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        visualStyle()
         
-        //createFile()
-        //loadedData = loadJson(filename: "sessionDocs")
-        let session = Session(name: "TestSesh", childName: "John Smith", time: 300.0, hours: 0, mins: 5, secs: 0, date: "05-02-2019", sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
-        
-        
-        listedSessions.append(session)
-        
-        //savedDataArray.append(load()!)
-        //loadSessionToTable()
-    
-        // Do any additional setup after loading the view.
-        
-        
-        //May 1st
-        //url = Bundle.main.url(forResource: "SavedSession", withExtension: "json")!
         let filemgr = FileManager.default
         
         url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions.json")
         
         if filemgr.fileExists(atPath: (url?.absoluteString)!) {
             do{
+                let session = Session(name: "Test Session", childName: "John Smith", time: 300.0, hours: 0, mins: 5, secs: 0, date: "01-01-2000", sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+                listedSessions.append(session)
                 filemgr.createFile(atPath: (url?.absoluteString)!, contents: try JSONEncoder().encode(listedSessions), attributes: nil)
                 saveToJson()
                 loadJson()
@@ -62,12 +51,51 @@ class WelcomeViewController: UITableViewController {
             loadJson()
         }
         
-        
-        
     }
 
+    func visualStyle(){
+        let nav = self.navigationController?.navigationBar
+        
+        // 2
+        nav?.barStyle = UIBarStyle.black
+        nav?.tintColor = UIColor.yellow
+        
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        // 4
+        let image = UIImage(named: "launchScreenFull2048.png")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
+    }
     
-   
+    @IBAction func openTutorial(){
+        if let url = URL(string: "https://www.youtube.com/watch?v=NJVIc4E0uVI&feature=youtu.be"){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            listedSessions.remove(at: indexPath.row)
+            do{
+                let toReplace = try JSONEncoder().encode(listedSessions)
+                try toReplace.write(to: url)
+                tableView.reloadData()
+                
+            }catch{
+                print(error)
+            }
+            
+        }
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -86,6 +114,9 @@ class WelcomeViewController: UITableViewController {
         let session = listedSessions[indexPath.row]
         //let session = Session(name: "TheSesh", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: "1", objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
         cell.nameLabel.text = session.name
+        cell.dateLabel.text = session.date
+        cell.childNameLabel.text = session.childName
+        cell.sessionNumber.text = String(session.sessionNum)
         
         return cell
     }
@@ -93,6 +124,7 @@ class WelcomeViewController: UITableViewController {
     
     @IBAction func backToWelcome(unwindSegue: UIStoryboardSegue){
         if savedSession != nil{
+            savedSession.sessionNum = listedSessions.count + 1
             savedDataArray.append(savedSession)
             listedSessions.append(savedSession)
             saveToJson()
@@ -145,11 +177,6 @@ class WelcomeViewController: UITableViewController {
         catch {
             print(error)
         }
-//        do {
-//            let text2 = try String(contentsOf: url, encoding: .utf8)
-//            print(text2)
-//        }
-//        catch {/* error handling here */}
     }
     
     func saveToJson(){
@@ -161,33 +188,7 @@ class WelcomeViewController: UITableViewController {
             print(error)
         }
         
-//        do {
-//            let text2 = try String(contentsOf: url, encoding: .utf8)
-//            print(text2)
-//        }
-//        catch {/* error handling here */}
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        
-        // 1
-        let nav = self.navigationController?.navigationBar
-        
-        // 2
-        nav?.barStyle = UIBarStyle.black
-        nav?.tintColor = UIColor.yellow
-        
-        // 3
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        
-        // 4
-        let image = UIImage(named: "launchScreenFull2048.png")
-        imageView.image = image
-        
-        // 5
-        navigationItem.titleView = imageView
-    }
     
 }

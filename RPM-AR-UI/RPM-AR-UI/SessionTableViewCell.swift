@@ -11,7 +11,10 @@ import UIKit
 class SessionTableViewCell: UITableViewCell {
     
     @IBOutlet var nameLabel:UILabel!
-
+    @IBOutlet weak var childNameLabel: UILabel!
+    @IBOutlet weak var sessionNumber: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D7CD64C2268FD2B00794D63 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CD64B2268FD2B00794D63 /* SaveData.swift */; };
 		0DF85C51226796120084147A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF85C50226796120084147A /* Session.swift */; };
 		1D105CDD22690BE300635C64 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D105CDC22690BE300635C64 /* WelcomeViewController.swift */; };
-		1D105CE02269155800635C64 /* LoadSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D105CDF2269155800635C64 /* LoadSave.swift */; };
 		1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA5F82253FC380011A730 /* AppDelegate.swift */; };
 		1D4CA5FD2253FC380011A730 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FC2253FC380011A730 /* ARViewController.swift */; };
 		1D4CA6002253FC380011A730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FE2253FC380011A730 /* Main.storyboard */; };
@@ -22,7 +20,6 @@
 		1D6D762822568E01000F9652 /* Objs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762722568E01000F9652 /* Objs.swift */; };
 		1D6D762A225691A9000F9652 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7629225691A9000F9652 /* SearchFooter.swift */; };
 		1D6D762C225695FE000F9652 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762B225695FE000F9652 /* DetailViewController.swift */; };
-		1D6D76302256C83D000F9652 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D762F2256C83D000F9652 /* ModelType.swift */; };
 		1DA84F902277A62800F28549 /* relate.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F822277A62800F28549 /* relate.png */; };
 		1DA84F912277A62800F28549 /* ipadPro167.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F832277A62800F28549 /* ipadPro167.png */; };
 		1DA84F922277A62800F28549 /* launchscreenfull2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA84F842277A62800F28549 /* launchscreenfull2048.png */; };
@@ -42,7 +39,6 @@
 		1DAA9785226F9B530089D118 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */; };
 		1DACA5F5225BC67800582A69 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CA5FA2253FC380011A730 /* art.scnassets */; };
 		1DE1803B227B781F00586C57 /* SessionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1803A227B781F00586C57 /* SessionList.swift */; };
-		1DE1803D227B7F7500586C57 /* Sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1803C227B7F7500586C57 /* Sessions.json */; };
 		1DE1803F227B9B8600586C57 /* ObjsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1803E227B9B8600586C57 /* ObjsTableViewCell.swift */; };
 		1DE18043227BB3B800586C57 /* ObjectInSessionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE18042227BB3B800586C57 /* ObjectInSessionTableViewController.swift */; };
 		1DE804762279FF0D009D4019 /* SavedSession.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE804752279FF0D009D4019 /* SavedSession.json */; };
@@ -67,10 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D7CD64B2268FD2B00794D63 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		0DF85C50226796120084147A /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1D105CDC22690BE300635C64 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		1D105CDF2269155800635C64 /* LoadSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSave.swift; sourceTree = "<group>"; };
 		1D4CA5F52253FC380011A730 /* RPM-AR-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPM-AR-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4CA5F82253FC380011A730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4CA5FA2253FC380011A730 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -88,7 +82,6 @@
 		1D6D762722568E01000F9652 /* Objs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objs.swift; sourceTree = "<group>"; };
 		1D6D7629225691A9000F9652 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		1D6D762B225695FE000F9652 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		1D6D762F2256C83D000F9652 /* ModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		1DA84F822277A62800F28549 /* relate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = relate.png; sourceTree = "<group>"; };
 		1DA84F832277A62800F28549 /* ipadPro167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadPro167.png; sourceTree = "<group>"; };
 		1DA84F842277A62800F28549 /* launchscreenfull2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreenfull2048.png; sourceTree = "<group>"; };
@@ -107,7 +100,6 @@
 		1DAA9782226F89060089D118 /* ObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectList.swift; sourceTree = "<group>"; };
 		1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		1DE1803A227B781F00586C57 /* SessionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionList.swift; sourceTree = "<group>"; };
-		1DE1803C227B7F7500586C57 /* Sessions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sessions.json; sourceTree = "<group>"; };
 		1DE1803E227B9B8600586C57 /* ObjsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjsTableViewCell.swift; sourceTree = "<group>"; };
 		1DE18042227BB3B800586C57 /* ObjectInSessionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectInSessionTableViewController.swift; sourceTree = "<group>"; };
 		1DE804752279FF0D009D4019 /* SavedSession.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SavedSession.json; sourceTree = "<group>"; };
@@ -175,21 +167,17 @@
 				1DA84F812277A62800F28549 /* apple logos resized */,
 				1D4CA5F82253FC380011A730 /* AppDelegate.swift */,
 				1D105CDC22690BE300635C64 /* WelcomeViewController.swift */,
-				1DE1803C227B7F7500586C57 /* Sessions.json */,
 				1DAA9784226F9B530089D118 /* SessionTableViewCell.swift */,
 				1DE1803E227B9B8600586C57 /* ObjsTableViewCell.swift */,
 				1DA84FA02277AD9B00F28549 /* SessionDetailsViewController.swift */,
 				1D4CA5FC2253FC380011A730 /* ARViewController.swift */,
 				1DE18042227BB3B800586C57 /* ObjectInSessionTableViewController.swift */,
 				1D4CA6282253FDA40011A730 /* NewSessionViewController.swift */,
-				1D6D762F2256C83D000F9652 /* ModelType.swift */,
 				1D6D762B225695FE000F9652 /* DetailViewController.swift */,
 				1D6D7621225689DC000F9652 /* SearchViewController.swift */,
 				1D6D7629225691A9000F9652 /* SearchFooter.swift */,
-				0D7CD64B2268FD2B00794D63 /* SaveData.swift */,
 				0DF85C50226796120084147A /* Session.swift */,
 				1DE1803A227B781F00586C57 /* SessionList.swift */,
-				1D105CDF2269155800635C64 /* LoadSave.swift */,
 				1D6D762722568E01000F9652 /* Objs.swift */,
 				1DAA9782226F89060089D118 /* ObjectList.swift */,
 				1D4CA5FE2253FC380011A730 /* Main.storyboard */,
@@ -358,7 +346,6 @@
 				1DA84F9B2277A62800F28549 /* Appstore1024.png in Resources */,
 				1DA84F992277A62800F28549 /* ipadSpotlight80.png in Resources */,
 				1DA84F942277A62800F28549 /* launchScreenFull Load.png in Resources */,
-				1DE1803D227B7F7500586C57 /* Sessions.json in Resources */,
 				1DA84F9D2277A62800F28549 /* ipadnotif40.png in Resources */,
 				1DE804762279FF0D009D4019 /* SavedSession.json in Resources */,
 				1DA84F9A2277A62800F28549 /* ipadApp152.png in Resources */,
@@ -396,9 +383,6 @@
 				1D4CA6292253FDA40011A730 /* NewSessionViewController.swift in Sources */,
 				1DA84FA12277AD9B00F28549 /* SessionDetailsViewController.swift in Sources */,
 				1D6D762822568E01000F9652 /* Objs.swift in Sources */,
-				1D105CE02269155800635C64 /* LoadSave.swift in Sources */,
-				1D6D76302256C83D000F9652 /* ModelType.swift in Sources */,
-				0D7CD64C2268FD2B00794D63 /* SaveData.swift in Sources */,
 				1DAA9785226F9B530089D118 /* SessionTableViewCell.swift in Sources */,
 				1D4CA5FD2253FC380011A730 /* ARViewController.swift in Sources */,
 				1D4CA5F92253FC380011A730 /* AppDelegate.swift in Sources */,
