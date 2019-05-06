@@ -29,18 +29,28 @@ class WelcomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //creating visual style
         visualStyle()
         
+        //create file manager for saving, loading and creating
         let filemgr = FileManager.default
         
+        //setting url of save file
         url = filemgr.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent("SavedSessions.json")
         
+        //checking if save file exists at the url
         if filemgr.fileExists(atPath: (url?.absoluteString)!) {
             do{
+                //creating a empty session to instansiate new save file
                 let session = Session(name: "Test Session", childName: "John Smith", time: 300.0, hours: 0, mins: 5, secs: 0, date: "01-01-2000", sessionNum: 1, objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
                 listedSessions.append(session)
+                
+                //creating json at url
                 filemgr.createFile(atPath: (url?.absoluteString)!, contents: try JSONEncoder().encode(listedSessions), attributes: nil)
+                //writing to file for saftey
                 saveToJson()
+                //loading file for safety
                 loadJson()
             }catch{
                 print(error)
@@ -48,46 +58,57 @@ class WelcomeViewController: UITableViewController {
            
             
         }else{
+            //file already exists so lets load it
             loadJson()
         }
         
     }
 
     func visualStyle(){
+        //finding the nav bar
         let nav = self.navigationController?.navigationBar
         
-        // 2
+        // setting nav colors
         nav?.barStyle = UIBarStyle.black
         nav?.tintColor = UIColor.yellow
         
-        // 3
+        // setting image size for top bar
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
         
-        // 4
+        // setting image for top bar
         let image = UIImage(named: "launchScreenFull2048.png")
         imageView.image = image
         
-        // 5
+        // display image
         navigationItem.titleView = imageView
     }
     
     @IBAction func openTutorial(){
+        //when tutorial btn is pressed navigate to this url. If youtube app is on device it will use the youtube app
         if let url = URL(string: "https://www.youtube.com/watch?v=NJVIc4E0uVI&feature=youtu.be"){
             UIApplication.shared.open(url)
         }
     }
     
+    //setting up rows so they can be deleted
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
+    //delete session function
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        //if delete swipe
         if (editingStyle == .delete) {
+            //remove desired session from array
             listedSessions.remove(at: indexPath.row)
+            //write changes to JSON
             do{
+                //encoding JSON
                 let toReplace = try JSONEncoder().encode(listedSessions)
+                //writing to file
                 try toReplace.write(to: url)
+                //reloading the table
                 tableView.reloadData()
                 
             }catch{
@@ -105,14 +126,20 @@ class WelcomeViewController: UITableViewController {
         return listedSessions.count
     }
     
+    //setting up cells in session list
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        //setting the correct prototype cell
+        //see file SessionTableViewCell.swift
         let cellId = "SessionTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SessionTableViewCell else{
             fatalError("The dequeued cell is not an instance of SessionTableViewCell.")
         }
+        
+        //setting up which session to display
         let session = listedSessions[indexPath.row]
-        //let session = Session(name: "TheSesh", time: TimeInterval.pi, hours: 1, mins: 2, secs: 3, date: Date.distantPast, sessionNum: "1", objsPicked: Array<Objs>(), objsNotPicked: Array<Objs>())
+        
+        //setting cell labels
         cell.nameLabel.text = session.name
         cell.dateLabel.text = session.date
         cell.childNameLabel.text = session.childName
@@ -121,26 +148,36 @@ class WelcomeViewController: UITableViewController {
         return cell
     }
     
-    
+    //seguing back to welcome from ARViewController
+    // See ARViewController.swift and ARViewController in Main.storyboard
     @IBAction func backToWelcome(unwindSegue: UIStoryboardSegue){
+        //checking that we got a session correctly
         if savedSession != nil{
+            //setting session number based on how many are in the list already
             savedSession.sessionNum = listedSessions.count + 1
+            //adding session to lists
             savedDataArray.append(savedSession)
             listedSessions.append(savedSession)
+            //saving updated sessions
             saveToJson()
+            //loading updated sessions
             loadJson()
+            //reloading data in table
             table.reloadData()
             
         }
         
     }
     
+    //when a cell is tapped on, pass session info then perform segue
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Get Cell Label
         let indexPath = table.indexPathForSelectedRow!
         let currentCell = table.cellForRow(at: indexPath)! as! SessionTableViewCell
         
+        //saving the sesision
         sessionToPass = currentCell.nameLabel.text
+        //sending to prepare for segue
         performSegue(withIdentifier: "viewSessionDetails", sender: self)
     }
     
