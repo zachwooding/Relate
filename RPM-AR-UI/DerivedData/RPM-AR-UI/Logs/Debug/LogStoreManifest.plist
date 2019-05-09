@@ -38,6 +38,38 @@
 			<key>uniqueIdentifier</key>
 			<string>165890B2-6EFE-49C2-A7C4-E2C1D5162403</string>
 		</dict>
+		<key>1B8E8291-D1E3-4D34-A875-379AD23EC778</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1B8E8291-D1E3-4D34-A875-379AD23EC778.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>579129740.93722904</real>
+			<key>timeStoppedRecording</key>
+			<real>579129776.205037</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>1B8E8291-D1E3-4D34-A875-379AD23EC778</string>
+		</dict>
 		<key>33667433-1901-48C9-B56D-16C5429AF8F5</key>
 		<dict>
 			<key>className</key>
@@ -261,6 +293,38 @@
 			<string>Debug RPM-AR-UI</string>
 			<key>uniqueIdentifier</key>
 			<string>92FFADDF-575B-4A63-9199-DCDEFC4986B3</string>
+		</dict>
+		<key>E9F9D5BF-2C47-4D9F-872C-E62EB5E864DB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E9F9D5BF-2C47-4D9F-872C-E62EB5E864DB.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RPM-AR-UI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RPM-AR-UI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>timeStartedRecording</key>
+			<real>579129723.18828106</real>
+			<key>timeStoppedRecording</key>
+			<real>579129730.18502796</real>
+			<key>title</key>
+			<string>Debug RPM-AR-UI</string>
+			<key>uniqueIdentifier</key>
+			<string>E9F9D5BF-2C47-4D9F-872C-E62EB5E864DB</string>
 		</dict>
 		<key>FF7855CC-072D-4784-A6A3-42E06A06A734</key>
 		<dict>
