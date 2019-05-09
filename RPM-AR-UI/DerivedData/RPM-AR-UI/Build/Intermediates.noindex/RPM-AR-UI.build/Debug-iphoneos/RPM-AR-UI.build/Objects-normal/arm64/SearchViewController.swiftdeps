@@ -33,6 +33,7 @@ depends-top-level:
 - "SearchFooter"
 - "SearchViewController"
 - "String"
+- !private "StringLiteralType"
 - !private "UINavigationController"
 - "UISearchBar"
 - "UISearchController"

@@ -1549,6 +1549,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "url"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITableViewDelegateP", "visualStyle"]
+- !private ["So19UITextFieldDelegateP", "savedSessions"]
 - ["So18UITraitEnvironmentP", "Array"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "Data"]
@@ -2010,6 +2011,7 @@ depends-nominal:
 - "So21UITableViewControllerC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
+- !private "So19UITextFieldDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"

@@ -25,6 +25,7 @@ class SessionDetailsViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //populating labels with session information
         timeLabel.text = String(sessionInfo.hours) + ":" + String(sessionInfo.mins) + ":" + String(sessionInfo.secs)
         dateLabel.text = sessionInfo.date
         sessionNameLabel.text = sessionInfo.name
@@ -37,10 +38,14 @@ class SessionDetailsViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //getting the cell script
+        //go see ObjsTableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectsPickedCell", for: indexPath) as? ObjsTableViewCell else{
             fatalError("The dequeued cell is not an instance of ObjsTableViewCell.")
         }
         
+        //adding contents to cell
+        //checking which array we need
         if tableView == objectsPickedTable{
             cell.objsNameLabel.text = sessionInfo.objsPicked[indexPath.row].name
             cell.pictureLabel.text = sessionInfo.objsPicked[indexPath.row].icon
@@ -49,7 +54,7 @@ class SessionDetailsViewController: UIViewController, UITableViewDelegate, UITab
             cell.pictureLabel.text = sessionInfo.objsNotPicked[indexPath.row].icon
         }
         
-        
+        //returning the cell to the table
         return cell
     }
     

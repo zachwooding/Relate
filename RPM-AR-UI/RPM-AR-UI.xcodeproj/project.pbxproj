@@ -201,9 +201,9 @@
 		1DA84F812277A62800F28549 /* apple logos resized */ = {
 			isa = PBXGroup;
 			children = (
+				1DA84F842277A62800F28549 /* launchscreenfull2048.png */,
 				1DA84F822277A62800F28549 /* relate.png */,
 				1DA84F832277A62800F28549 /* ipadPro167.png */,
-				1DA84F842277A62800F28549 /* launchscreenfull2048.png */,
 				1DA84F852277A62800F28549 /* apple.png */,
 				1DA84F862277A62800F28549 /* launchScreenFull Load.png */,
 				1DA84F872277A62800F28549 /* ipadsetting29.png */,

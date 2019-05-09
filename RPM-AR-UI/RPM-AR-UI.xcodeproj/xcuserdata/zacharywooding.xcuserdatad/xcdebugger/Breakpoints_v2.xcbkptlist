@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SearchViewController.swift"
-            timestampString = "578867624.289946"
+            timestampString = "579121981.794165"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SearchViewController.swift"
-            timestampString = "578867624.289999"
+            timestampString = "579121981.794214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SearchViewController.swift"
-            timestampString = "578867624.290037"
+            timestampString = "579121981.794252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SearchViewController.swift"
-            timestampString = "578867624.290072"
+            timestampString = "579121981.7942851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SearchViewController.swift"
-            timestampString = "578867624.2901061"
+            timestampString = "579121981.794317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -330,13 +330,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.290625"
+            timestampString = "579121981.794463"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "WelcomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -394,13 +394,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.2907799"
+            timestampString = "579121981.79479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "backToWelcome(unwindSegue:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,13 +410,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.290818"
+            timestampString = "579121981.795006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -426,13 +426,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.290858"
+            timestampString = "579121981.795213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -442,13 +442,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.290897"
+            timestampString = "579121981.795421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -458,13 +458,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.290935"
+            timestampString = "579121981.79563"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "WelcomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -474,13 +474,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.290975"
+            timestampString = "579121981.795836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "WelcomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -490,13 +490,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.291014"
+            timestampString = "579121981.796039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -506,13 +506,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.291052"
+            timestampString = "579121981.7962461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -522,29 +522,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.29109"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.291127"
+            timestampString = "579121981.7964489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "159"
             endingLineNumber = "159"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "backToWelcome(unwindSegue:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -554,13 +538,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.2911659"
+            timestampString = "579121981.7966501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "backToWelcome(unwindSegue:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -569,12 +553,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RPM-AR-UI/SessionDetailsViewController.swift"
-            timestampString = "578867624.291207"
+            filePath = "RPM-AR-UI/WelcomeViewController.swift"
+            timestampString = "579121981.79689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -586,7 +570,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SessionDetailsViewController.swift"
-            timestampString = "578867624.291252"
+            timestampString = "579121981.797094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -602,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SessionDetailsViewController.swift"
-            timestampString = "578867624.291296"
+            timestampString = "579121981.79713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -618,11 +602,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/SessionDetailsViewController.swift"
-            timestampString = "578867624.291338"
+            timestampString = "579121981.797163"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPM-AR-UI/SessionDetailsViewController.swift"
+            timestampString = "579121981.797194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -634,13 +634,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPM-AR-UI/WelcomeViewController.swift"
-            timestampString = "578867624.2913769"
+            timestampString = "579121981.797225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
             endingLineNumber = "86"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "WelcomeViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPM-AR-UI/WelcomeViewController.swift"
+            timestampString = "579121981.7974989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "visualStyle()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -54,7 +54,7 @@ class ObjectList{
     }
     
     func get() -> Array<Objs>{
-        return getList
+        return getList //returning/ passing the list
     }
 
     

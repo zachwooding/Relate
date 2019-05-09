@@ -77,7 +77,7 @@ class WelcomeViewController: UITableViewController {
         imageView.contentMode = .scaleAspectFit
         
         // setting image for top bar
-        let image = UIImage(named: "launchScreenFull2048.png")
+        let image = UIImage(named: "launchscreenfull2048.png")
         imageView.image = image
         
         // display image
@@ -118,6 +118,7 @@ class WelcomeViewController: UITableViewController {
         }
     }
     
+    //creating the table
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -173,9 +174,10 @@ class WelcomeViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Get Cell Label
         let indexPath = table.indexPathForSelectedRow!
+        //go see SessionTableViewCell
         let currentCell = table.cellForRow(at: indexPath)! as! SessionTableViewCell
         
-        //saving the sesision
+        //saving the session
         sessionToPass = currentCell.nameLabel.text
         //sending to prepare for segue
         performSegue(withIdentifier: "viewSessionDetails", sender: self)
@@ -183,19 +185,26 @@ class WelcomeViewController: UITableViewController {
     
     
     
-    
+    //preapring sessions to be sent
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
+        //sending sessions to new session page
         if segue.destination is UINavigationController{
+            //setting the correct destination
             let navTarget = segue.destination as! UINavigationController
+            //getting the view controller
             let nsVC = navTarget.topViewController as! NewSessionViewController
             
             nsVC.savedSessions = savedDataArray
         }
         
-        if segue.identifier == "viewSessionDetails" && sessionToPass != nil{
+        //sending session (data)to session details page, // making sure the seque goes to the right page
+        if segue.identifier == "viewSessionDetails" && sessionToPass != nil{ //identifing what seque we need to use
+            //gettimg destination controller
             let navTarget = segue.destination as! SessionDetailsViewController
+            //picking the correct session to send
             for sesh in listedSessions{
-                if sessionToPass == sesh.name{
+                if sessionToPass == sesh.name{ //session to move
+                    //setting the session in view controller
                     navTarget.sessionInfo = sesh
                 }
             }
@@ -204,11 +213,13 @@ class WelcomeViewController: UITableViewController {
     }
     
     func loadJson(){
-        
+        //loading JSON file
         do {
+            //getting contents of the JSON
             json = try Data.init(contentsOf: url) as Data
+            //decoding the JSON
             let jsonData = try JSONDecoder().decode(Array<Session>.self, from: json)
-            //print(jsonData)
+            //setting the array so we can list the sessions
             listedSessions = jsonData
         }
         catch {
@@ -218,8 +229,9 @@ class WelcomeViewController: UITableViewController {
     
     func saveToJson(){
         do{
+            //encoding the array
             let dataToSave = try JSONEncoder().encode(listedSessions)
-            //print(dataToSave.description)
+            //writing to JSON file
             try dataToSave.write(to: url)
         }catch{
             print(error)

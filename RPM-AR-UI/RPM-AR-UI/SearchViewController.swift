@@ -13,7 +13,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     let searchController = UISearchController(searchResultsController: nil)
     @IBOutlet var searcherBar: UISearchBar!
-    var objs = [Objs]()
+    var objs = [Objs]()//setting up array of objs
     var filteredObjs = [Objs]()
     
     @IBOutlet var tableView: UITableView!
@@ -24,7 +24,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         
         let objListController = ObjectList()
-        objs = objListController.get()
+        objs = objListController.get() //getting the obj list from objectList
         
         // Setup the Search Controller
         
